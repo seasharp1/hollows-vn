@@ -30,6 +30,53 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
+    label Timberland:
+        show Elliot
+        e "...Anyone else think it's a little strang here? It's like everyone's
+        just wandering around aimlessly... almost like they're mindless."
+
+        show Stella
+        s "Sounds like Zach would fit right in."
+
+        show Zach
+        z "Hey! *snarky comback here*" #TODO
+
+        z "Excuse me, could you tell me..."
+
+        #Hollow looking stranger doesn't respond, Moves past as if he doesn't see
+        #him
+
+        e "That was... {i}weird{/i}. *visibly scared*"
+
+        s "Yeah, let's ask someone else. *visibily uncomfortable*"
+
+        #Shows multiple hollow town's folk
+        z "Well, that didn't get us anywhere."
+
+        s "Yeah, what is up with everyone in this town? They all look like
+        zombies. *Grossed out*"
+
+        z "I guess we should look for someplace to eat and stay the night."
+
+        s "Yes, stay the night."
+
+        e "I saw a bar and grill about a block back the way we came."
+
+        z "It has normal food, right?"
+
+        e "Normal food? What do you mean? *confused*"
+
+        s "I saw it too. It looks like it's the only restuarant in town, so
+        we don't have a choice. *sigh*"
+
+        z "Okay, let's go."
+
+        #Zach and Stella walk off
+
+        e "My pallet isn't {i}that{/i} bad... right?"
+
+
+
     label Tavern:
     show Elliot
 
