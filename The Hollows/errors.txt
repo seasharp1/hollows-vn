@@ -1,0 +1,24 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 35: end of line expected.
+(Perhaps you left out a " at the end of the first line.)
+    """
+        style multiple2_say_window:
+            xsize 500
+            background None
+    
+        style block1_multiple2_say_window:
+            xalign 0.0
+    
+        style block2_multiple2_say_window:
+            xalign 0.5
+    
+        s "Test character 1" (multiple=2)
+                      ^
+        e "Test character 2" (multiple=2)
+        """
+
+Ren'Py Version: Ren'Py 7.4.11.2266
+Mon Jan 31 17:27:00 2022

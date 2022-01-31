@@ -20,6 +20,21 @@ transform slightright:
 
 label start:
 
+    ## This is an example of showing multiple characters talking simultaneously
+    ##style multiple2_say_window:
+        ##xsize 500
+        ##background None
+
+    ##style block1_multiple2_say_window:
+        ##xalign 0.0
+
+    ##style block2_multiple2_say_window:
+        ##xalign 0.5
+
+    ##s "Test character 1" (multiple=2)
+    ##e "Test character 2" (multiple=2)
+    ## End example ----------------------------------------------------------
+
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.

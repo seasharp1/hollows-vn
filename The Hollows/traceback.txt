@@ -1,30 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 53, in script
-    show Elliot at mid
-  File "game/script.rpy", line 53, in <module>
-    show Elliot at mid
-NameError: name 'mid' is not defined
+After initialization, but before game start.
+  File "renpy/common/00start.rpy", line 80, in _init_language
+    renpy.change_language(language)
+  File "game/script.rpy", line 37, in <module>
+    background none
+NameError: name 'none' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 53, in script
-    show Elliot at mid
-  File "renpy/ast.py", line 1197, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "renpy/ast.py", line 1156, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "renpy/bootstrap.py", line 331, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 662, in main
+    run(restart)
+  File "renpy/main.py", line 78, in run
+    renpy.translation.init_translation()
+  File "renpy/translation/__init__.py", line 561, in init_translation
+    renpy.store._init_language() # @UndefinedVariable
+  File "renpy/common/00start.rpy", line 80, in _init_language
+    renpy.change_language(language)
+  File "renpy/translation/__init__.py", line 645, in change_language
+    new_change_language(tl, language)
+  File "renpy/translation/__init__.py", line 607, in new_change_language
+    i.apply()
+  File "renpy/ast.py", line 2675, in apply
+    value = renpy.python.py_eval(expr)
   File "renpy/python.py", line 2276, in py_eval
     return py_eval_bytecode(code, globals, locals)
   File "renpy/python.py", line 2269, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 53, in <module>
-    show Elliot at mid
-NameError: name 'mid' is not defined
+  File "game/script.rpy", line 37, in <module>
+    background none
+NameError: name 'none' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 The Hollows 1.0
-Sun Jan 30 16:11:39 2022
+Mon Jan 31 17:24:09 2022
