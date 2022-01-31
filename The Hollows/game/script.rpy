@@ -40,7 +40,8 @@ label start:
 
     z "HEY! I'm driving here. Put that away."
 
-    "*Car swerves, Zach stops the car*"
+    "*Camera shake, Car swerves, Zach stops the car*"
+    #Can use hpunch transition here, shakes the scene for 1/4 second
 
     s "Well, MAYBE if you knew where you were going, I wouldn't have to pull out a map."
 
