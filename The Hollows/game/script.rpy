@@ -252,18 +252,161 @@ label start:
 
     label whyareyouhere:
         z "So why are you here?"
+
+        bm "Because that's my wife behind the counter."
+
+        "The man gestures to the waitress from earlier"
+
+        z "Her?"
+
+        bm "Yeah, aint she a beaut?"
+
+        show Stella at slightright
+
+        s "Right..."
+
+        hide Stella
+
+        bm "She wasn't always hollow, or that's what I call it at least."
+
+        bm "One day I left for uh, work, and she went on a walk. When I came home she was like this."
+
         jump ontrack
 
     label whathappened:
         z "What happened to everyone in this town?"
+
+        bm "Couldn't tell ya."
+
+        bm "But I do know that it started about 21 years ago. That was when the first person went hollow."
+
+        bm "I think it was someone who was visiting their family. Started acting weird."
+
+        bm "At first we thought they were just startled after seeing a bear or something."
+
+        bm "But as the days and weeks went on, more and more people started acting the same way."
+
+        z "Hollow?"
+
+        bm "Yeah, thats what we call 'em. The people around these parts used to be lively and clamorous."
+
+        bm "My man Earl over there in the Red Tux used to be the liveliest man around."
+
+        bm "He used to play gigs in the Tavern every Tuesday."
+
+        z "I see..."
+
+        bm "I sure miss the noise. I used to hate it, and now I would do anything have it back."
+
+
         jump ontrack
 
     label amulet:
         z "Do you know anything about this amulet?"
+
+        bm "Not a clue. I mean, there's not much to go on."
+
+        bm "There are plenty of trees in the world. But the letter H may indicate that the creator could write in English."
+
+        bm "But I am sure you could have figured all that out on your own. Why ask me?"
+
+        z "We are actually here looking for my family."
+
+        bm "Your family?"
+
+        z "My biological family are locals here. I wanted to see them and ask why I was put up for adoption"
+
+        show Stella at rightish
+
+        s "And I've been telling you that you might not want to know the answer to that!"
+
+        s "Furthermore, what if your biological parents don't want to see you?"
+
+        z "..."
+
+        s "But go ahead...ignore me. It's not like I know anything."
+
+        hide stella
+
         jump ontrack
 
     label ontrack:
-        "Here!"
+
+        z "We should brobably Introduce ourselves. I'm Zack, and this..."
+
+        show Elliot at slightright
+
+        z "This is my friend Eliiot and this..."
+
+        show Stella at slightleft
+
+        z"is my sister Stella."
+
+        e "We were also looking for a place to stay the night. Do you have any recommendations."
+
+        bm "Yeah, this bar also runs a motel that is right behind this building. My wife can ring up a room for you."
+
+        bm "It's $70 a night for a room, two beds and...uh...well there WAS cable TV."
+
+        bm "But people stopped visiting the town once people started going hollow. The Motel couldn't afford to keep the cable."
+
+        z "Um..."
+
+        bm "It's a travesty! I know that business is bad, but what about the rest of us who sneak in to watch the college ball games!?"
+
+        bm "I can't take it anymore, this is unfair, an outrage, total anarchy!"
+
+        e "Why don't you upgrade your TV service yourself?"
+
+        bm "Do you know how much that would cost me? In this rundown hovel?"
+
+        bm "There is no business to be had here! Business has been stalled for over 20 years!"
+
+        e "..."
+
+        e "I'm sorry I asked."
+
+        z "We'll be taking one room."
+
+        s "I don't think so. You think I'm staying in the same room as you tow clowns?"
+
+        menu:
+
+            "You can have your own room":
+                z "Fine, you can have your own room."
+
+                s "Yay! Thank you Zach!"
+
+
+            "If you pay for it":
+
+                z "You can have it if you pay for it."
+
+                s "..."
+
+                z "I brought enough money for Elliot and myself."
+
+                z "I mean, the least you could have done is brought some money for yourself if you were going to hide in my trunk."
+
+                s "..."
+
+                s "Fine"
+
+        bm "How long are you going to be in town?"
+
+        z "By the looks of it, not long. I mean, I can't exactly find my biological parents if I can't even talk to anyone in town."
+
+        bm "You should at least take a look at the nearby hiking trails before you leave."
+
+        bm "It's probably the only redeeming part of the town. The trail takes you up the Mountain to one of the most beautiful views."
+
+        z "I mean we might as well take a look while we're here."
+
+        e "I love hiking! Let's go!"
+
+        s "hmpf, I guess I'll tag along."
+
+        bm "Perfect..."
 
 
 
