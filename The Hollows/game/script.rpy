@@ -314,7 +314,7 @@ label start:
 
         bm "Not a clue. I mean, there's not much to go on."
 
-        bm "There are plenty of trees in the world. But the letter H may indicate that the creator could write in English."
+        bm "There are plenty of trees in the world. The 'H' probably stands for something."
 
         bm "But I am sure you could have figured all that out on your own. Why ask me?"
 
