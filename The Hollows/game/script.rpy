@@ -298,13 +298,13 @@ label start:
 
         bm "Yeah, thats what we call 'em. The people around these parts used to be lively and clamorous."
 
-        bm "My man Earl over there in the Red Tux used to be the liveliest man around."
+        bm "My man Earl over there in the red tux used to be the liveliest man around."
 
         bm "He used to play gigs in the Tavern every Tuesday."
 
         z "I see..."
 
-        bm "I sure miss the noise. I used to hate it, and now I would do anything have it back."
+        bm "I sure miss the noise. I used to hate it, but now? Heh, I'd do anything to get it back."
 
 
         jump ontrack
