@@ -368,7 +368,7 @@ label start:
 
         bm "Do you know how much that would cost me? In this rundown hovel?"
 
-        bm "There is no business to be had here! Business has been stalled for over 20 years!"
+        bm "There is {i}no{/i} business to be had here! Business has been stalled for over 20 years!"
 
         e "..."
 
@@ -376,7 +376,7 @@ label start:
 
         z "We'll be taking one room."
 
-        s "I don't think so. You think I'm staying in the same room as you tow clowns?"
+        s "I don't think so. You think I'm staying in the same room as you two clowns?"
 
         menu:
 
