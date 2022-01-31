@@ -376,12 +376,12 @@ label start:
 
         z "We'll be taking one room."
 
-        s "I don't think so. You think I'm staying in the same room as you two clowns?"
+        s "I don't think so. You think I'm staying in the same room as you two {i}clowns{/i}?"
 
         menu:
 
             "You can have your own room":
-                z "Fine, you can have your own room."
+                z "{i}Fine{/i}, you can have your own room."
 
                 s "Yay! Thank you Zach!"
 
@@ -406,7 +406,7 @@ label start:
 
         bm "You should at least take a look at the nearby hiking trails before you leave."
 
-        bm "It's probably the only redeeming part of the town. The trail takes you up the Mountain to one of the most beautiful views."
+        bm "It's probably the only redeeming part of the town. The trail takes you up the (insert name) Mountain to one of the most beautiful views."
 
         z "I mean we might as well take a look while we're here."
 
