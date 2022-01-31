@@ -124,6 +124,55 @@ label start:
 
     s "Don't even finish that sentence. You're going to make me lose my appetite, so just don't."
 
+    label Timberland:
+    #Shows some towns people who look disoriented
+
+    show Elliot
+    e "...Anyone else think it's a little strange here? It's like everyone's just
+    wandering around aimlessly... almost like they're mindless."
+
+    show Stella
+    s "Sounds like Zach would fit right in."
+
+    show Zach
+    z "Hey! *maube make choice of snarky comeback here)*"
+
+    z "Excuse me, could you tell me..."
+    #Hollow looking stranger doesn't respond, moves past him as if he doesn't see him
+
+    e "That was... {i}weird{/i}. *visibly scared*"
+
+    s "Yeah, let's ask someone else. *visibly uncomfortable*"
+
+    #Shows multiple hollow town's folk
+
+    z "Well, that didn't get us anywhere."
+
+    s "Yeah, what is up with everyone in this town? They all look like zombies. *grossed out*"
+
+    z "I guess we should look for someplace to eat and stay the night."
+
+    s "Stay the night?!"
+
+    z "Yes, stay the night."
+
+    e "I saw a bar and grill about a block back the way we came."
+
+    z "It has normal food, right?"
+
+    e "Normal food? What do you mean? *Confused*"
+
+    s "I saw it too. It looks like it's the only restuarant in town, so we don't have a choice. (sigh)"
+
+    z "Okay, let's go."
+
+    #Zach and Stella walk off
+    hide Zach
+    hide Stella
+
+    e "My pallet isn't that bad... right?"
+
+
     label Tavern:
     show Elliot
 
