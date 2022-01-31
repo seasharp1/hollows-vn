@@ -3,10 +3,10 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Elliot")
-define s = Character("Stella")
-define z = Character("Zach")
-define bm = Character("Boisterous Man")
+define e = Character("Elliot", who_color="4287f5")
+define s = Character("Stella", who_color="ef42f5")
+define z = Character("Zach", who_color="42f584")
+define bm = Character("Boisterous Man", who_color="e62222")
 
 transform slightleft:
     xalign 0.25
