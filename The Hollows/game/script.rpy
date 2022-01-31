@@ -203,7 +203,7 @@ label start:
 
     z "I don't think anyone who likes the soup of the day here could be considered sane."
     #Goes over to a man whose cheeks are flushed
-    
+
     z "Excuse me."
 
     hide Stella
@@ -225,11 +225,11 @@ label start:
 
     bm "Rude comment here"
 
-    bm "I haven't had a real conversation over three moths now."
+    bm "I haven't had a real conversation over three months now."
 
     s "Three months?"
 
-    bm "That was the last time someone passed through here. I mean, we are in the middle of nowhere after all."
+    bm "That was the last time someone passed through here. I mean, we {i}are{/i} in the middle of nowhere after all."
 
     bm "Not much reason for people to come visit unless you have family here."
 
@@ -259,6 +259,7 @@ label start:
         bm "Because that's my wife behind the counter."
 
         "The man gestures to the waitress from earlier"
+        #Zoom if possible
 
         z "Her?"
 
@@ -266,7 +267,11 @@ label start:
 
         show Stella at slightright
 
+        #doc says Stella - "I guess it’s true that love has no bounds. Unless there’s something funky in that drink…"
+        # bm says "I can assume you I'm drinking Root Beer"
+
         s "Right..."
+
 
         hide Stella
 
@@ -281,7 +286,7 @@ label start:
 
         bm "Couldn't tell ya."
 
-        bm "But I do know that it started about 21 years ago. That was when the first person went hollow."
+        bm "But I {i}do{/i} know that it started about 21 years ago. That was when the first person went hollow."
 
         bm "I think it was someone who was visiting their family. Started acting weird."
 
