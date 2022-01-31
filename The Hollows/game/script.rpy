@@ -30,7 +30,7 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    s "*Pulls out a rediculously large map that blocks part of Zach's view*"
+    s "*Pulls out a ridiculously large map that blocks part of Zach's view*"
 
     show Stella at slightright
 
@@ -40,7 +40,8 @@ label start:
 
     z "HEY! I'm driving here. Put that away."
 
-    "*Car swerves, Zach stops the car*"
+    "*Camera shake, Car swerves, Zach stops the car*"
+    #Can use hpunch transition here, shakes the scene for 1/4 second
 
     s "Well, MAYBE if you knew where you were going, I wouldn't have to pull out a map."
 
@@ -135,7 +136,7 @@ label start:
     s "Sounds like Zach would fit right in."
 
     show Zach
-    z "Hey! *maube make choice of snarky comeback here)*"
+    z "Hey! *maybe make choice of snarky comeback here)*"
 
     z "Excuse me, could you tell me..."
     #Hollow looking stranger doesn't respond, moves past him as if he doesn't see him
@@ -170,7 +171,7 @@ label start:
     hide Zach
     hide Stella
 
-    e "My pallet isn't that bad... right?"
+    e "My pallet isn't {i}that{/i} bad... right?"
 
 
     label Tavern:
@@ -196,10 +197,12 @@ label start:
     bm "Fantastic soup again Margaret!"
 
     e "It sounds like there is someone sane in this town afterall."
+    #Line in the doc says "You guys hear that? Someone {i}actually{/i} sane in this town?"
 
     show Zach at slightright
 
     z "I don't think anyone who likes the soup of the day here could be considered sane."
+    #Goes over to a man whose cheeks are flushed
 
     z "Excuse me."
 
@@ -222,11 +225,11 @@ label start:
 
     bm "Rude comment here"
 
-    bm "I haven't had a real conversation over three moths now."
+    bm "I haven't had a real conversation over three months now."
 
     s "Three months?"
 
-    bm "That was the last time someone passed through here. I mean, we are in the middle of nowhere after all."
+    bm "That was the last time someone passed through here. I mean, we {i}are{/i} in the middle of nowhere after all."
 
     bm "Not much reason for people to come visit unless you have family here."
 
@@ -252,18 +255,166 @@ label start:
 
     label whyareyouhere:
         z "So why are you here?"
+
+        bm "Because that's my wife behind the counter."
+
+        "The man gestures to the waitress from earlier"
+        #Zoom if possible
+
+        z "Her?"
+
+        bm "Yeah, aint she a beaut?"
+
+        show Stella at slightright
+
+        #doc says Stella - "I guess it’s true that love has no bounds. Unless there’s something funky in that drink…"
+        # bm says "I can assume you I'm drinking Root Beer"
+
+        s "Right..."
+
+
+        hide Stella
+
+        bm "She wasn't always hollow, or that's what I call it at least."
+
+        bm "One day I left for uh, work, and she went on a walk. When I came home she was like this."
+
         jump ontrack
 
     label whathappened:
         z "What happened to everyone in this town?"
+
+        bm "Couldn't tell ya."
+
+        bm "But I {i}do{/i} know that it started about 21 years ago. That was when the first person went hollow."
+
+        bm "I think it was someone who was visiting their family. Started acting weird."
+
+        bm "At first we thought they were just startled after seeing a bear or something."
+
+        bm "But as the days and weeks went on, more and more people started acting the same way."
+
+        z "Hollow?"
+
+        bm "Yeah, thats what we call 'em. The people around these parts used to be lively and clamorous."
+
+        bm "My man Earl over there in the red tux used to be the liveliest man around."
+
+        bm "He used to play gigs in the Tavern every Tuesday."
+
+        z "I see..."
+
+        bm "I sure miss the noise. I used to hate it, but now? Heh, I'd do anything to get it back."
+
+
         jump ontrack
 
     label amulet:
         z "Do you know anything about this amulet?"
+
+        bm "Not a clue. I mean, there's not much to go on."
+
+        bm "There are plenty of trees in the world. The 'H' probably stands for something."
+
+        bm "But I am sure you could have figured all that out on your own. Why ask me?"
+
+        z "We are actually here looking for my family."
+
+        bm "Your family?"
+
+        z "My biological family are locals here. I wanted to see them and ask why I was put up for adoption"
+
+        show Stella at rightish
+
+        s "And {i}I've{/i} been telling you that you might not want to know the answer to that."
+
+        s "Furthermore, what if your biological parents don't want to see you?"
+
+        z "..."
+
+        s "But go ahead...ignore me. It's not like I know anything."
+
+        hide stella
+
         jump ontrack
 
     label ontrack:
-        "Here!"
+
+        z "We should probably introduce ourselves. I'm Zack, and this..."
+
+        show Elliot at slightright
+
+        z "This is my friend Eliiot and this..."
+
+        show Stella at slightleft
+
+        z"is my sister Stella."
+
+        e "We were also looking for a place to stay the night. Do you have any recommendations?"
+
+        bm "Yeah, this bar also runs a motel that is right behind this building. My wife can ring up a room for you."
+
+        bm "It's $70 a night for a room, two beds and...uh...well there WAS cable TV."
+
+        bm "But people stopped visiting the town once people started going hollow. The Motel couldn't afford to keep the cable."
+
+        z "Um..."
+
+        bm "It's a travesty! I know that business is bad, but what about the rest of us who sneak in to watch the college ball games!?"
+
+        bm "I can't take it anymore, this is unfair, an outrage, total anarchy!"
+
+        e "Why don't you upgrade your TV service yourself?"
+
+        bm "Do you know how much that would cost me? In this rundown hovel?"
+
+        bm "There is {i}no{/i} business to be had here! Business has been stalled for over 20 years!"
+
+        e "..."
+
+        e "I'm sorry I asked."
+
+        z "We'll be taking one room."
+
+        s "I don't think so. You think I'm staying in the same room as you two {i}clowns{/i}?"
+
+        menu:
+
+            "You can have your own room":
+                z "{i}Fine{/i}, you can have your own room."
+
+                s "Yay! Thank you Zach!"
+
+
+            "If you pay for it":
+
+                z "You can have it if you pay for it."
+
+                s "..."
+
+                z "I brought enough money for Elliot and myself."
+
+                z "I mean, the least you could have done is brought some money for yourself if you were going to hide in my trunk."
+
+                s "..."
+
+                s "Fine"
+
+        bm "How long are you going to be in town?"
+
+        z "By the looks of it, not long. I mean, I can't exactly find my biological parents if I can't even talk to anyone in town."
+
+        bm "You should at least take a look at the nearby hiking trails before you leave."
+
+        bm "It's probably the only redeeming part of the town. The trail takes you up the (insert name) Mountain to one of the most beautiful views."
+
+        z "I mean we might as well take a look while we're here."
+
+        e "I love hiking! Let's go!"
+
+        s "hmpf, I guess I'll tag along."
+
+        bm "Perfect..."
 
 
 
