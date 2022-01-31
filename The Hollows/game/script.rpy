@@ -30,7 +30,7 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    s "*Pulls out a rediculously large map that blocks part of Zach's view*"
+    s "*Pulls out a ridiculously large map that blocks part of Zach's view*"
 
     show Stella at slightright
 
