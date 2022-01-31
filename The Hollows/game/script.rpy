@@ -136,7 +136,7 @@ label start:
     s "Sounds like Zach would fit right in."
 
     show Zach
-    z "Hey! *maube make choice of snarky comeback here)*"
+    z "Hey! *maybe make choice of snarky comeback here)*"
 
     z "Excuse me, could you tell me..."
     #Hollow looking stranger doesn't respond, moves past him as if he doesn't see him
@@ -171,7 +171,7 @@ label start:
     hide Zach
     hide Stella
 
-    e "My pallet isn't that bad... right?"
+    e "My pallet isn't {i}that{/i} bad... right?"
 
 
     label Tavern:
@@ -197,11 +197,13 @@ label start:
     bm "Fantastic soup again Margaret!"
 
     e "It sounds like there is someone sane in this town afterall."
+    #Line in the doc says "You guys hear that? Someone {i}actually{/i} sane in this town?"
 
     show Zach at slightright
 
     z "I don't think anyone who likes the soup of the day here could be considered sane."
-
+    #Goes over to a man whose cheeks are flushed
+    
     z "Excuse me."
 
     hide Stella
