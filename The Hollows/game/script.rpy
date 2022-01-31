@@ -326,7 +326,7 @@ label start:
 
         show Stella at rightish
 
-        s "And I've been telling you that you might not want to know the answer to that!"
+        s "And {i}I've{/i} been telling you that you might not want to know the answer to that."
 
         s "Furthermore, what if your biological parents don't want to see you?"
 
@@ -340,7 +340,7 @@ label start:
 
     label ontrack:
 
-        z "We should brobably Introduce ourselves. I'm Zack, and this..."
+        z "We should probably introduce ourselves. I'm Zack, and this..."
 
         show Elliot at slightright
 
@@ -350,7 +350,7 @@ label start:
 
         z"is my sister Stella."
 
-        e "We were also looking for a place to stay the night. Do you have any recommendations."
+        e "We were also looking for a place to stay the night. Do you have any recommendations?"
 
         bm "Yeah, this bar also runs a motel that is right behind this building. My wife can ring up a room for you."
 
