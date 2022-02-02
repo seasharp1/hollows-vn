@@ -429,16 +429,14 @@ label ontrack:
     bm "Perfect..."
 
 label MotelNight1:
-    menu:
-        "Zach and Elliot's room":
-            jump zeRoom
-
-        "Stella's Room":
-            jump sRoom
+    if ownRoom:
+        jump zeRoom
+    else if groupRoom
+        jump gRoom
 
 label zeRoom:
-    #Zach unlockes Room 308
-    #The room reeks of old mildew and strawberry flavored bubblegum
+    "*Zach unlockes Room 308*"
+    "*The room reeks of old mildew and strawberry flavored bubblegum*"
 
     show Elliot at slightright
 
@@ -461,6 +459,37 @@ label zeRoom:
 
     z "I don't. I was in such a rush today that I didn't even think about that. I even forgot to pack my toothbrush!"
     z "But feel free to check the vending machines."
+
+label gRoom:
+    #explain purpose of trip here too, gum under table from part 2 of choice 1, stella hungry, they go to vending machines after this
+    show Stella at slightleft
+
+    s "So Zach, why do you want to find your biological parents? I mean, is our family not good enough for you?"
+
+    show Zach at slightright
+
+    z "Hey! I never said that!"
+
+    s "Then why?!"
+
+    z "Because I want to know more about myself. It's like, there is a part of me missing and I have no way of finding it."
+
+    s "Okay genius. If there is no way to find it, why are we out here in this creepy town?."
+
+    show Elliot
+
+    e "Yeah, I was wondering that too."
+
+    z "I told you everything in the car!"
+
+    e "You did? You know I was sleeping for most of the ride right?"
+
+    z "*sigh*"
+
+    e "I really should get a bite to eat before going to bed. *sees gum underneath the coffee table and starts reaching for it*"
+
+    s "Gross! I should really get you a dog cone. Come on, we're going to the vending machine outside."
+
 
     # This ends the game
 
