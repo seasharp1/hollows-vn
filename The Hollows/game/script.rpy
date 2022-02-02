@@ -1,8 +1,3 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
 define e = Character("Elliot", who_color="4287f5")
 define s = Character("Stella", who_color="ef42f5")
 define z = Character("Zach", who_color="42f584")
@@ -16,8 +11,19 @@ transform slightright:
     xalign 0.75
     yalign 1.0
 
-# The game starts here.
+#Example Animation
+#image character change:
+    #animation
+    #"default character test"
+    #xalign 0.0
+    #pause 1
+    #"angry character test"
+    #linear 5.0 xalign 1.0
+    #pause 1
+    #repeat 2
+#End Example Animation
 
+# The game starts here.
 label start:
 
     ## This is an example of showing multiple characters talking simultaneously
@@ -33,17 +39,17 @@ label start:
 
     ##s "Test character 1" (multiple=2)
     ##e "Test character 2" (multiple=2)
-    ## End example ----------------------------------------------------------
+    ## End example ------------------------------------------------------------
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    #Show the Animation Example
+    #"Start example"
+    #show character change:
+    #pause
+    #hide character change
+    #"End example"
+    #End Animation Example
 
     scene bg car
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
 
     s "*Pulls out a ridiculously large map that blocks part of Zach's view*"
 
@@ -140,8 +146,11 @@ label start:
 
     s "Don't even finish that sentence. You're going to make me lose my appetite, so just don't."
 
-    label Timberland:
+label Timberland:
     #Shows some towns people who look disoriented
+
+    show bg car
+    with fade
 
     show Elliot
     e "...Anyone else think it's a little strange here? It's like everyone's just
@@ -189,7 +198,10 @@ label start:
     e "My pallet isn't {i}that{/i} bad... right?"
 
 
-    label Tavern:
+label Tavern:
+    show bg car
+    with fade
+
     show Elliot
 
     #image launch = Movie(play="watercolor_test.gif", pos=(10, 10), anchor=(0, 0))
@@ -269,6 +281,9 @@ label start:
             jump amulet
 
 label whyareyouhere:
+    show bg car
+    with fade
+
     z "So why are you here?"
 
     bm "Because that's my wife behind the counter."
@@ -296,6 +311,9 @@ label whyareyouhere:
     jump ontrack
 
 label whathappened:
+    show bg car
+    with fade
+
     z "What happened to everyone in this town?"
 
     bm "Couldn't tell ya."
@@ -323,6 +341,9 @@ label whathappened:
     jump ontrack
 
 label amulet:
+    show bg car
+    with fade
+
     z "Do you know anything about this amulet?"
 
     bm "Not a clue. I mean, there's not much to go on."
@@ -352,6 +373,8 @@ label amulet:
     jump ontrack
 
 label ontrack:
+    show bg car
+    with fade
 
     z "We should probably introduce ourselves. I'm Zack, and this..."
 
@@ -428,14 +451,20 @@ label ontrack:
     bm "Perfect..."
 
 label MotelNight1:
+    show bg car
+    with fade
+
     menu:
         "Zach and Elliot's room":
             jump zeRoom
 
         "Stella's Room":
             jump sRoom
+            #Need to add sRoom
 
 label zeRoom:
+    show bg car
+    with fade
     #Zach unlockes Room 308
     #The room reeks of old mildew and strawberry flavored bubblegum
 

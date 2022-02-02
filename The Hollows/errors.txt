@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 436: expected ':' not found.
-    label MotelNight1
-                     ^
-
-File "game/script.rpy", line 439: expected menuitem
-    jump zeRoom
-    ^
-
-File "game/script.rpy", line 444: expected ':' not found.
-    label zeRoom
-                ^
+File "game/script.rpy", line 15: expected statement.
+    atl_animation ::= "animation"
+                  ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Wed Feb  2 15:47:40 2022
+Wed Feb  2 16:44:05 2022
