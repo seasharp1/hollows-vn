@@ -481,7 +481,41 @@ label vending1:
 
     s "Yeah, I should've just given it to you. And now this dang machine won't give me my candy bar!"
     s "I paid for the dang thing! Can you help me?"
-    
+
+    e "Sure, give me a sec. *picks up the vending machine and slams it down, candy bar falls down*"
+    #could use camera shake here again
+
+    show Zach
+    z "*comes out of his room* What was that?!"
+
+    e "What was what?"
+
+    z "The noise!"
+
+    s "That was Elliot's rage agaisnt the vending machine."
+
+    e "Rage? You were the one kicking it earlier."
+
+    s "Whatever. *picks up the candy bar and starts walking away and pauses, under her breath* Thanks Elliot. *continues walking*"
+
+    e "I think that's the first time time I've ever heard her say thank you. Should I should 'you're welcome'?"
+
+    z "I think she already knows."
+    z "Besides, you've already caused enough noise tonight. We should probably get back to the room."
+
+    e "But I'm still hungry!"
+
+    z "Then you should've grabbed that candy bar before Stella did. *smirks* *walks towards the room*"
+    z "Come on you big lug."
+
+    e "Ok..."
+    e "I guess I'm just happy that Stella has something to eat."
+
+
+
+
+
+
 
 
 
