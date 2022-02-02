@@ -462,6 +462,27 @@ label zeRoom:
     jump vending1
 
 label vending1:
+    "*Elliot works his way to a section of 3 vending machines. All of them are empty except for the
+    one on the far end that has 1 Oogle Boogle Nutty Candy Bar left in it. Stella’s at the vending
+    machine impatiently waiting for the candy bar to fall)*"
+
+    show Stella slightleft
+
+    s "*mutterting to herself* Come on! I don't have all day! *kicks the vending machine*"
+    s "UGH, it won't budge *screams out of frustration*"
+
+    show Elliot slightright
+
+    e "Hey Stella! What are you doing out here? I figured you would've locked yourself to the confinement of your room by now."
+
+    s "What does it look like?! I'm {i}trying{/i} to get something to eat!"
+
+    e "Still hungry? You didn't really touch your smoked cow tongue."
+
+    s "Yeah, I should've just given it to you. And now this dang machine won't give me my candy bar!"
+    s "I paid for the dang thing! Can you help me?"
+    
+
 
 
 label gRoom:
