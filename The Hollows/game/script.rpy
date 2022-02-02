@@ -268,205 +268,198 @@ label start:
         "Do you know anything about this amulet?":
             jump amulet
 
-    label whyareyouhere:
-        z "So why are you here?"
+label whyareyouhere:
+    z "So why are you here?"
 
-        bm "Because that's my wife behind the counter."
+    bm "Because that's my wife behind the counter."
 
-        "The man gestures to the waitress from earlier"
-        #Zoom if possible
+    "The man gestures to the waitress from earlier"
+    #Zoom if possible
 
-        z "Her?"
+    z "Her?"
 
-        bm "Yeah, aint she a beaut?"
+    bm "Yeah, aint she a beaut?"
 
-        show Stella at slightright
+    show Stella at slightright
 
-        #doc says Stella - "I guess it’s true that love has no bounds. Unless there’s something funky in that drink…"
-        # bm says "I can assume you I'm drinking Root Beer"
+    #doc says Stella - "I guess it’s true that love has no bounds. Unless there’s something funky in that drink…"
+    # bm says "I can assume you I'm drinking Root Beer"
 
-        s "Right..."
+    s "Right..."
 
+    hide Stella
 
-        hide Stella
+    bm "She wasn't always hollow, or that's what I call it at least."
 
-        bm "She wasn't always hollow, or that's what I call it at least."
+    bm "One day I left for uh, work, and she went on a walk. When I came home she was like this."
 
-        bm "One day I left for uh, work, and she went on a walk. When I came home she was like this."
+    jump ontrack
 
-        jump ontrack
+label whathappened:
+    z "What happened to everyone in this town?"
 
-    label whathappened:
-        z "What happened to everyone in this town?"
+    bm "Couldn't tell ya."
 
-        bm "Couldn't tell ya."
+    bm "But I {i}do{/i} know that it started about 21 years ago. That was when the first person went hollow."
 
-        bm "But I {i}do{/i} know that it started about 21 years ago. That was when the first person went hollow."
+    bm "I think it was someone who was visiting their family. Started acting weird."
 
-        bm "I think it was someone who was visiting their family. Started acting weird."
+    bm "At first we thought they were just startled after seeing a bear or something."
 
-        bm "At first we thought they were just startled after seeing a bear or something."
+    bm "But as the days and weeks went on, more and more people started acting the same way."
 
-        bm "But as the days and weeks went on, more and more people started acting the same way."
+    z "Hollow?"
 
-        z "Hollow?"
+    bm "Yeah, thats what we call 'em. The people around these parts used to be lively and clamorous."
 
-        bm "Yeah, thats what we call 'em. The people around these parts used to be lively and clamorous."
+    bm "My man Earl over there in the red tux used to be the liveliest man around."
 
-        bm "My man Earl over there in the red tux used to be the liveliest man around."
+    bm "He used to play gigs in the Tavern every Tuesday."
 
-        bm "He used to play gigs in the Tavern every Tuesday."
+    z "I see..."
 
-        z "I see..."
+    bm "I sure miss the noise. I used to hate it, but now? Heh, I'd do anything to get it back."
 
-        bm "I sure miss the noise. I used to hate it, but now? Heh, I'd do anything to get it back."
+    jump ontrack
 
+label amulet:
+    z "Do you know anything about this amulet?"
 
-        jump ontrack
+    bm "Not a clue. I mean, there's not much to go on."
 
-    label amulet:
-        z "Do you know anything about this amulet?"
+    bm "There are plenty of trees in the world. The 'H' probably stands for something."
 
-        bm "Not a clue. I mean, there's not much to go on."
+    bm "But I am sure you could have figured all that out on your own. Why ask me?"
 
-        bm "There are plenty of trees in the world. The 'H' probably stands for something."
+    z "We are actually here looking for my family."
 
-        bm "But I am sure you could have figured all that out on your own. Why ask me?"
+    bm "Your family?"
 
-        z "We are actually here looking for my family."
+    z "My biological family are locals here. I wanted to see them and ask why I was put up for adoption"
 
-        bm "Your family?"
+    show Stella at rightish
 
-        z "My biological family are locals here. I wanted to see them and ask why I was put up for adoption"
+    s "And {i}I've{/i} been telling you that you might not want to know the answer to that."
 
-        show Stella at rightish
+    s "Furthermore, what if your biological parents don't want to see you?"
 
-        s "And {i}I've{/i} been telling you that you might not want to know the answer to that."
+    z "..."
 
-        s "Furthermore, what if your biological parents don't want to see you?"
+    s "But go ahead...ignore me. It's not like I know anything."
 
-        z "..."
+    hide stella
 
-        s "But go ahead...ignore me. It's not like I know anything."
+    jump ontrack
 
-        hide stella
+label ontrack:
 
-        jump ontrack
+    z "We should probably introduce ourselves. I'm Zack, and this..."
 
-    label ontrack:
+    show Elliot at slightright
 
-        z "We should probably introduce ourselves. I'm Zack, and this..."
+    z "This is my friend Eliiot and this..."
 
-        show Elliot at slightright
+    show Stella at slightleft
 
-        z "This is my friend Eliiot and this..."
+    z"is my sister Stella."
 
-        show Stella at slightleft
+    e "We were also looking for a place to stay the night. Do you have any recommendations?"
 
-        z"is my sister Stella."
+    bm "Yeah, this bar also runs a motel that is right behind this building. My wife can ring up a room for you."
 
-        e "We were also looking for a place to stay the night. Do you have any recommendations?"
+    bm "It's $70 a night for a room, two beds and...uh...well there WAS cable TV."
 
-        bm "Yeah, this bar also runs a motel that is right behind this building. My wife can ring up a room for you."
+    bm "But people stopped visiting the town once people started going hollow. The Motel couldn't afford to keep the cable."
 
-        bm "It's $70 a night for a room, two beds and...uh...well there WAS cable TV."
+    z "Um..."
 
-        bm "But people stopped visiting the town once people started going hollow. The Motel couldn't afford to keep the cable."
+    bm "It's a travesty! I know that business is bad, but what about the rest of us who sneak in to watch the college ball games!?"
 
-        z "Um..."
+    bm "I can't take it anymore, this is unfair, an outrage, total anarchy!"
 
-        bm "It's a travesty! I know that business is bad, but what about the rest of us who sneak in to watch the college ball games!?"
+    e "Why don't you upgrade your TV service yourself?"
 
-        bm "I can't take it anymore, this is unfair, an outrage, total anarchy!"
+    bm "Do you know how much that would cost me? In this rundown hovel?"
 
-        e "Why don't you upgrade your TV service yourself?"
+    bm "There is {i}no{/i} business to be had here! Business has been stalled for over 20 years!"
 
-        bm "Do you know how much that would cost me? In this rundown hovel?"
+    e "..."
 
-        bm "There is {i}no{/i} business to be had here! Business has been stalled for over 20 years!"
+    e "I'm sorry I asked."
 
-        e "..."
+    z "We'll be taking one room."
 
-        e "I'm sorry I asked."
+    s "I don't think so. You think I'm staying in the same room as you two {i}clowns{/i}?"
 
-        z "We'll be taking one room."
+    menu:
 
-        s "I don't think so. You think I'm staying in the same room as you two {i}clowns{/i}?"
+        "You can have your own room":
+            z "{i}Fine{/i}, you can have your own room."
 
-        menu:
+            s "Yay! Thank you Zach!"
 
-            "You can have your own room":
-                z "{i}Fine{/i}, you can have your own room."
+        "If you pay for it":
+            z "You can have it if you pay for it."
 
-                s "Yay! Thank you Zach!"
+            s "..."
 
+            z "I brought enough money for Elliot and myself."
 
-            "If you pay for it":
+            z "I mean, the least you could have done is brought some money for yourself if you were going to hide in my trunk."
 
-                z "You can have it if you pay for it."
+            s "..."
 
-                s "..."
+            s "Fine"
 
-                z "I brought enough money for Elliot and myself."
+    bm "How long are you going to be in town?"
 
-                z "I mean, the least you could have done is brought some money for yourself if you were going to hide in my trunk."
+    z "By the looks of it, not long. I mean, I can't exactly find my biological parents if I can't even talk to anyone in town."
 
-                s "..."
+    bm "You should at least take a look at the nearby hiking trails before you leave."
 
-                s "Fine"
+    bm "It's probably the only redeeming part of the town. The trail takes you up the (insert name) Mountain to one of the most beautiful views."
 
-        bm "How long are you going to be in town?"
+    z "I mean we might as well take a look while we're here."
 
-        z "By the looks of it, not long. I mean, I can't exactly find my biological parents if I can't even talk to anyone in town."
+    e "I love hiking! Let's go!"
 
-        bm "You should at least take a look at the nearby hiking trails before you leave."
+    s "hmpf, I guess I'll tag along."
 
-        bm "It's probably the only redeeming part of the town. The trail takes you up the (insert name) Mountain to one of the most beautiful views."
+    bm "Perfect..."
 
-        z "I mean we might as well take a look while we're here."
-
-        e "I love hiking! Let's go!"
-
-        s "hmpf, I guess I'll tag along."
-
-        bm "Perfect..."
-
-
-
-        label MotelNight1
-        menu:
-            "Zach and Elliot's room"
+label MotelNight1:
+    menu:
+        "Zach and Elliot's room":
             jump zeRoom
 
-            "Stella's Room"
+        "Stella's Room":
             jump sRoom
 
-        label zeRoom
-        #Zach unlockes Room 308
-        #The room reeks of old mildew and strawberry flavored bubblegum
+label zeRoom:
+    #Zach unlockes Room 308
+    #The room reeks of old mildew and strawberry flavored bubblegum
 
-        show Elliot at slightright
+    show Elliot at slightright
 
-        e "So, Zach you never actually explained much of this trip's purpose to me."
-        show Zach at slightleft
+    e "So, Zach you never actually explained much of this trip's purpose to me."
+    show Zach at slightleft
 
-        z "Huh? I told you about it shortly after we left my house. How did you already forget?"
+    z "Huh? I told you about it shortly after we left my house. How did you already forget?"
 
-        e "Haha, about that... I uh kinda... well um... slept most of the trip here"
+    e "Haha, about that... I uh kinda... well um... slept most of the trip here"
 
-        z "What are you talking about? I saw you with your eyes open!"
+    z "What are you talking about? I saw you with your eyes open!"
 
-        e "I mean, they probably were. Every since I ate those fried oysters last Monday, my sleep cycle has been kinda weird."
-        e "The other day I found my pillow in the fridge next to the mustard-stained cheese. I've never been one to sleep walkx, but I think I am now."
+    e "I mean, they probably were. Every since I ate those fried oysters last Monday, my sleep cycle has been kinda weird."
+    e "The other day I found my pillow in the fridge next to the mustard-stained cheese. I've never been one to sleep walkx, but I think I am now."
 
-        z "...{i}Riiiight{\i}. Um.. well, since we're on the topic: Do you think you're going to get any sleep tonight?"
-        z "You should be somewhat well-rested if we're going hiking tomorrow. I don't need you collapsing on us."
+    z "...{i}Riiiight{\i}. Um.. well, since we're on the topic: Do you think you're going to get any sleep tonight?"
+    z "You should be somewhat well-rested if we're going hiking tomorrow. I don't need you collapsing on us."
 
-        e "I'd say a midnight snack should do the trick. Got anything?"
+    e "I'd say a midnight snack should do the trick. Got anything?"
 
-        z "I don't. I was in such a rush today that I didn't even think about that. I even forgot to pack my toothbrush!"
-        z "But feel free to check the vending machines."
-
+    z "I don't. I was in such a rush today that I didn't even think about that. I even forgot to pack my toothbrush!"
+    z "But feel free to check the vending machines."
 
     # This ends the game
 
