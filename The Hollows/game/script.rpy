@@ -337,7 +337,7 @@ label amulet:
 
     z "My biological family are locals here. I wanted to see them and ask why I was put up for adoption"
 
-    show Stella at rightish
+    show Stella at slightright
 
     s "And {i}I've{/i} been telling you that you might not want to know the answer to that."
 
