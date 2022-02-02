@@ -433,6 +433,41 @@ label start:
 
 
 
-    # This ends the game.
+        label MotelNight1
+        menu:
+            "Zach and Elliot's room"
+            jump zeRoom
+
+            "Stella's Room"
+            jump sRoom
+
+        label zeRoom
+        #Zach unlockes Room 308
+        #The room reeks of old mildew and strawberry flavored bubblegum
+
+        show Elliot at slightright
+
+        e "So, Zach you never actually explained much of this trip's purpose to me."
+        show Zach at slightleft
+
+        z "Huh? I told you about it shortly after we left my house. How did you already forget?"
+
+        e "Haha, about that... I uh kinda... well um... slept most of the trip here"
+
+        z "What are you talking about? I saw you with your eyes open!"
+
+        e "I mean, they probably were. Every since I ate those fried oysters last Monday, my sleep cycle has been kinda weird."
+        e "The other day I found my pillow in the fridge next to the mustard-stained cheese. I've never been one to sleep walkx, but I think I am now."
+
+        z "...{i}Riiiight{\i}. Um.. well, since we're on the topic: Do you think you're going to get any sleep tonight?"
+        z "You should be somewhat well-rested if we're going hiking tomorrow. I don't need you collapsing on us."
+
+        e "I'd say a midnight snack should do the trick. Got anything?"
+
+        z "I don't. I was in such a rush today that I didn't even think about that. I even forgot to pack my toothbrush!"
+        z "But feel free to check the vending machines."
+
+
+    # This ends the game
 
     return
