@@ -431,7 +431,7 @@ label ontrack:
 label MotelNight1:
     if ownRoom:
         jump zeRoom
-    else if groupRoom
+    elif groupRoom
         jump gRoom
 
 label zeRoom:
@@ -459,6 +459,10 @@ label zeRoom:
 
     z "I don't. I was in such a rush today that I didn't even think about that. I even forgot to pack my toothbrush!"
     z "But feel free to check the vending machines."
+    jump vending1
+
+label vending1:
+
 
 label gRoom:
     #explain purpose of trip here too, gum under table from part 2 of choice 1, stella hungry, they go to vending machines after this
