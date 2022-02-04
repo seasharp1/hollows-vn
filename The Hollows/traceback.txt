@@ -1,28 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 385, in script
-    with moutoutright
-  File "game/script.rpy", line 385, in <module>
-    with moutoutright
-NameError: name 'moutoutright' is not defined
+  File "game/script.rpy", line 478, in script
+    if ownRoom:
+  File "game/script.rpy", line 478, in <module>
+    if ownRoom:
+NameError: name 'ownRoom' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 385, in script
-    with moutoutright
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/ast.py", line 1436, in execute
-    trans = renpy.python.py_eval(self.expr)
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/python.py", line 2276, in py_eval
+  File "game/script.rpy", line 478, in script
+    if ownRoom:
+  File "renpy/ast.py", line 1898, in execute
+    if renpy.python.py_eval(condition):
+  File "renpy/python.py", line 2276, in py_eval
     return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/python.py", line 2269, in py_eval_bytecode
+  File "renpy/python.py", line 2269, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 385, in <module>
-    with moutoutright
-NameError: name 'moutoutright' is not defined
+  File "game/script.rpy", line 478, in <module>
+    if ownRoom:
+NameError: name 'ownRoom' is not defined
 
-Windows-10-10.0.19041
+Windows-10-10.0.22000
 Ren'Py 7.4.11.2266
 The Hollows 1.0
-Fri Feb  4 16:41:26 2022
+Fri Feb  4 17:24:42 2022

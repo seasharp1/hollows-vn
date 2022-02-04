@@ -3,6 +3,9 @@ define s = Character("Stella", who_color="ef42f5")
 define z = Character("Zach", who_color="42f584")
 define bm = Character("Boisterous Man", who_color="e62222")
 
+$ ownRoom
+$ groupRoom
+
 transform slightleft:
     xalign 0.25
     yalign 1.0
@@ -435,7 +438,7 @@ label ontrack:
             z "{i}Fine{/i}, you can have your own room."
 
             s "Yay! Thank you Zach!"
-            $ ownRoom = True
+            ownRoom = True
         "If you pay for it":
             z "You can have it if you pay for it."
 
@@ -448,7 +451,7 @@ label ontrack:
             s "..."
 
             s "Fine"
-            $ groupRoom = True
+             groupRoom = True
 
     bm "How long are you going to be in town?"
 
@@ -683,7 +686,7 @@ label MotelMorn1:
     s "We know!" (multiple=2)
     z "We know!" (multiple=2)
 
-    
+    s "TALKING TALKING TALKING"
 
 
 
