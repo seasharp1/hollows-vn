@@ -1,40 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "renpy/common/00start.rpy", line 80, in _init_language
-    renpy.change_language(language)
-  File "game/script.rpy", line 37, in <module>
-    background none
-NameError: name 'none' is not defined
+While running game code:
+  File "game/script.rpy", line 385, in script
+    with moutoutright
+  File "game/script.rpy", line 385, in <module>
+    with moutoutright
+NameError: name 'moutoutright' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/bootstrap.py", line 331, in bootstrap
-    renpy.main.main()
-  File "renpy/main.py", line 662, in main
-    run(restart)
-  File "renpy/main.py", line 78, in run
-    renpy.translation.init_translation()
-  File "renpy/translation/__init__.py", line 561, in init_translation
-    renpy.store._init_language() # @UndefinedVariable
-  File "renpy/common/00start.rpy", line 80, in _init_language
-    renpy.change_language(language)
-  File "renpy/translation/__init__.py", line 645, in change_language
-    new_change_language(tl, language)
-  File "renpy/translation/__init__.py", line 607, in new_change_language
-    i.apply()
-  File "renpy/ast.py", line 2675, in apply
-    value = renpy.python.py_eval(expr)
-  File "renpy/python.py", line 2276, in py_eval
+  File "game/script.rpy", line 385, in script
+    with moutoutright
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/ast.py", line 1436, in execute
+    trans = renpy.python.py_eval(self.expr)
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/python.py", line 2276, in py_eval
     return py_eval_bytecode(code, globals, locals)
-  File "renpy/python.py", line 2269, in py_eval_bytecode
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/python.py", line 2269, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 37, in <module>
-    background none
-NameError: name 'none' is not defined
+  File "game/script.rpy", line 385, in <module>
+    with moutoutright
+NameError: name 'moutoutright' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 The Hollows 1.0
-Mon Jan 31 17:24:09 2022
+Fri Feb  4 16:41:26 2022
