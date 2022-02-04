@@ -540,5 +540,20 @@ label vending1:
     e "Ok..."
     e "I guess I'm just happy that Stella has something to eat."
 
+label MotelNight1Pt2:
+    show Elliot at slightleft
+
+    e "Well, I guess I'm going hungry tonight."
+
+    show Zach at slightright
+
+    z "*jokingly* I mean, there's that chewed gum stuck underneath that coffee table, but I wouldn't...."
+
+    z "*sigh* Elliot, where's the gum?"
+
+    z "That kid sure is something else. *Turns off the light and goes to bed*"
+
+    with fade
+
     # This ends the game
     return
