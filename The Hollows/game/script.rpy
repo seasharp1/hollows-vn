@@ -149,7 +149,7 @@ label start:
 label Timberland:
     #Shows some towns people who look disoriented
 
-    show bg car
+    show bg timberland
     with fade
 
     show Elliot
@@ -199,7 +199,7 @@ label Timberland:
 
 
 label Tavern:
-    show bg car
+    show bg tavern
     with fade
 
     show Elliot
@@ -281,8 +281,7 @@ label Tavern:
             jump amulet
 
 label whyareyouhere:
-    show bg car
-    with fade
+    show bg tavern
 
     z "So why are you here?"
 
@@ -311,8 +310,7 @@ label whyareyouhere:
     jump ontrack
 
 label whathappened:
-    show bg car
-    with fade
+    show bg tavern
 
     z "What happened to everyone in this town?"
 
@@ -341,8 +339,7 @@ label whathappened:
     jump ontrack
 
 label amulet:
-    show bg car
-    with fade
+    show bg tavern
 
     z "Do you know anything about this amulet?"
 
@@ -373,8 +370,7 @@ label amulet:
     jump ontrack
 
 label ontrack:
-    show bg car
-    with fade
+    show bg tavern
 
     z "We should probably introduce ourselves. I'm Zack, and this..."
 
@@ -451,7 +447,7 @@ label ontrack:
     bm "Perfect..."
 
 label MotelNight1:
-    show bg car
+    show bg night motel
     with fade
 
     menu:
@@ -463,7 +459,7 @@ label MotelNight1:
             #Need to add sRoom
 
 label zeRoom:
-    show bg car
+    show bg night motel
     with fade
     #Zach unlockes Room 308
     #The room reeks of old mildew and strawberry flavored bubblegum
@@ -491,5 +487,4 @@ label zeRoom:
     z "But feel free to check the vending machines."
 
     # This ends the game
-
     return
