@@ -11,6 +11,10 @@ transform slightright:
     xalign 0.75
     yalign 1.0
 
+transform hop:
+    linear 0.1 ypos 50
+    linear 0.1 ypos 0
+
 #Example Animation
 #image character change:
     #animation
@@ -50,6 +54,7 @@ label start:
     #End Animation Example
 
     scene bg car
+    with fade
 
     s "*Pulls out a ridiculously large map that blocks part of Zach's view*"
 
@@ -80,6 +85,7 @@ label start:
     e "I'm not a rando, I'm his best friend! *Elliot points to Zach*"
 
     e "And that was some good sushi!"
+    show Elliot at hop
 
     z "I'm with Stel on this one. You eat some of the weirdest crap I've ever seen."
 
@@ -300,13 +306,21 @@ label whyareyouhere:
     bm "Because that's my wife behind the counter."
 
     "The man gestures to the waitress from earlier"
-    #Zoom if possible
+    #Zoom in
+    show bg tavern with dissolve:
+        zoom 1.5
+
+    hide Boisterous Man
+    hide Zach
+
+    show Waitress
+    with dissolve
 
     z "Her?"
 
     bm "Yeah, aint she a beaut?"
 
-    show Stella at slightright
+    show Stella at right
     with moveinright
 
     s "I guess it’s true that love has no bounds. Unless there’s something funky in that drink…"
@@ -317,6 +331,13 @@ label whyareyouhere:
 
     hide Stella
     with moveoutright
+
+    hide Waitress
+    #Zoom out
+    show bg tavern with dissolve:
+        zoom 1.0
+    show Boisterous Man at left
+    show Zach at slightright
 
     bm "She wasn't always hollow, or that's what I call it at least."
 
@@ -623,7 +644,7 @@ label gRoom:
     jump vending2
 
 label vending2:
-    
+
 
 
     # This ends the game
