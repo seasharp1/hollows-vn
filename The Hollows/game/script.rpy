@@ -66,15 +66,17 @@ label start:
     s "*Pulls out a ridiculously large map that blocks part of Zach's view*"
 
     show Stella at slightright
+    with dissolve
 
     s "Is this the place?"
 
     show Zach at slightleft
+    with dissolve
 
     z "HEY! I'm driving here. Put that away."
 
     "*Camera shake, Car swerves, Zach stops the car*"
-    #Can use hpunch transition here, shakes the scene for 1/4 second
+    show bg car with hpunch
 
     s "Well, MAYBE if you knew where you were going, I wouldn't have to pull out a map."
 
@@ -85,6 +87,7 @@ label start:
         he got from a local gas station! I still can't get that eight-day old fish flavor outta my mouth."
 
     show Elliot at center
+    with dissolve
 
     e "I'm not a rando, I'm his best friend! *Elliot points to Zach*"
 
@@ -158,20 +161,27 @@ label start:
 
     s "Don't even finish that sentence. You're going to make me lose my appetite, so just don't."
 
+    hide Elliot
+    hide Zach
+    hide Stella
+
 label Timberland:
     #Shows some towns people who look disoriented
 
     show bg timberland
     with fade
 
-    show Elliot
+    show Elliot at slightleft
+    with dissolve
     e "...Anyone else think it's a little strange here? It's like everyone's just
     wandering around aimlessly... almost like they're mindless."
 
-    show Stella
+    show Stella at slightright
+    with dissolve
     s "Sounds like Zach would fit right in."
 
-    show Zach
+    show Zach at center
+    with dissolve
     z "Hey! *maybe make choice of snarky comeback here)*"
 
     z "Excuse me, could you tell me..."
@@ -209,14 +219,14 @@ label Timberland:
 
     e "My pallet isn't {i}that{/i} bad... right?"
 
+    hide Elliot
 
 label Tavern:
     show bg tavern
     with fade
 
-    show Elliot
-
-    #image launch = Movie(play="watercolor_test.gif", pos=(10, 10), anchor=(0, 0))
+    show Elliot at slightright
+    with dissolve
 
 
     # These display lines of dialogue.
@@ -224,6 +234,7 @@ label Tavern:
     e "And I'll have the Bear Brain Soup."
 
     show Stella at slightleft
+    with dissolve
 
     s "Who comes up with these recipes?"
 
@@ -238,7 +249,8 @@ label Tavern:
     e "It sounds like there is someone sane in this town afterall."
     #Line in the doc says "You guys hear that? Someone {i}actually{/i} sane in this town?"
 
-    show Zach at slightright
+    show Zach at center
+    with dissolve
 
     z "I don't think anyone who likes the soup of the day here could be considered sane."
     #Goes over to a man whose cheeks are flushed
@@ -246,10 +258,10 @@ label Tavern:
     z "Excuse me."
 
     hide Stella
-
     hide Elliot
 
-    show Boisterous Man at slightleft
+    show Boisterous Man at left
+    with dissolve
 
     bm "Well I'll be! Am I hallucinating or are you talkin' to me?"
 
@@ -307,13 +319,16 @@ label whyareyouhere:
     bm "Yeah, aint she a beaut?"
 
     show Stella at slightright
+    with moveinright
 
-    #doc says Stella - "I guess it’s true that love has no bounds. Unless there’s something funky in that drink…"
-    # bm says "I can assume you I'm drinking Root Beer"
+    s "I guess it’s true that love has no bounds. Unless there’s something funky in that drink…"
+
+    bm "I can assume you I'm drinking Root Beer"
 
     s "Right..."
 
     hide Stella
+    with moveoutright
 
     bm "She wasn't always hollow, or that's what I call it at least."
 
@@ -368,6 +383,7 @@ label amulet:
     z "My biological family are locals here. I wanted to see them and ask why I was put up for adoption"
 
     show Stella at slightright
+    with moveinright
 
     s "And {i}I've{/i} been telling you that you might not want to know the answer to that."
 
@@ -377,7 +393,8 @@ label amulet:
 
     s "But go ahead...ignore me. It's not like I know anything."
 
-    hide stella
+    hide Stella
+    with moveoutright
 
     jump ontrack
 
@@ -387,10 +404,12 @@ label ontrack:
     z "We should probably introduce ourselves. I'm Zack, and this..."
 
     show Elliot at slightright
+    with dissolve
 
     z "This is my friend Eliiot and this..."
 
     show Stella at slightleft
+    with dissolve
 
     z"is my sister Stella."
 
@@ -441,7 +460,7 @@ label ontrack:
             s "..."
 
             s "Fine"
-            $ groupRoom = true
+            $ groupRoom = True
 
     bm "How long are you going to be in town?"
 
@@ -458,6 +477,11 @@ label ontrack:
     s "hmpf, I guess I'll tag along."
 
     bm "Perfect..."
+
+    hide Elliot
+    hide Stella
+    hide Zach
+    hide Boisterous Man
 
 label MotelNight1:
     show bg night motel
@@ -476,9 +500,11 @@ label zeRoom:
     #The room reeks of old mildew and strawberry flavored bubblegum
 
     show Elliot at slightright
+    with dissolve
 
     e "So, Zach you never actually explained much of this trip's purpose to me."
     show Zach at slightleft
+    with dissolve
 
     z "Huh? I told you about it shortly after we left my house. How did you already forget?"
 
@@ -500,18 +526,21 @@ label zeRoom:
     e "Works for me!"
 
     z "Before you go... *sigh* He's already gone. That kid sure has a one-track mind."
+    jump vending1
 
 label vending1:
     "*Elliot works his way to a section of 3 vending machines. All of them are empty except for the
     one on the far end that has 1 Oogle Boogle Nutty Candy Bar left in it. Stella’s at the vending
     machine impatiently waiting for the candy bar to fall)*"
 
-    show Stella slightleft
+    show Stella at slightleft
+    with dissolve
 
     s "*mutterting to herself* Come on! I don't have all day! *kicks the vending machine*"
     s "UGH, it won't budge *screams out of frustration*"
 
-    show Elliot slightright
+    show Elliot at slightright
+    with dissolve
 
     e "Hey Stella! What are you doing out here? I figured you would've locked yourself to the confinement of your room by now."
 
@@ -527,6 +556,8 @@ label vending1:
     #could use camera shake here again
 
     show Zach
+    with dissolve
+
     z "*comes out of his room* What was that?!"
 
     e "What was what?"
@@ -552,6 +583,8 @@ label vending1:
     e "Ok..."
     e "I guess I'm just happy that Stella has something to eat."
 
+    jump MotelNight1Pt2
+
 label MotelNight1Pt2:
     show Elliot at slightleft
 
@@ -564,8 +597,107 @@ label MotelNight1Pt2:
     z "*sigh* Elliot, where's the gum?"
 
     z "That kid sure is something else. *Turns off the light and goes to bed*"
+    #FADE OUT
 
-    with fade
+    jump MotelMorn1
+
+label gRoom:
+    #Zach unlockes Room 308
+    #The room reeks of old mildew and strawberry flavored bubblegum
+
+    show Stella at slightleft
+
+    s "So Zach, why do you even want to find your biological family? I mean, is our family not good enough for you?"
+
+    show Zach at slightright
+
+    z "Hey! I never said that!"
+
+    s "Then why?"
+
+    z "Because I want to know more about myself. It's like there's a part of me missing and I have no way of finding it."
+
+    s "Okay genius, if there is 'no way of finding it' then why are we in this creepy town?"
+
+    show Elliot
+
+    e "Yeah, I was wondering that too."
+
+    z "I told you everything in the car!"
+
+    e "You know I was sleeping most of the ride, right?"
+
+    z "*sigh*"
+
+    e "I really should get a bite to eat before I head to bed for the night. *sees the gum under the table and starts reaching for it*"
+
+    s "Gross! I should really get you a dog cone. Come on, we're going to the vending machines. I saw some outside."
+
+    jump vending2
+
+label vending2:
+    show Elliot at slightright
+    show Stella at slightleft
+
+    "Elliot and Stella work their way to an area with 3 vending machines. All of them are empty except for one with
+    1 Oogle Boogle Nutty Candy Bar in it."
+
+    e "Looks like there's one left..."
+
+    "Elliot and Stella split the bar"
+
+    jump MotelMorn2
+
+label MotelMorn1:
+    "*Stella bangs on the door*"
+
+    s "Rise and shine sleepyheads!!"
+
+    show Zach at slightright
+
+    z "Just give us 5 minutes Stel. We're almost ready."
+
+    s "Oh you're awake? I wasn't expecting that."
+
+    z "Suprised?"
+
+    s "Well yeah! You're never up this early. You must be {i}really{/i} excited for this hiking trip."
+
+    show Elliot at slightleft
+    show Stella
+
+    e "*opens the door* Believe me, he is. He's been up since 5:37 a.m."
+
+    s "Yeesh, that explains why Zach looks like a..."
+    s "You know what? Nevermind."
+
+    s "Zach you ready yet?"
+
+    z "Almost, I need to talk to Elliot quick though."
+
+    z "Last night, you were outta this room so quick that I didn't get to tell you why I wanted to go on this trip
+    in the first place."
+
+    s "Actually. I'd like to know that too."
+
+    e "Oh yeah... Sorry about that. When my minds on food, I kinda forget about my surroundings."
+
+    style multiple2_say_window:
+        xsize 500
+        background None
+
+    style block1_multiple2_say_window:
+        xalign 0.0
+
+    style block2_multiple2_say_window:
+        xalign 0.5
+
+    s "We know!" (multiple=2)
+    z "We know!" (multiple=2)
+
+    
+
+
 
     # This ends the game
     return

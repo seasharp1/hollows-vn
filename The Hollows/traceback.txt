@@ -1,26 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 60, in script
-    python:
-  File "game/script.rpy", line 62, in <module>
-    player_name = povname.strip()
-NameError: name 'povname' is not defined
+  File "game/script.rpy", line 385, in script
+    with moutoutright
+  File "game/script.rpy", line 385, in <module>
+    with moutoutright
+NameError: name 'moutoutright' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 60, in script
-    python:
-  File "renpy/ast.py", line 928, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2245, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 62, in <module>
-    player_name = povname.strip()
-NameError: name 'povname' is not defined
+  File "game/script.rpy", line 385, in script
+    with moutoutright
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/ast.py", line 1436, in execute
+    trans = renpy.python.py_eval(self.expr)
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/python.py", line 2276, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/python.py", line 2269, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 385, in <module>
+    with moutoutright
+NameError: name 'moutoutright' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 The Hollows 1.0
-Fri Feb  4 17:18:34 2022
+Fri Feb  4 16:41:26 2022
