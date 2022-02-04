@@ -555,8 +555,9 @@ label MotelNight1Pt2:
     z "*sigh* Elliot, where's the gum?"
 
     z "That kid sure is something else. *Turns off the light and goes to bed*"
+    #FADE OUT
 
-    with fade
+    jump MotelMorn1
 
 label gRoom:
     #Zach unlockes Room 308
@@ -593,8 +594,44 @@ label gRoom:
     jump vending2
 
 label vending2:
-    
+    show Elliot at slightright
+    show Stella at slightleft
 
+    "Elliot and Stella work their way to an area with 3 vending machines. All of them are empty except for one with
+    1 Oogle Boogle Nutty Candy Bar in it."
+
+    e "Looks like there's one left..."
+
+    "Elliot and Stella split the bar"
+
+    jump MotelMorn2
+
+label MotelMorn1:
+    "*Stella bangs on the door*"
+
+    s "Rise and shine sleepyheads!!"
+
+    show Zach at slightright
+
+    z "Just give us 5 minutes Stel. We're almost ready."
+
+    s "Oh you're awake? I wasn't expecting that."
+
+    z "Suprised?"
+
+    s "Well yeah! You're never up this early. You must be {i}really{/i} excited for this hiking trip."
+
+    show Elliot at slightleft
+    show Stella
+
+    e "*opens the door* Believe me, he is. He's been up since 5:37 a.m."
+
+    s "Yeesh, that explains why Zach looks like a..."
+    s "You know what? Nevermind."
+
+    s "Zach you ready yet?"
+
+    
 
     # This ends the game
     return
