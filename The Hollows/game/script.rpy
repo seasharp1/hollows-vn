@@ -451,8 +451,10 @@ label ontrack:
     bm "Perfect..."
 
 label MotelNight1:
-    show bg car
-    with fade
+    if ownRoom:
+        jump zeRoom
+    elif groupRoom
+        jump gRoom
 
     menu:
         "Zach and Elliot's room":
