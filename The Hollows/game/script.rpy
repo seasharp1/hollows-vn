@@ -661,7 +661,31 @@ label MotelMorn1:
 
     s "Zach you ready yet?"
 
+    z "Almost, I need to talk to Elliot quick though."
+
+    z "Last night, you were outta this room so quick that I didn't get to tell you why I wanted to go on this trip
+    in the first place."
+
+    s "Actually. I'd like to know that too."
+
+    e "Oh yeah... Sorry about that. When my minds on food, I kinda forget about my surroundings."
+
+    style multiple2_say_window:
+        xsize 500
+        background None
+
+    style block1_multiple2_say_window:
+        xalign 0.0
+
+    style block2_multiple2_say_window:
+        xalign 0.5
+
+    s "We know!" (multiple=2)
+    z "We know!" (multiple=2)
+
     
+
+
 
     # This ends the game
     return
