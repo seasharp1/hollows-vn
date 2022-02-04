@@ -2,6 +2,7 @@ define e = Character("Elliot", who_color="4287f5")
 define s = Character("Stella", who_color="ef42f5")
 define z = Character("Zach", who_color="42f584")
 define bm = Character("Boisterous Man", who_color="e62222")
+##define me = Character("[povname]") ## Use this for named main character
 
 $ ownRoom
 $ groupRoom
@@ -51,6 +52,17 @@ label start:
     #hide character change
     #"End example"
     #End Animation Example
+
+    ## Begin User Input Test --------
+    #"Hmm, what is my name again..."
+    #python:
+    #    povname = renpy.input("Name thyself: ", length=32)
+    #    povname = povname.strip()
+    #
+    #    if not povname:
+    #        povname = "Unidentified User"
+    #"Hello [povname]"
+    ## End User Input Test ----------
 
     scene bg car
 
