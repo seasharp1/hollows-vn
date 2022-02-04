@@ -1,40 +1,41 @@
-Fri Feb  4 17:24:24 2022
+Fri Feb  4 17:29:46 2022
 Windows-10-10.0.22000
 Ren'Py 7.4.11.2266
  
 
 Bootstrap to the start of init.init took 0.17s
-Early init took 0.02s
-Loader init took 0.05s
-Loading error handling took 0.06s
-Loading script took 0.43s
-Loading save slot metadata. took 0.17s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.07s
+Loading script took 2.13s
+Loading save slot metadata. took 0.05s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.13s
+Running init code took 0.19s
 Loading analysis data took 0.05s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Dump and make backups. took 0.16s
+Backing up script files to 'C:\\Users\\VerdouwRowan\\AppData\\Roaming/RenPy/backups\\The Hollows':
+Dump and make backups. took 0.14s
 Cleaning cache took 0.00s
-Making clean stores took 0.01s
-Initial gc. took 0.06s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
 DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.02s
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.09s
-Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.05s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.07s
+Save bytecode. took 0.04s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.19s
+Interface start took 0.18s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -46,23 +47,3 @@ Version: '4.6.14830 Compatibility Profile Context 21.10 27.20.21026.3004'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
 Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 478, in script
-    if ownRoom:
-  File "renpy/ast.py", line 1898, in execute
-    if renpy.python.py_eval(condition):
-  File "renpy/python.py", line 2276, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "renpy/python.py", line 2269, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 478, in <module>
-    if ownRoom:
-NameError: name 'ownRoom' is not defined
-
-While running game code:
-  File "game/script.rpy", line 478, in script
-    if ownRoom:
-  File "game/script.rpy", line 478, in <module>
-    if ownRoom:
-NameError: name 'ownRoom' is not defined
