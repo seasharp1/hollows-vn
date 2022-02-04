@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 475: reached end of line when expecting ':'.
+File "game/script.rpy", line 456: reached end of line when expecting ':'.
     elif groupRoom
                   ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Fri Feb  4 16:39:40 2022
+Fri Feb  4 16:26:40 2022

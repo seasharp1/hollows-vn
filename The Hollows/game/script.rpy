@@ -448,7 +448,7 @@ label ontrack:
             s "..."
 
             s "Fine"
-            $ groupRoom = true
+            $ groupRoom = True
 
     bm "How long are you going to be in town?"
 
@@ -514,6 +514,7 @@ label zeRoom:
     e "Works for me!"
 
     z "Before you go... *sigh* He's already gone. That kid sure has a one-track mind."
+    jump vending1
 
 label vending1:
     "*Elliot works his way to a section of 3 vending machines. All of them are empty except for the
@@ -569,6 +570,61 @@ label vending1:
 
     e "Ok..."
     e "I guess I'm just happy that Stella has something to eat."
+
+    jump MotelNight1Pt2
+
+label MotelNight1Pt2:
+    show Elliot at slightleft
+
+    e "Well, I guess I'm going hungry tonight."
+
+    show Zach at slightright
+
+    z "*jokingly* I mean, there's that chewed gum stuck underneath that coffee table, but I wouldn't...."
+
+    z "*sigh* Elliot, where's the gum?"
+
+    z "That kid sure is something else. *Turns off the light and goes to bed*"
+
+    with fade
+
+label gRoom:
+    #Zach unlockes Room 308
+    #The room reeks of old mildew and strawberry flavored bubblegum
+
+    show Stella at slightleft
+
+    s "So Zach, why do you even want to find your biological family? I mean, is our family not good enough for you?"
+
+    show Zach at slightright
+
+    z "Hey! I never said that!"
+
+    s "Then why?"
+
+    z "Because I want to know more about myself. It's like there's a part of me missing and I have no way of finding it."
+
+    s "Okay genius, if there is 'no way of finding it' then why are we in this creepy town?"
+
+    show Elliot
+
+    e "Yeah, I was wondering that too."
+
+    z "I told you everything in the car!"
+
+    e "You know I was sleeping most of the ride, right?"
+
+    z "*sigh*"
+
+    e "I really should get a bite to eat before I head to bed for the night. *sees the gum under the table and starts reaching for it*"
+
+    s "Gross! I should really get you a dog cone. Come on, we're going to the vending machines. I saw some outside."
+
+    jump vending2
+
+label vending2:
+    
+
 
     # This ends the game
     return
