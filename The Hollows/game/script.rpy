@@ -416,7 +416,7 @@ label ontrack:
             z "{i}Fine{/i}, you can have your own room."
 
             s "Yay! Thank you Zach!"
-
+            $ ownRoom = True
         "If you pay for it":
             z "You can have it if you pay for it."
 
@@ -429,6 +429,7 @@ label ontrack:
             s "..."
 
             s "Fine"
+            $ groupRoom = true
 
     bm "How long are you going to be in town?"
 
@@ -449,6 +450,12 @@ label ontrack:
 label MotelNight1:
     show bg night motel
     with fade
+
+    if ownRoom:
+        jump zeRoom
+    elif groupRoom
+        jump gRoom
+
 
     menu:
         "Zach and Elliot's room":
