@@ -457,14 +457,6 @@ label MotelNight1:
         jump gRoom
 
 
-    menu:
-        "Zach and Elliot's room":
-            jump zeRoom
-
-        "Stella's Room":
-            jump sRoom
-            #Need to add sRoom
-
 label zeRoom:
     show bg night motel
     with fade
@@ -492,6 +484,11 @@ label zeRoom:
 
     z "I don't. I was in such a rush today that I didn't even think about that. I even forgot to pack my toothbrush!"
     z "But feel free to check the vending machines."
+
+    e "Works for me!"
+
+    z "Before you go... *sigh* He's already gone. That kid sure has a one-track mind."
+
 
     # This ends the game
     return
