@@ -457,14 +457,6 @@ label MotelNight1:
         jump gRoom
 
 
-    menu:
-        "Zach and Elliot's room":
-            jump zeRoom
-
-        "Stella's Room":
-            jump sRoom
-            #Need to add sRoom
-
 label zeRoom:
     show bg night motel
     with fade
@@ -492,6 +484,76 @@ label zeRoom:
 
     z "I don't. I was in such a rush today that I didn't even think about that. I even forgot to pack my toothbrush!"
     z "But feel free to check the vending machines."
+
+    e "Works for me!"
+
+    z "Before you go... *sigh* He's already gone. That kid sure has a one-track mind."
+
+label vending1:
+    "*Elliot works his way to a section of 3 vending machines. All of them are empty except for the
+    one on the far end that has 1 Oogle Boogle Nutty Candy Bar left in it. Stella’s at the vending
+    machine impatiently waiting for the candy bar to fall)*"
+
+    show Stella slightleft
+
+    s "*mutterting to herself* Come on! I don't have all day! *kicks the vending machine*"
+    s "UGH, it won't budge *screams out of frustration*"
+
+    show Elliot slightright
+
+    e "Hey Stella! What are you doing out here? I figured you would've locked yourself to the confinement of your room by now."
+
+    s "What does it look like?! I'm {i}trying{/i} to get something to eat!"
+
+    e "Still hungry? You didn't really touch your smoked cow tongue."
+
+    s "Yeah, I should've just given it to you. And now this dang machine won't give me my candy bar!"
+    s "I paid for the dang thing! Can you help me?"
+
+
+    e "Sure, give me a sec. *picks up the vending machine and slams it down, candy bar falls down*"
+    #could use camera shake here again
+
+    show Zach
+    z "*comes out of his room* What was that?!"
+
+    e "What was what?"
+
+    z "The noise!"
+
+    s "That was Elliot's rage agaisnt the vending machine."
+
+    e "Rage? You were the one kicking it earlier."
+
+    s "Whatever. *picks up the candy bar and starts walking away and pauses, under her breath* Thanks Elliot. *continues walking*"
+
+    e "I think that's the first time time I've ever heard her say thank you. Should I should 'you're welcome'?"
+
+    z "I think she already knows."
+    z "Besides, you've already caused enough noise tonight. We should probably get back to the room."
+
+    e "But I'm still hungry!"
+
+    z "Then you should've grabbed that candy bar before Stella did. *smirks* *walks towards the room*"
+    z "Come on you big lug."
+
+    e "Ok..."
+    e "I guess I'm just happy that Stella has something to eat."
+
+label MotelNight1Pt2:
+    show Elliot at slightleft
+
+    e "Well, I guess I'm going hungry tonight."
+
+    show Zach at slightright
+
+    z "*jokingly* I mean, there's that chewed gum stuck underneath that coffee table, but I wouldn't...."
+
+    z "*sigh* Elliot, where's the gum?"
+
+    z "That kid sure is something else. *Turns off the light and goes to bed*"
+
+    with fade
 
     # This ends the game
     return
