@@ -453,7 +453,7 @@ label MotelNight1:
 
     if ownRoom:
         jump zeRoom
-    elif groupRoom
+    elif groupRoom:
         jump gRoom
 
 
