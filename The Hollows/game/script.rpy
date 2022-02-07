@@ -509,18 +509,10 @@ label MotelNight1:
     show bg night motel
     with fade
 
-<<<<<<< Updated upstream
     if ownRoom:
         jump zeRoom
     else:
         jump gRoom
-=======
-    python:
-        if ownRoom:
-            jump zeRoom
-        elif groupRoom:
-            jump gRoom
->>>>>>> Stashed changes
 
 label zeRoom:
     show bg night motel
