@@ -738,6 +738,8 @@ label MotelMorn1:
     s "I can tell."
 
     z "I suppose we should get going. I can explain more on the way."
+    #jump HikingTrail
+
 
 
 
