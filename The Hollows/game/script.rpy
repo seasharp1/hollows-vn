@@ -66,7 +66,7 @@ label start:
 
     scene bg car
 
-    s "*Pulls out a ridiculously large map that blocks part of Zach's view*"
+    s "*{i}Pulls out a ridiculously large map that blocks part of Zach's view{/i}*"
 
     show Stella at slightright
     with dissolve
@@ -78,10 +78,10 @@ label start:
 
     z "HEY! I'm driving here. Put that away."
 
-    "*Camera shake, Car swerves, Zach stops the car*"
+    "*{i}Car swerves, Zach stops the car{/i}*"
     show bg car with hpunch
 
-    s "Well, MAYBE if you knew where you were going, I wouldn't have to pull out a map."
+    s "Well, {i}MAYBE{/i} if you knew where you were going, I wouldn't have to pull out a map."
 
     s "You know, this is just like that time we went on that road trip to see Aunt Kathrine.
         You refused to listen to me, and remember where we ended up?"
@@ -92,9 +92,9 @@ label start:
     show Elliot at center
     with dissolve
 
-    e "I'm not a rando, I'm his best friend! *Elliot points to Zach*"
+    e "I'm not a rando, I'm his best friend! *{i}Elliot points to Zach{/i}*"
 
-    e "And that was some good sushi!"
+    e "And that was some {i}good sushi{/i}!"
 
     z "I'm with Stel on this one. You eat some of the weirdest crap I've ever seen."
 
@@ -102,7 +102,7 @@ label start:
 
     s "You call that food?! You can't be serious."
 
-    z "*Chuckles*"
+    z "*{i}Chuckles{/i}*"
 
     z "It's still better than that time he made us try jellied moose nose."
 
@@ -116,15 +116,15 @@ label start:
 
     s "I'm trying not to, I promise!"
 
-    "*Stella opens the car door and proceeds to vomit, revealing a tipped over sign that says
-        \"Welcome to Timberland\"."
+    "*{i}Stella opens the car door and proceeds to vomit, revealing a tipped over sign that says
+        \"Welcome to Timberland\".{/i}"
 
     e "Looks like you knew what you were doing after all, Zach. I guess we're in Timberland... or
         what's left of it."
 
     z "Did I hit that sign?"
 
-    "*Zach and Elliot get out of the car to inspect the hood*"
+    "*{i}Zach and Elliot get out of the car to inspect the hood{/i}*"
 
     z "It sure looks a bit run down, don't ya think?"
 
@@ -135,7 +135,7 @@ label start:
 
     e "Not in the trunk, that's for sure."
 
-    "*Stella rolls her eyes*"
+    "*{i}Stella rolls her eyes{/i}*"
 
     s "How's the hood look?"
 
@@ -148,7 +148,7 @@ label start:
     s "You two need to get a room. I can't stand how you talk about that thing like it's your
         girlfriend. Or is it because you've never had a girlfriend that you've talked to like that?"
 
-    s "*Snickering*"
+    s "*{i}Snickering{/i}*"
 
     z "..."
 
@@ -158,7 +158,7 @@ label start:
 
     z "How can you think of food after you just threw up your stomach?"
 
-    s "It's BECAUSE I threw up that I'm hungry now!"
+    s "It's {i}BECAUSE{/i} I threw up that I'm hungry now!"
 
     e "How about we get some-"
 
@@ -176,7 +176,7 @@ label Timberland:
 
     show Elliot at slightleft
     with dissolve
-    e "...Anyone else think it's a little strange here? It's like everyone's just
+    e "... Anyone else think it's a little strange here? It's like everyone's just
     wandering around aimlessly... almost like they're mindless."
 
     show Stella at slightright
@@ -185,24 +185,26 @@ label Timberland:
 
     show Zach at center
     with dissolve
-    z "Hey! *maybe make choice of snarky comeback here)*"
+    z "Hey, rude!"
+
+    z "*{i}Zach turns to a man walking nearby{/i}*"
 
     z "Excuse me, could you tell me..."
     #Hollow looking stranger doesn't respond, moves past him as if he doesn't see him
 
-    e "That was... {i}weird{/i}. *visibly scared*"
+    e "That was... {i}weird{/i}."
 
-    s "Yeah, let's ask someone else. *visibly uncomfortable*"
+    s "Yeah, let's ask someone else."
 
     #Shows multiple hollow town's folk
 
     z "Well, that didn't get us anywhere."
 
-    s "Yeah, what is up with everyone in this town? They all look like zombies. *grossed out*"
+    s "Yeah, what is up with everyone in this town? They all look like zombies."
 
-    z "I guess we should look for someplace to eat and stay the night."
+    z "I guess we should look for some place to eat and stay the night."
 
-    s "Stay the night?!"
+    s "{i}Stay the night?!{/i}"
 
     z "Yes, stay the night."
 
@@ -210,7 +212,7 @@ label Timberland:
 
     z "It has normal food, right?"
 
-    e "Normal food? What do you mean? *Confused*"
+    e "Normal food? What do you mean?"
 
     s "I saw it too. It looks like it's the only restuarant in town, so we don't have a choice. (sigh)"
 
@@ -231,9 +233,6 @@ label Tavern:
     show Elliot at slightright
     with dissolve
 
-
-    # These display lines of dialogue.
-
     e "And I'll have the Bear Brain Soup."
 
     show Stella at slightleft
@@ -241,7 +240,7 @@ label Tavern:
 
     s "Who comes up with these recipes?"
 
-    e "Where is your sense of adventure now?"
+    e "Where's your sense of adventure now?"
 
     e "But at least it looks like these zombie-like people can understand us."
 
@@ -249,14 +248,14 @@ label Tavern:
 
     bm "Fantastic soup again Margaret!"
 
-    e "It sounds like there is someone sane in this town afterall."
-    #Line in the doc says "You guys hear that? Someone {i}actually{/i} sane in this town?"
+    e "It sounds like there's someone sane in this town afterall."
 
     show Zach at center
     with dissolve
 
     z "I don't think anyone who likes the soup of the day here could be considered sane."
-    #Goes over to a man whose cheeks are flushed
+
+    z "*{i}Zach walks over to the man in question{/i}*"
 
     z "Excuse me."
 
