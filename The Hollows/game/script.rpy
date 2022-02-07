@@ -305,9 +305,12 @@ label Tavern:
     bm "Well I'll be! Am I hallucinating or are you talkin' to me?"
 
     menu:
+        bm "Well I'll be! Am I hallucinating or are you talkin' to me?"
 
         "You're hallucinating":
             z "I'm not real. I'm a ghost! {i}oooOOOooo{/i}"
+
+            bm "Ha, I like to think I know a ghost when I see one, and you aint it."
 
         "I'm talkin' to you":
             z "I'm really talking to you..."
@@ -330,13 +333,14 @@ label Tavern:
     "*{i}It appears like this guy has been here for a while, might be a good chance to ask some questions{/i}"
 
     menu:
+        "*{i}It appears like this guy has been here for a while, might be a good chance to ask some questions{/i}"
 
         "Why are you here?":
             jump whyareyouhere
 
         "What happened to the people":
             jump whathappened
-
+        # I see no mention of an amulet before this point ------------------
         "Do you know anything about this amulet?":
             jump amulet
 
@@ -372,7 +376,7 @@ label whyareyouhere:
 
     show Boisterous Man at left
 
-    show Zach at slightright
+    show Zach at center
 
     s "I guess it’s true that love has no bounds. Unless there’s something funky in that drink..."
 
@@ -394,23 +398,23 @@ label whathappened:
 
     z "What happened to everyone in this town?"
 
-    bm "Couldn't tell ya."
+    bm "Couldn't tell ya..."
 
     bm "But I {i}do{/i} know that it started about 21 years ago. That was when the first person went hollow."
 
     bm "I think it was someone who was visiting their family. Started acting weird."
 
-    bm "At first we thought they were just startled after seeing a bear or something."
+    bm "At first we thought they were just startled after seeing a bear or somethin."
 
     bm "But as the days and weeks went on, more and more people started acting the same way."
 
     z "Hollow?"
 
-    bm "Yeah, thats what we call 'em. The people around these parts used to be lively and clamorous."
+    bm "Yeah, thats what I like to call 'em. The people around these parts used to be pretty lively folk."
 
     bm "My man Earl over there in the red tux used to be the liveliest man around."
 
-    bm "He used to play gigs in the Tavern every Tuesday."
+    bm "He used to play gigs in the tavern every Tuesday."
 
     z "I see..."
 
@@ -537,10 +541,6 @@ label ontrack:
     hide Stella
     hide Zach
     hide Boisterous Man
-
-label MotelNight1:
-    show bg night motel
-    with fade
 
     if ownRoom:
         jump zeRoom
