@@ -29,6 +29,12 @@ transform hop:
     #repeat 2
 #End Example Animation
 
+image stranger walking:
+    animation
+    "default character test"
+    xalign 0.0
+    linear 5.0 xalign 1.0
+
 # The game starts here.
 label start:
 
@@ -68,16 +74,14 @@ label start:
 
     scene bg car
 
-    "We've been driving for hours, the three of us."
+    "We've been driving for hours, the three of us.
+        Elliot, the big guy in the back fast asleep, and a good friend of mine."
 
-    "Elliot, the big guy in the back fast asleep, and a good friend of mine."
+    "Then there's Stella, who generously volunteered to navigate, even though no one asked.
+        And your pilot this afternoon is me, Zach, the dashing, charming, man you'll ever meet."
 
-    "Then there's Stella, who generously volunteered to navigate, even though no one asked."
+    "*{i}My thoughts are cut off as Stella pulls out a giant map that blocks my view.{/i}"
 
-    "And your pilot this afternoon is me, Zach, the dashing, charming, man you'll ever meet."
-
-    "My thoughts are cut off as Stella pulls out a giant map that blocks my view."
-    
     show Stella at slightright
     with dissolve
 
@@ -88,10 +92,10 @@ label start:
 
     z "HEY! I'm driving here. Put that away."
 
-    "*Camera shake, Car swerves, Zach stops the car*"
+    "*{i}Car swerves, Zach stops the car{/i}*"
     show bg car with hpunch
 
-    s "Well, MAYBE if you knew where you were going, I wouldn't have to pull out a map."
+    s "Well, {i}MAYBE{/i} if you knew where you were going, I wouldn't have to pull out a map."
 
     s "You know, this is just like that time we went on that road trip to see Aunt Kathrine.
         You refused to listen to me, and remember where we ended up?"
@@ -102,7 +106,7 @@ label start:
     show Elliot at center
     with dissolve
 
-    e "I'm not a rando, I'm his best friend! *Elliot points to Zach*"
+    e "I'm not a rando, I'm his best friend! *{i}Elliot points to Zach{/i}*"
 
     e "And that was some good sushi!"
 
@@ -112,7 +116,7 @@ label start:
 
     s "You call that food?! You can't be serious."
 
-    z "*Chuckles*"
+    z "*{i}Chuckles{/i}*"
 
     z "It's still better than that time he made us try jellied moose nose."
 
@@ -126,30 +130,30 @@ label start:
 
     s "I'm trying not to, I promise!"
 
-    "*Stella opens the car door and proceeds to vomit, revealing a tipped over sign that says
-        \"Welcome to Timberland\"."
+    "*{i}Stella opens the car door and proceeds to vomit, revealing a tipped over sign that says
+        \"Welcome to Timberland\".{/i}"
 
     e "Looks like you knew what you were doing after all, Zach. I guess we're in Timberland... or
         what's left of it."
 
     z "Did I hit that sign?"
 
-    "*Zach and Elliot get out of the car to inspect the hood*"
+    "*{i}Zach and Elliot get out of the car to inspect the hood{/i}*"
 
     z "It sure looks a bit run down, don't ya think?"
 
     e "Maybe we should turn around."
 
-    s "We're going in. I didn't hide in a trunk for eight hours for nothing. Besides, where's
+    s "We're going. I didn't hide in a trunk for eight hours for nothing. Besides, where's
         your sense of adventure?"
 
     e "Not in the trunk, that's for sure."
 
-    "*Stella rolls her eyes*"
+    "*{i}Stella rolls her eyes{/i}*"
 
     s "How's the hood look?"
 
-    z "Not even a dent, that wood couldn't be anymore rotten."
+    z "Not even a dent, that wood couldn't be any more rotten."
 
     s "That's good. I don't think that rustbucket you drive can take much more of a beating."
 
@@ -158,7 +162,7 @@ label start:
     s "You two need to get a room. I can't stand how you talk about that thing like it's your
         girlfriend. Or is it because you've never had a girlfriend that you've talked to like that?"
 
-    s "*Snickering*"
+    s "*{i}Snickering{/i}*"
 
     z "..."
 
@@ -168,7 +172,7 @@ label start:
 
     z "How can you think of food after you just threw up your stomach?"
 
-    s "It's BECAUSE I threw up that I'm hungry now!"
+    s "It's {i}BECAUSE{/i} I threw up that I'm hungry now!"
 
     e "How about we get some-"
 
@@ -195,24 +199,33 @@ label Timberland:
 
     show Zach at center
     with dissolve
-    z "Hey! *maybe make choice of snarky comeback here)*"
+    z "Hey, rude!"
+
+    z "*{i}Zach turns to someone walking nearby{/i}*"
 
     z "Excuse me, could you tell me..."
+
     #Hollow looking stranger doesn't respond, moves past him as if he doesn't see him
+    show stranger walking:
+    pause
+    hide stranger walking
 
-    e "That was... {i}weird{/i}. *visibly scared*"
+    e "That was... {i}weird{/i}."
 
-    s "Yeah, let's ask someone else. *visibly uncomfortable*"
+    s "Yeah, let's ask someone else."
 
     #Shows multiple hollow town's folk
+    show stranger walking:
+    pause
+    hide stranger walking
 
     z "Well, that didn't get us anywhere."
 
-    s "Yeah, what is up with everyone in this town? They all look like zombies. *grossed out*"
+    s "Yeah, what is up with everyone in this town? They all look like zombies."
 
-    z "I guess we should look for someplace to eat and stay the night."
+    z "I guess we should look for some place to eat and stay the night."
 
-    s "Stay the night?!"
+    s "{i}Stay the night?!{/i}"
 
     z "Yes, stay the night."
 
@@ -220,9 +233,9 @@ label Timberland:
 
     z "It has normal food, right?"
 
-    e "Normal food? What do you mean? *Confused*"
+    e "Normal food? What do you mean?"
 
-    s "I saw it too. It looks like it's the only restuarant in town, so we don't have a choice. (sigh)"
+    s "I saw it too. It looks like it's the only restuarant in town, so we don't have a choice. *{i}sigh{/i}*"
 
     z "Okay, let's go."
 
