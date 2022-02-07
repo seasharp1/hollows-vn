@@ -2,13 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 453: expected statement.
-    ownRoom = True
-            ^
-
-File "game/script.rpy", line 466: expected statement.
-    groupRoom = True
-              ^
+File "game/script.rpy", line 493: invalid syntax
+        jump zeRoom
+                   ^
+    
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Fri Feb  4 17:29:16 2022
+Mon Feb  7 15:59:06 2022
