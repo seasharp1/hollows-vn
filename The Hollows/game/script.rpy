@@ -4,8 +4,6 @@ define z = Character("Zach", who_color="42f584")
 define bm = Character("Boisterous Man", who_color="e62222")
 ##define me = Character("[povname]") ## Use this for named main character
 
-$ ownRoom
-$ groupRoom
 
 transform slightleft:
     xalign 0.25
@@ -14,6 +12,10 @@ transform slightleft:
 transform slightright:
     xalign 0.75
     yalign 1.0
+
+transform hop:
+    linear 0.1 ypos 50
+    linear 0.1 ypos 0
 
 #Example Animation
 #image character change:
@@ -66,7 +68,7 @@ label start:
 
     scene bg car
 
-    s "*{i}Pulls out a ridiculously large map that blocks part of Zach's view{/i}*"
+    s "*Pulls out a ridiculously large map that blocks part of Zach's view*"
 
     show Stella at slightright
     with dissolve
@@ -78,10 +80,10 @@ label start:
 
     z "HEY! I'm driving here. Put that away."
 
-    "*{i}Car swerves, Zach stops the car{/i}*"
+    "*Camera shake, Car swerves, Zach stops the car*"
     show bg car with hpunch
 
-    s "Well, {i}MAYBE{/i} if you knew where you were going, I wouldn't have to pull out a map."
+    s "Well, MAYBE if you knew where you were going, I wouldn't have to pull out a map."
 
     s "You know, this is just like that time we went on that road trip to see Aunt Kathrine.
         You refused to listen to me, and remember where we ended up?"
@@ -92,9 +94,9 @@ label start:
     show Elliot at center
     with dissolve
 
-    e "I'm not a rando, I'm his best friend! *{i}Elliot points to Zach{/i}*"
+    e "I'm not a rando, I'm his best friend! *Elliot points to Zach*"
 
-    e "And that was some {i}good sushi{/i}!"
+    e "And that was some good sushi!"
 
     z "I'm with Stel on this one. You eat some of the weirdest crap I've ever seen."
 
@@ -102,7 +104,7 @@ label start:
 
     s "You call that food?! You can't be serious."
 
-    z "*{i}Chuckles{/i}*"
+    z "*Chuckles*"
 
     z "It's still better than that time he made us try jellied moose nose."
 
@@ -116,15 +118,15 @@ label start:
 
     s "I'm trying not to, I promise!"
 
-    "*{i}Stella opens the car door and proceeds to vomit, revealing a tipped over sign that says
-        \"Welcome to Timberland\".{/i}"
+    "*Stella opens the car door and proceeds to vomit, revealing a tipped over sign that says
+        \"Welcome to Timberland\"."
 
     e "Looks like you knew what you were doing after all, Zach. I guess we're in Timberland... or
         what's left of it."
 
     z "Did I hit that sign?"
 
-    "*{i}Zach and Elliot get out of the car to inspect the hood{/i}*"
+    "*Zach and Elliot get out of the car to inspect the hood*"
 
     z "It sure looks a bit run down, don't ya think?"
 
@@ -135,7 +137,7 @@ label start:
 
     e "Not in the trunk, that's for sure."
 
-    "*{i}Stella rolls her eyes{/i}*"
+    "*Stella rolls her eyes*"
 
     s "How's the hood look?"
 
@@ -148,7 +150,7 @@ label start:
     s "You two need to get a room. I can't stand how you talk about that thing like it's your
         girlfriend. Or is it because you've never had a girlfriend that you've talked to like that?"
 
-    s "*{i}Snickering{/i}*"
+    s "*Snickering*"
 
     z "..."
 
@@ -158,7 +160,7 @@ label start:
 
     z "How can you think of food after you just threw up your stomach?"
 
-    s "It's {i}BECAUSE{/i} I threw up that I'm hungry now!"
+    s "It's BECAUSE I threw up that I'm hungry now!"
 
     e "How about we get some-"
 
@@ -176,7 +178,7 @@ label Timberland:
 
     show Elliot at slightleft
     with dissolve
-    e "... Anyone else think it's a little strange here? It's like everyone's just
+    e "...Anyone else think it's a little strange here? It's like everyone's just
     wandering around aimlessly... almost like they're mindless."
 
     show Stella at slightright
@@ -185,26 +187,24 @@ label Timberland:
 
     show Zach at center
     with dissolve
-    z "Hey, rude!"
-
-    z "*{i}Zach turns to a man walking nearby{/i}*"
+    z "Hey! *maybe make choice of snarky comeback here)*"
 
     z "Excuse me, could you tell me..."
     #Hollow looking stranger doesn't respond, moves past him as if he doesn't see him
 
-    e "That was... {i}weird{/i}."
+    e "That was... {i}weird{/i}. *visibly scared*"
 
-    s "Yeah, let's ask someone else."
+    s "Yeah, let's ask someone else. *visibly uncomfortable*"
 
     #Shows multiple hollow town's folk
 
     z "Well, that didn't get us anywhere."
 
-    s "Yeah, what is up with everyone in this town? They all look like zombies."
+    s "Yeah, what is up with everyone in this town? They all look like zombies. *grossed out*"
 
-    z "I guess we should look for some place to eat and stay the night."
+    z "I guess we should look for someplace to eat and stay the night."
 
-    s "{i}Stay the night?!{/i}"
+    s "Stay the night?!"
 
     z "Yes, stay the night."
 
@@ -212,7 +212,7 @@ label Timberland:
 
     z "It has normal food, right?"
 
-    e "Normal food? What do you mean?"
+    e "Normal food? What do you mean? *Confused*"
 
     s "I saw it too. It looks like it's the only restuarant in town, so we don't have a choice. (sigh)"
 
@@ -233,6 +233,9 @@ label Tavern:
     show Elliot at slightright
     with dissolve
 
+
+    # These display lines of dialogue.
+
     e "And I'll have the Bear Brain Soup."
 
     show Stella at slightleft
@@ -240,7 +243,7 @@ label Tavern:
 
     s "Who comes up with these recipes?"
 
-    e "Where's your sense of adventure now?"
+    e "Where is your sense of adventure now?"
 
     e "But at least it looks like these zombie-like people can understand us."
 
@@ -248,14 +251,15 @@ label Tavern:
 
     bm "Fantastic soup again Margaret!"
 
-    e "It sounds like there's someone sane in this town afterall."
+    e "You guys hear that? Someone {i}actually{/i} sane in this town?"
+    #Line in the doc says "You guys hear that? Someone {i}actually{/i} sane in this town?"
+    #Resolved
 
     show Zach at center
     with dissolve
 
     z "I don't think anyone who likes the soup of the day here could be considered sane."
-
-    z "*{i}Zach walks over to the man in question{/i}*"
+    #Goes over to a man whose cheeks are flushed
 
     z "Excuse me."
 
@@ -268,7 +272,6 @@ label Tavern:
     bm "Well I'll be! Am I hallucinating or are you talkin' to me?"
 
     menu:
-        "Well I'll be! Am I hallucinating or are you talkin' to me?"
 
         "You're hallucinating":
             "I'm not real. I'm a ghost. oooOOOooo"
@@ -315,6 +318,14 @@ label whyareyouhere:
 
     "The man gestures to the waitress from earlier"
     #Zoom if possible
+    show bg tavern with dissolve:
+        zoom 1.5
+
+    hide Boisterous Man
+    hide Zach
+
+    show Waitress
+    with dissolve
 
     z "Her?"
 
@@ -331,6 +342,13 @@ label whyareyouhere:
 
     hide Stella
     with moveoutright
+
+    hide Waitress
+    #Zoom out
+    show bg tavern with dissolve:
+        zoom 1.0
+    show Boisterous Man at left
+    show Zach at slightright
 
     bm "She wasn't always hollow, or that's what I call it at least."
 
@@ -450,6 +468,7 @@ label ontrack:
 
             s "Yay! Thank you Zach!"
             $ ownRoom = True
+            $ groupRoom = False
         "If you pay for it":
             z "You can have it if you pay for it."
 
@@ -463,6 +482,7 @@ label ontrack:
 
             s "Fine"
             $ groupRoom = True
+            $ ownRoom = False
 
     bm "How long are you going to be in town?"
 
@@ -491,9 +511,8 @@ label MotelNight1:
 
     if ownRoom:
         jump zeRoom
-    elif groupRoom:
+    else:
         jump gRoom
-
 
 label zeRoom:
     show bg night motel
@@ -566,7 +585,7 @@ label vending1:
 
     z "The noise!"
 
-    s "That was Elliot's rage agaisnt the vending machine."
+    s "That was Elliot's rage against the vending machine."
 
     e "Rage? You were the one kicking it earlier."
 
@@ -697,7 +716,11 @@ label MotelMorn1:
     s "We know!" (multiple=2)
     z "We know!" (multiple=2)
 
-    s "TALKING TALKING TALKING"
+    z "Anyways, I decided to go on this trip because I wanted to know more about myself. I've always felt like an odd-ball."
+    z "A misfit, you know I've never really fit in anywhere. And maybe there's a reason behind it. I know I have a loving sister, even if she doesn't show it."
+    z "And a great best friend. It's just that my past is a mystery that I want to solve."
+
+    
 
 
 
