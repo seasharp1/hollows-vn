@@ -92,8 +92,8 @@ label start:
 
     z "HEY! I'm driving here. Put that away."
 
-    "*{i}Car swerves, Zach stops the car{/i}*"
     show bg car with hpunch
+    "*{i}Car swerves, Zach stops the car{/i}*"
 
     s "Well, {i}MAYBE{/i} if you knew where you were going, I wouldn't have to pull out a map."
 
@@ -206,18 +206,16 @@ label Timberland:
     z "Excuse me, could you tell me..."
 
     show stranger walking:
-    pause
-    hide stranger walking
     "*{i}The stranger walks past without stopping{/i}*"
+    hide stranger walking
 
     e "That was... {i}weird{/i}."
 
     s "Yeah, let's ask someone else."
 
     show stranger walking:
-    pause
-    hide stranger walking
     "*{i}There is still no response from the townsfolk{/i}*"
+    hide stranger walking
 
     z "Well, that didn't get us anywhere."
 
