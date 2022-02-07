@@ -106,7 +106,7 @@ label start:
     show Elliot at center
     with dissolve
 
-    e "I'm not a rando, I'm his best friend! *{i}Elliot points to Zach{/i}*"
+    e "I'm not a rando, I'm his best friend!" #*{i}Elliot points to Zach{/i}* Taken out
 
     e "And that was some good sushi!"
 
