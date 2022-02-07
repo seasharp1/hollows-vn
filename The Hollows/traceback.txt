@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 491, in script
-    if ownRoom:
-  File "game/script.rpy", line 491, in <module>
-    if ownRoom:
-NameError: name 'ownRoom' is not defined
+  File "game/script.rpy", line 689, in script
+    jump MotelMorn2
+ScriptError: could not find label 'MotelMorn2'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 491, in script
-    if ownRoom:
-  File "renpy/ast.py", line 1898, in execute
-    if renpy.python.py_eval(condition):
-  File "renpy/python.py", line 2276, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "renpy/python.py", line 2269, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 491, in <module>
-    if ownRoom:
-NameError: name 'ownRoom' is not defined
+  File "game/script.rpy", line 689, in script
+    jump MotelMorn2
+  File "renpy/ast.py", line 1757, in execute
+    rv = renpy.game.script.lookup(target)
+  File "renpy/script.py", line 918, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'MotelMorn2'.
 
 Windows-10-10.0.22000
 Ren'Py 7.4.11.2266
 The Hollows 1.0
-Mon Feb  7 16:00:28 2022
+Mon Feb  7 16:54:28 2022

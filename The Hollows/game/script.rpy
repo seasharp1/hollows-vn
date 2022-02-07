@@ -686,7 +686,7 @@ label vending2:
 
     "Elliot and Stella split the bar"
 
-    jump MotelMorn2
+    #jump MotelMorn2
 
 label MotelMorn1:
     "*Stella bangs on the door*"
