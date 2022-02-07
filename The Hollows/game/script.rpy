@@ -264,9 +264,6 @@ label Tavern:
     show Elliot at slightright
     with dissolve
 
-
-    # These display lines of dialogue.
-
     e "And I'll have the Bear Brain Soup."
 
     show Stella at slightleft
@@ -274,7 +271,7 @@ label Tavern:
 
     s "Who comes up with these recipes?"
 
-    e "Where is your sense of adventure now?"
+    e "Where's your sense of adventure now?"
 
     e "But at least it looks like these zombie-like people can understand us."
 
@@ -282,20 +279,19 @@ label Tavern:
 
     bm "Fantastic soup again Margaret!"
 
-    e "You guys hear that? Someone {i}actually{/i} sane in this town?"
-    #Line in the doc says "You guys hear that? Someone {i}actually{/i} sane in this town?"
-    #Resolved
+    e "You guys hear that? Someone is {i}actually{/i} sane in this town?"
 
     show Zach at center
     with dissolve
 
     z "I don't think anyone who likes the soup of the day here could be considered sane."
-    #Goes over to a man whose cheeks are flushed
 
-    z "Excuse me."
+    z "*{i}Zach walks over to the man in question{/i}*"
 
     hide Stella
     hide Elliot
+
+    z "Excuse me..."
 
     show Boisterous Man at left
     with dissolve
@@ -305,31 +301,29 @@ label Tavern:
     menu:
 
         "You're hallucinating":
-            "I'm not real. I'm a ghost. oooOOOooo"
+            z "I'm not real. I'm a ghost! {i}oooOOOooo{/i}"
 
         "I'm talkin' to you":
-            "I'm talking to you, but you're facing the wrong way"
+            z "I'm really talking to you..."
 
-    bm "Rude comment here"
-
-    bm "I haven't had a real conversation over three months now."
+    bm "Well call me surprised, I haven't had a real conversation over three months now."
 
     s "Three months?"
 
-    bm "That was the last time someone passed through here. I mean, we {i}are{/i} in the middle of nowhere after all."
+    bm "That was the last time someone passed through here.
+        I mean, we {i}are{/i} in the middle of nowhere after all."
 
     bm "Not much reason for people to come visit unless you have family here."
 
-    "The Boisterous Man glances at the waitress"
+    "*{i}The Boisterous Man glances at the waitress{/i}"
 
     bm "But then again, who would want to visit their family here?"
 
     bm "Everyone acts like they tasted somethin' sour n' can't talk!"
 
-    "Sounds like this guy has been here for a while, nows a good chance to ask some questions"
+    "*{i}It appears like this guy has been here for a while, might be a good chance to ask some questions{/i}"
 
     menu:
-        "Sounds like this guy has been here for a while, nows a good chance to ask some questions"
 
         "Why are you here?":
             jump whyareyouhere
@@ -347,8 +341,8 @@ label whyareyouhere:
 
     bm "Because that's my wife behind the counter."
 
-    "The man gestures to the waitress from earlier"
-    #Zoom if possible
+    "*{i}The man gestures to the waitress from earlier{/i}"
+
     show bg tavern with dissolve:
         zoom 1.5
 
@@ -362,26 +356,28 @@ label whyareyouhere:
 
     bm "Yeah, aint she a beaut?"
 
+    hide Waitress
+
+    show bg tavern with dissolve:
+        zoom 1.0
+
     show Stella at slightright
     with moveinright
 
-    s "I guess it’s true that love has no bounds. Unless there’s something funky in that drink…"
+    show Boisterous Man at left
 
-    bm "I can assume you I'm drinking Root Beer"
+    show Zach at slightright
+
+    s "I guess it’s true that love has no bounds. Unless there’s something funky in that drink..."
+
+    bm "I can assure you I'm drinking Root Beer"
 
     s "Right..."
 
     hide Stella
     with moveoutright
 
-    hide Waitress
-    #Zoom out
-    show bg tavern with dissolve:
-        zoom 1.0
-    show Boisterous Man at left
-    show Zach at slightright
-
-    bm "She wasn't always hollow, or that's what I call it at least."
+    bm "She wasn't always like this, hollow I mean, or that's what I call it at least."
 
     bm "One day I left for uh, work, and she went on a walk. When I came home she was like this."
 
