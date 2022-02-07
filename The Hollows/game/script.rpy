@@ -13,6 +13,10 @@ transform slightright:
     xalign 0.75
     yalign 1.0
 
+transform hop:
+    linear 0.1 ypos 50
+    linear 0.1 ypos 0
+
 #Example Animation
 #image character change:
     #animation
@@ -247,8 +251,9 @@ label Tavern:
 
     bm "Fantastic soup again Margaret!"
 
-    e "It sounds like there is someone sane in this town afterall."
+    e "You guys hear that? Someone {i}actually{/i} sane in this town?"
     #Line in the doc says "You guys hear that? Someone {i}actually{/i} sane in this town?"
+    #Resolved
 
     show Zach at center
     with dissolve
@@ -267,7 +272,6 @@ label Tavern:
     bm "Well I'll be! Am I hallucinating or are you talkin' to me?"
 
     menu:
-        "Well I'll be! Am I hallucinating or are you talkin' to me?"
 
         "You're hallucinating":
             "I'm not real. I'm a ghost. oooOOOooo"
@@ -314,6 +318,14 @@ label whyareyouhere:
 
     "The man gestures to the waitress from earlier"
     #Zoom if possible
+    show bg tavern with dissolve:
+        zoom 1.5
+
+    hide Boisterous Man
+    hide Zach
+
+    show Waitress
+    with dissolve
 
     z "Her?"
 
@@ -330,6 +342,13 @@ label whyareyouhere:
 
     hide Stella
     with moveoutright
+
+    hide Waitress
+    #Zoom out
+    show bg tavern with dissolve:
+        zoom 1.0
+    show Boisterous Man at left
+    show Zach at slightright
 
     bm "She wasn't always hollow, or that's what I call it at least."
 
@@ -490,10 +509,18 @@ label MotelNight1:
     show bg night motel
     with fade
 
+<<<<<<< Updated upstream
     if ownRoom:
         jump zeRoom
     else:
         jump gRoom
+=======
+    python:
+        if ownRoom:
+            jump zeRoom
+        elif groupRoom:
+            jump gRoom
+>>>>>>> Stashed changes
 
 label zeRoom:
     show bg night motel
