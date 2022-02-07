@@ -80,7 +80,7 @@ label start:
     "Then there's Stella, who generously volunteered to navigate, even though no one asked.
         And your pilot this afternoon is me, Zach, the dashing, charming, man you'll ever meet."
 
-    "*{i}My thoughts are cut off as Stella pulls out a giant map that blocks my view.{/i}"
+    "*{i}My thoughts are cut off as Stella pulls out a giant map that blocks my view.{/i}*"
 
     show Stella at slightright
     with dissolve
@@ -130,6 +130,8 @@ label start:
 
     s "I'm trying not to, I promise!"
 
+    #animetion with stella disapearing from view to vomit
+
     "*{i}Stella opens the car door and proceeds to vomit, revealing a tipped over sign that says
         \"Welcome to Timberland\".{/i}"
 
@@ -138,9 +140,16 @@ label start:
 
     z "Did I hit that sign?"
 
-    "*{i}Zach and Elliot get out of the car to inspect the hood{/i}*"
+    #"*{i}Zach and Elliot get out of the car to inspect the hood{/i}*"
+    #Show elliot and zach moving off screen to inspect hood
 
-    z "It sure looks a bit run down, don't ya think?"
+    e "Well, they aren't going to miss that sign."
+
+    e "On the bright side, we gave the town an excuss to upgrade."
+
+    #Show main cast coming back into car
+
+    z "The town sure looks a bit run down, don't ya think?"
 
     e "Maybe we should turn around."
 
@@ -149,7 +158,8 @@ label start:
 
     e "Not in the trunk, that's for sure."
 
-    "*{i}Stella rolls her eyes{/i}*"
+    #"*{i}Stella rolls her eyes{/i}*"
+    #Show stella annoyed
 
     s "How's the hood look?"
 
@@ -160,9 +170,11 @@ label start:
     z "Yeah, she's been through a lot. She's my first car."
 
     s "You two need to get a room. I can't stand how you talk about that thing like it's your
-        girlfriend. Or is it because you've never had a girlfriend that you've talked to like that?"
+        girlfriend. Or is it because you've never had a girlfriend that you talk like that?"
 
-    s "*{i}Snickering{/i}*"
+    #s "*{i}Snickering{/i}*"
+    #show stella snickering (smug face activate)
+    #could do this before previous diologue line
 
     z "..."
 
