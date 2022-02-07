@@ -566,7 +566,7 @@ label vending1:
 
     z "The noise!"
 
-    s "That was Elliot's rage agaisnt the vending machine."
+    s "That was Elliot's rage against the vending machine."
 
     e "Rage? You were the one kicking it earlier."
 
