@@ -1,30 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 88, in script
-    show Elliot with hop
-Exception: Parameter 'new_widget' is not known by ATL Transform.
+  File "game/script.rpy", line 478, in script
+    if ownRoom:
+  File "game/script.rpy", line 478, in <module>
+    if ownRoom:
+NameError: name 'ownRoom' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 88, in script
-    show Elliot with hop
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/ast.py", line 1443, in execute
-    renpy.exports.with_statement(trans, paired)
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/exports.py", line 1684, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/display/core.py", line 2762, in do_with
-    clear=clear)
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/display/core.py", line 3325, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/display/core.py", line 3676, in interact_core
-    new_widget=layers_root)
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/atl.py", line 462, in __call__
-    raise Exception('Parameter %r is not known by ATL Transform.' % k)
-Exception: Parameter 'new_widget' is not known by ATL Transform.
+  File "game/script.rpy", line 478, in script
+    if ownRoom:
+  File "renpy/ast.py", line 1898, in execute
+    if renpy.python.py_eval(condition):
+  File "renpy/python.py", line 2276, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "renpy/python.py", line 2269, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 478, in <module>
+    if ownRoom:
+NameError: name 'ownRoom' is not defined
 
-Windows-10-10.0.19041
+Windows-10-10.0.22000
 Ren'Py 7.4.11.2266
 The Hollows 1.0
-Fri Feb  4 17:25:59 2022
+Fri Feb  4 17:24:42 2022

@@ -2,6 +2,10 @@ define e = Character("Elliot", who_color="4287f5")
 define s = Character("Stella", who_color="ef42f5")
 define z = Character("Zach", who_color="42f584")
 define bm = Character("Boisterous Man", who_color="e62222")
+##define me = Character("[povname]") ## Use this for named main character
+
+$ ownRoom
+$ groupRoom
 
 transform slightleft:
     xalign 0.25
@@ -10,10 +14,6 @@ transform slightleft:
 transform slightright:
     xalign 0.75
     yalign 1.0
-
-transform hop:
-    linear 0.1 ypos 50
-    linear 0.1 ypos 0
 
 #Example Animation
 #image character change:
@@ -53,8 +53,18 @@ label start:
     #"End example"
     #End Animation Example
 
+    ## Begin User Input Test --------
+    #"Hmm, what is my name again..."
+    #python:
+    #    povname = renpy.input("Name thyself: ", length=32)
+    #    povname = povname.strip()
+    #
+    #    if not povname:
+    #        povname = "Unidentified User"
+    #"Hello [povname]"
+    ## End User Input Test ----------
+
     scene bg car
-    with fade
 
     s "*Pulls out a ridiculously large map that blocks part of Zach's view*"
 
@@ -85,7 +95,6 @@ label start:
     e "I'm not a rando, I'm his best friend! *Elliot points to Zach*"
 
     e "And that was some good sushi!"
-    show Elliot at hop
 
     z "I'm with Stel on this one. You eat some of the weirdest crap I've ever seen."
 
@@ -306,21 +315,13 @@ label whyareyouhere:
     bm "Because that's my wife behind the counter."
 
     "The man gestures to the waitress from earlier"
-    #Zoom in
-    show bg tavern with dissolve:
-        zoom 1.5
-
-    hide Boisterous Man
-    hide Zach
-
-    show Waitress
-    with dissolve
+    #Zoom if possible
 
     z "Her?"
 
     bm "Yeah, aint she a beaut?"
 
-    show Stella at right
+    show Stella at slightright
     with moveinright
 
     s "I guess it’s true that love has no bounds. Unless there’s something funky in that drink…"
@@ -331,13 +332,6 @@ label whyareyouhere:
 
     hide Stella
     with moveoutright
-
-    hide Waitress
-    #Zoom out
-    show bg tavern with dissolve:
-        zoom 1.0
-    show Boisterous Man at left
-    show Zach at slightright
 
     bm "She wasn't always hollow, or that's what I call it at least."
 
@@ -606,8 +600,9 @@ label MotelNight1Pt2:
     z "*sigh* Elliot, where's the gum?"
 
     z "That kid sure is something else. *Turns off the light and goes to bed*"
+    #FADE OUT
 
-    with fade
+    jump MotelMorn1
 
 label gRoom:
     #Zach unlockes Room 308
@@ -644,6 +639,66 @@ label gRoom:
     jump vending2
 
 label vending2:
+    show Elliot at slightright
+    show Stella at slightleft
+
+    "Elliot and Stella work their way to an area with 3 vending machines. All of them are empty except for one with
+    1 Oogle Boogle Nutty Candy Bar in it."
+
+    e "Looks like there's one left..."
+
+    "Elliot and Stella split the bar"
+
+    jump MotelMorn2
+
+label MotelMorn1:
+    "*Stella bangs on the door*"
+
+    s "Rise and shine sleepyheads!!"
+
+    show Zach at slightright
+
+    z "Just give us 5 minutes Stel. We're almost ready."
+
+    s "Oh you're awake? I wasn't expecting that."
+
+    z "Suprised?"
+
+    s "Well yeah! You're never up this early. You must be {i}really{/i} excited for this hiking trip."
+
+    show Elliot at slightleft
+    show Stella
+
+    e "*opens the door* Believe me, he is. He's been up since 5:37 a.m."
+
+    s "Yeesh, that explains why Zach looks like a..."
+    s "You know what? Nevermind."
+
+    s "Zach you ready yet?"
+
+    z "Almost, I need to talk to Elliot quick though."
+
+    z "Last night, you were outta this room so quick that I didn't get to tell you why I wanted to go on this trip
+    in the first place."
+
+    s "Actually. I'd like to know that too."
+
+    e "Oh yeah... Sorry about that. When my minds on food, I kinda forget about my surroundings."
+
+    style multiple2_say_window:
+        xsize 500
+        background None
+
+    style block1_multiple2_say_window:
+        xalign 0.0
+
+    style block2_multiple2_say_window:
+        xalign 0.5
+
+    s "We know!" (multiple=2)
+    z "We know!" (multiple=2)
+
+    s "TALKING TALKING TALKING"
 
 
 

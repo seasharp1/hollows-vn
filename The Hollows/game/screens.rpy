@@ -160,6 +160,10 @@ style say_dialogue:
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
 
+## Example text border ---------------------------------------------------
+##style say_dialogue:
+##    outlines [(1, "#f00", 0, 0)]
+## End example -----------------------------------------------------------
 
 ## Input screen ################################################################
 ##
