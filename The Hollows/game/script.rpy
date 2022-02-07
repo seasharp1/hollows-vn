@@ -33,7 +33,7 @@ image stranger walking:
     animation
     "default character test"
     xalign 0.0
-    linear 5.0 xalign 1.0
+    linear 2.0 xalign 1.0
 
 # The game starts here.
 label start:
@@ -205,17 +205,19 @@ label Timberland:
 
     z "Excuse me, could you tell me..."
 
-    #Hollow looking stranger doesn't respond, moves past him as if he doesn't see him
     show stranger walking:
+    pause
     hide stranger walking
+    "*{i}The stranger walks past without stopping{/i}*"
 
     e "That was... {i}weird{/i}."
 
     s "Yeah, let's ask someone else."
 
-    #Shows multiple hollow town's folk
     show stranger walking:
+    pause
     hide stranger walking
+    "*{i}There is still no response from the townsfolk{/i}*"
 
     z "Well, that didn't get us anywhere."
 
