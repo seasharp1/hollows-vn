@@ -77,8 +77,9 @@ label start:
     "We've been driving for hours, the three of us.
         Elliot, the big guy in the back fast asleep, and a good friend of mine."
 
-    "Then there's Stella, who generously volunteered to navigate, even though no one asked.
-        And your pilot this afternoon is me, Zach, the dashing, charming, man you'll ever meet."
+    "Then there's Stella, who generously volunteered to navigate, even though no one asked."
+
+    "And your pilot this afternoon is me, Zach, the dashing, charming, man you'll ever meet."
 
     "*{i}My thoughts are cut off as Stella pulls out a giant map that blocks my view.{/i}*"
 
@@ -130,7 +131,7 @@ label start:
 
     s "I'm trying not to, I promise!"
 
-    #animetion with stella disapearing from view to vomit
+    #animation with stella disapearing from view to vomit
 
     "*{i}Stella opens the car door and proceeds to vomit, revealing a tipped over sign that says
         \"Welcome to Timberland\".{/i}"
@@ -143,7 +144,7 @@ label start:
     #"*{i}Zach and Elliot get out of the car to inspect the hood{/i}*"
     #Show elliot and zach moving off screen to inspect hood
 
-    e "Well, they aren't going to miss that sign."
+    e "Well, they aren't going to miss that thing."
 
     e "On the bright side, we gave the town an excuss to upgrade."
 
@@ -165,7 +166,7 @@ label start:
 
     z "Not even a dent, that wood couldn't be any more rotten."
 
-    s "That's good. I don't think that rustbucket you drive can take much more of a beating."
+    s "That's good. I don't think this rustbucket you drive can take much more of a beating."
 
     z "Yeah, she's been through a lot. She's my first car."
 
