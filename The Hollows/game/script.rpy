@@ -740,6 +740,17 @@ label MotelMorn1:
     z "And a great best friend. It's just that my past is a mystery that I want to solve."
 
 
+    e "I gotcha."
+
+    s "*notices Zach's pendant flicker in the light* I know you never talk about it, but you'd like to know what that pendant means, right?"
+
+    z "Well yeah... I've had it for as long as I can remember. It means a lot for me. I feel weird without it."
+    z "It's a part of me."
+
+    s "I can tell."
+
+    z "I suppose we should get going. I can explain more on the way."
+    #jump HikingTrail
 
 
 
