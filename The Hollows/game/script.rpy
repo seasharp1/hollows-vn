@@ -207,7 +207,6 @@ label Timberland:
 
     #Hollow looking stranger doesn't respond, moves past him as if he doesn't see him
     show stranger walking:
-    pause
     hide stranger walking
 
     e "That was... {i}weird{/i}."
@@ -216,7 +215,6 @@ label Timberland:
 
     #Shows multiple hollow town's folk
     show stranger walking:
-    pause
     hide stranger walking
 
     z "Well, that didn't get us anywhere."
