@@ -79,14 +79,19 @@ label start:
 
     "Then there's Stella, who generously volunteered to navigate, even though no one asked."
 
-    "And your pilot this afternoon is me, Zach, the dashing, charming, man you'll ever meet."
+    "And your pilot this afternoon is me, Zach, the most dashing, charming man you'll ever meet."
 
+<<<<<<< Updated upstream
     "*{i}My thoughts are cut off as Stella pulls out a giant map that blocks my view.{/i}*"
+=======
+    "My thoughts are cut off as Stella pulls out a giant map that blocks my view."
+>>>>>>> Stashed changes
 
     show Stella at slightright
     with dissolve
 
     s "Is this the place?"
+    show Stella
 
     show Zach at slightleft
     with dissolve
@@ -760,6 +765,165 @@ label MotelMorn1:
 
     z "I suppose we should get going. I can explain more on the way."
     #jump HikingTrail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+label HikingTrail:
+    show Stella with dissolve
+    s "Who's idea was this again?"
+
+    e "I think it was the guy in the tavern's recommendation."
+
+    s "Yeah, but who agreed to this?"
+
+    z "We all did."
+
+    s "Well {i}that{/i}... was a mistake. I... need... water."
+    #Drop transition
+
+    e "Here Stella, I brought enough for everyone."
+
+    s "..."
+
+    s "This tastes like its been in the car for months."
+
+    e "Do you want it or not."
+
+    s "Yes! Sorry! I want it!"
+    show Stella
+
+    z "Elliot? Where are we on the hiking trail?"
+
+    e "Huh? How should I know?"
+
+    z "You were the one in charge of grabbing a map at the trailhead!"
+
+    e "Whose idea was that?"
+
+    #TO DO: ADD CHOICE HERE
+
+    e "Well, the damage has been done. Now we should probably focus on getting back."
+
+    z "Do you know the way back?"
+
+    e "I think I remember most of the path that we took. But we {i}have{/i} been hiking for a couple miles now."
+
+    e "I don't know if I remember everything."
+
+    s "Well, let's get moving. I don't want to spend another minute without cell service."
+
+    z "uhg. I feel so bad that all of your followers haven't seen your face in two hours."
+
+    #Time pass transition(clock sound and swirl) or naration?
+
+    s "Face it. We're lost."
+
+    e "No we are not! The trail head should be half a mile ahead."
+
+    s "But you said that five miles ago!"
+
+    show shadowman at offscreen with moveinleft
+    hide shadowmand
 
 
 
