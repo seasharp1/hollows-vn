@@ -532,10 +532,6 @@ label ontrack:
     hide Zach
     hide Boisterous Man
 
-label MotelNight1:
-    show bg night motel
-    with fade
-
     if ownRoom:
         jump zeRoom
     else:
