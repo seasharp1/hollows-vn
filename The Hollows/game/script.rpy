@@ -4,8 +4,10 @@ define z = Character("Zach", who_color="42f584")
 define bm = Character("Boisterous Man", who_color="e62222")
 ##define me = Character("[povname]") ## Use this for named main character
 
-$ ownRoom
-$ groupRoom
+python:
+    ownRoom = True
+    groupRoom = True
+
 
 transform slightleft:
     xalign 0.25
@@ -451,6 +453,7 @@ label ontrack:
 
             s "Yay! Thank you Zach!"
             $ ownRoom = True
+            $ groupRoom = False
         "If you pay for it":
             z "You can have it if you pay for it."
 
@@ -464,6 +467,7 @@ label ontrack:
 
             s "Fine"
             $ groupRoom = True
+            $ ownRoom = True
 
     bm "How long are you going to be in town?"
 
@@ -490,10 +494,11 @@ label MotelNight1:
     show bg night motel
     with fade
 
-    if ownRoom:
-        jump zeRoom
-    elif groupRoom:
-        jump gRoom
+    python:
+        if ownRoom:
+            jump zeRoom
+        elif groupRoom:
+            jump gRoom
 
 
 label zeRoom:
