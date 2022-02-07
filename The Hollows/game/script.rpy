@@ -68,8 +68,16 @@ label start:
 
     scene bg car
 
-    s "*Pulls out a ridiculously large map that blocks part of Zach's view*"
+    "We've been driving for hours, the three of us."
 
+    "Elliot, the big guy in the back fast asleep, and a good friend of mine."
+
+    "Then there's Stella, who generously volunteered to navigate, even though no one asked."
+
+    "And your pilot this afternoon is me, Zach, the dashing, charming, man you'll ever meet."
+
+    "My thoughts are cut off as Stella pulls out a giant map that blocks my view."
+    
     show Stella at slightright
     with dissolve
 
@@ -720,6 +728,7 @@ label MotelMorn1:
     z "A misfit, you know I've never really fit in anywhere. And maybe there's a reason behind it. I know I have a loving sister, even if she doesn't show it."
     z "And a great best friend. It's just that my past is a mystery that I want to solve."
 
+<<<<<<< HEAD
     e "I gotcha."
 
     s "*notices Zach's pendant flicker in the light* I know you never talk about it, but you'd like to know what that pendant means, right?"
@@ -732,6 +741,9 @@ label MotelMorn1:
     z "I suppose we should get going. I can explain more on the way."
 
     
+=======
+
+>>>>>>> bda41e8178803f395a75d80cd54c8584ff66aec0
 
 
 
