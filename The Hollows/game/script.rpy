@@ -106,5 +106,13 @@ label start:
     call chapter1
     return
 
+    #Chapter Directory --------------------------
+    # Chapter 1: The Car Scene
+    # Chapter 2: Welcome to Timberland
+    # Chapter 3: The Tavern
+    # Chapter 4: The Hotel
+    # Chapter 5: The Hiking Trail
+    #--------------------------------------------
+
     # This ends the game
     return
