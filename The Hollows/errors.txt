@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1054: style property s is not known.
+File "game/script.rpy", line 1062: style property s is not known.
     s "20 YEARS?!" (multiple=3)
      ^
 
-File "game/script.rpy", line 1058: style property e is not known.
-    e "20 YEARS?!" (multiple=3)
-     ^
-
-File "game/script.rpy", line 1062: style property z is not known.
-    z "20 YEARS?!" (multiple=3)
-     ^
-
 Ren'Py Version: Ren'Py 7.4.11.2266
-Wed Feb  9 15:59:22 2022
+Wed Feb  9 16:19:23 2022

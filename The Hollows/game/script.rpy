@@ -5,6 +5,7 @@ define bm = Character("Boisterous Man", who_color="e62222")
 define lum = Character("Lumberjack", who_color="cc5500")
 ##define me = Character("[povname]") ## Use this for named main character
 
+
 transform slightleft:
     xalign 0.25
     yalign 1.0
@@ -17,44 +18,7 @@ transform hop:
     linear 0.1 ypos 50
     linear 0.1 ypos 0
 
-# This is for displaying multiple character's dialogue simultaneously ---
-# For 2 characters...
-# Use (multiple=2) after dialogue on same line to use this
-style multiple2_say_window:
-    xsize 500
-    background None
-
-style block1_multiple2_say_window:
-    xalign 0.0
-
-style block2_multiple2_say_window:
-    xalign 0.5
-
-# For 3 characters...
-# Use (multiple=3) after dialogue on same line to use this
-style multiple3_say_window:
-    xsize 500
-    background None
-
-style block1_multiple3_say_window:
-    xalign 0.0
-
-style block2_multiple3_say_window:
-    xalign 0.5
-
-style block3_multiple3_say_window:
-    xalign 1.0
-#------------------------------------------------------------------------
-
-# Stranger walking animation used in second scene -----------------------
-image stranger walking:
-    animation
-    "default character test" # Replace this with a better picture
-    xalign 0.0
-    linear 2.0 xalign 1.0
-#-------------------------------------------------------------------------
-
-#Example Animation -------------------------------------------------------
+#Example Animation
 #image character change:
     #animation
     #"default character test"
@@ -64,44 +28,51 @@ image stranger walking:
     #linear 5.0 xalign 1.0
     #pause 1
     #repeat 2
-#End Example Animation ---------------------------------------------------
+#End Example Animation
 
-## This is an example of showing multiple characters talking simultaneously
-##style multiple2_say_window:
-    ##xsize 500
-    ##background None
+image stranger walking:
+    animation
+    "default character test" # Replace this with a better picture
+    xalign 0.0
+    linear 2.0 xalign 1.0
 
-##style block1_multiple2_say_window:
-    ##xalign 0.0
-
-##style block2_multiple2_say_window:
-    ##xalign 0.5
-
-##s "Test character 1" (multiple=2)
-##e "Test character 2" (multiple=2)
-## End example ------------------------------------------------------------
-
-#Show the Animation Example -----------------------------------------------
-#"Start example"
-#show character change:
-#pause
-#hide character change
-#"End example"
-#End Animation Example ----------------------------------------------------
-
-## Begin User Input Test --------------------------------------------------
-#"Hmm, what is my name again..."
-#python:
-#    povname = renpy.input("Name thyself: ", length=32)
-#    povname = povname.strip()
-#
-#    if not povname:
-#        povname = "Unidentified User"
-#"Hello [povname]"
-## End User Input Test ----------------------------------------------------
-
-# The game starts here. \'O'/
+# The game starts here.
 label start:
+
+    ## This is an example of showing multiple characters talking simultaneously
+    ##style multiple2_say_window:
+        ##xsize 500
+        ##background None
+
+    ##style block1_multiple2_say_window:
+        ##xalign 0.0
+
+    ##style block2_multiple2_say_window:
+        ##xalign 0.5
+
+    ##s "Test character 1" (multiple=2)
+    ##e "Test character 2" (multiple=2)
+    ## End example ------------------------------------------------------------
+
+    #Show the Animation Example
+    #"Start example"
+    #show character change:
+    #pause
+    #hide character change
+    #"End example"
+    #End Animation Example
+
+    ## Begin User Input Test --------
+    #"Hmm, what is my name again..."
+    #python:
+    #    povname = renpy.input("Name thyself: ", length=32)
+    #    povname = povname.strip()
+    #
+    #    if not povname:
+    #        povname = "Unidentified User"
+    #"Hello [povname]"
+    ## End User Input Test ----------
+
     scene bg car
 
     "We've been driving for hours, the three of us.
@@ -123,6 +94,10 @@ label start:
 
     show Zach at slightleft
     with dissolve
+
+    show Stella:
+        yalign 0.0
+        linear 0.5
 
     z "HEY! I'm driving here. Put that away."
 
@@ -333,6 +308,7 @@ label Tavern:
     bm "Well I'll be! Am I hallucinating or are you talkin' to me?"
 
     menu:
+        bm "Well I'll be! Am I hallucinating or are you talkin' to me?"
 
         "You're hallucinating":
             z "I'm not real. I'm a ghost! {i}oooOOOooo{/i}"
@@ -360,6 +336,7 @@ label Tavern:
     "*{i}It appears like this guy has been here for a while, might be a good chance to ask some questions{/i}"
 
     menu:
+        "*{i}It appears like this guy has been here for a while, might be a good chance to ask some questions{/i}"
 
         "Why are you here?":
             jump whyareyouhere
@@ -760,7 +737,6 @@ label vending2:
     #jump MotelMorn2
 
 label MotelMorn1:
-
     "*Stella bangs on the door*"
 
     s "Rise and shine sleepyheads!!"
@@ -793,6 +769,16 @@ label MotelMorn1:
     s "Actually. I'd like to know that too."
 
     e "Oh yeah... Sorry about that. When my minds on food, I kinda forget about my surroundings."
+
+    style multiple2_say_window:
+        xsize 500
+        background None
+
+    style block1_multiple2_say_window:
+        xalign 0.0
+
+    style block2_multiple2_say_window:
+        xalign 0.5
 
     s "We know!" (multiple=2)
     z "We know!" (multiple=2)
@@ -1022,14 +1008,12 @@ label HikingTrail:
     s "Wait! I don't want to die! Not without being honest about..."
 
     lum "Who's dying now?"
-
     hide shadowman
     show lumberjack behind Elliot, Stella, Zach
 
     s "Eek!"
 
     lum "I haven't seen many people this far into the woods in a while."
-
     lum "What brings you out here?"
 
     z "We were just hiking and got lost. What are you doing out here?"
@@ -1057,11 +1041,25 @@ label HikingTrail:
     s "Stella."
 
     lum "I'm... Who am I again? It's been so long since I've talked to anyone that
-        I haven't really needed a name."
+    I haven't really needed a name."
 
     z "When's like last time you talked to somebody?"
 
     lum "Hmm... Probably about 20 years ago."
+
+
+    style multiple3_say_window:
+        xsize 500
+        background None
+
+    style block1_multiple3_say_window:
+        xalign 0.0
+
+    style block2_multiple3_say_window:
+        xalign 0.5
+
+    style block2_multiple3_say_window:
+        xalign 0.5
 
     s "20 YEARS?!" (multiple=3)
     e "20 YEARS?!" (multiple=3)
@@ -1098,6 +1096,16 @@ label HikingTrail:
 
     s "What are you talking about? I'm fine... *collapses*"
     #idk how to make this really happen in the game
+
+    style multiple2_say_window:
+        xsize 500
+        background None
+
+    style block1_multiple2_say_window:
+        xalign 0.0
+
+    style block2_multiple2_say_window:
+        xalign 0.5
 
     z "Stella!" (multiple=2)
     e "Stella!" (multiple=2)
