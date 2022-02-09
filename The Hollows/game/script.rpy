@@ -5,7 +5,6 @@ define bm = Character("Boisterous Man", who_color="e62222")
 define lum = Character("Lumberjack", who_color="cc5500")
 ##define me = Character("[povname]") ## Use this for named main character
 
-
 transform slightleft:
     xalign 0.25
     yalign 1.0
@@ -18,7 +17,44 @@ transform hop:
     linear 0.1 ypos 50
     linear 0.1 ypos 0
 
-#Example Animation
+# This is for displaying multiple character's dialogue simultaneously ---
+# For 2 characters...
+# Use (multiple=2) after dialogue on same line to use this
+style multiple2_say_window:
+    xsize 500
+    background None
+
+style block1_multiple2_say_window:
+    xalign 0.0
+
+style block2_multiple2_say_window:
+    xalign 0.5
+
+# For 3 characters...
+# Use (multiple=3) after dialogue on same line to use this
+style multiple3_say_window:
+    xsize 500
+    background None
+
+style block1_multiple3_say_window:
+    xalign 0.0
+
+style block2_multiple3_say_window:
+    xalign 0.5
+
+style block3_multiple3_say_window:
+    xalign 1.0
+#------------------------------------------------------------------------
+
+# Stranger walking animation used in second scene -----------------------
+image stranger walking:
+    animation
+    "default character test" # Replace this with a better picture
+    xalign 0.0
+    linear 2.0 xalign 1.0
+#-------------------------------------------------------------------------
+
+#Example Animation -------------------------------------------------------
 #image character change:
     #animation
     #"default character test"
@@ -28,51 +64,44 @@ transform hop:
     #linear 5.0 xalign 1.0
     #pause 1
     #repeat 2
-#End Example Animation
+#End Example Animation ---------------------------------------------------
 
-image stranger walking:
-    animation
-    "default character test" # Replace this with a better picture
-    xalign 0.0
-    linear 2.0 xalign 1.0
+## This is an example of showing multiple characters talking simultaneously
+##style multiple2_say_window:
+    ##xsize 500
+    ##background None
 
-# The game starts here.
+##style block1_multiple2_say_window:
+    ##xalign 0.0
+
+##style block2_multiple2_say_window:
+    ##xalign 0.5
+
+##s "Test character 1" (multiple=2)
+##e "Test character 2" (multiple=2)
+## End example ------------------------------------------------------------
+
+#Show the Animation Example -----------------------------------------------
+#"Start example"
+#show character change:
+#pause
+#hide character change
+#"End example"
+#End Animation Example ----------------------------------------------------
+
+## Begin User Input Test --------------------------------------------------
+#"Hmm, what is my name again..."
+#python:
+#    povname = renpy.input("Name thyself: ", length=32)
+#    povname = povname.strip()
+#
+#    if not povname:
+#        povname = "Unidentified User"
+#"Hello [povname]"
+## End User Input Test ----------------------------------------------------
+
+# The game starts here. \'O'/
 label start:
-
-    ## This is an example of showing multiple characters talking simultaneously
-    ##style multiple2_say_window:
-        ##xsize 500
-        ##background None
-
-    ##style block1_multiple2_say_window:
-        ##xalign 0.0
-
-    ##style block2_multiple2_say_window:
-        ##xalign 0.5
-
-    ##s "Test character 1" (multiple=2)
-    ##e "Test character 2" (multiple=2)
-    ## End example ------------------------------------------------------------
-
-    #Show the Animation Example
-    #"Start example"
-    #show character change:
-    #pause
-    #hide character change
-    #"End example"
-    #End Animation Example
-
-    ## Begin User Input Test --------
-    #"Hmm, what is my name again..."
-    #python:
-    #    povname = renpy.input("Name thyself: ", length=32)
-    #    povname = povname.strip()
-    #
-    #    if not povname:
-    #        povname = "Unidentified User"
-    #"Hello [povname]"
-    ## End User Input Test ----------
-
     scene bg car
 
     "We've been driving for hours, the three of us.
@@ -94,10 +123,6 @@ label start:
 
     show Zach at slightleft
     with dissolve
-
-    show Stella:
-        yalign 0.0
-        linear 0.5
 
     z "HEY! I'm driving here. Put that away."
 
@@ -308,7 +333,6 @@ label Tavern:
     bm "Well I'll be! Am I hallucinating or are you talkin' to me?"
 
     menu:
-        bm "Well I'll be! Am I hallucinating or are you talkin' to me?"
 
         "You're hallucinating":
             z "I'm not real. I'm a ghost! {i}oooOOOooo{/i}"
@@ -336,7 +360,6 @@ label Tavern:
     "*{i}It appears like this guy has been here for a while, might be a good chance to ask some questions{/i}"
 
     menu:
-        "*{i}It appears like this guy has been here for a while, might be a good chance to ask some questions{/i}"
 
         "Why are you here?":
             jump whyareyouhere
@@ -690,12 +713,13 @@ label MotelNight1Pt2:
 
 # Group room
 label gRoom:
-    #Zach unlockes Room 308
-    #The room reeks of old mildew and strawberry flavored bubblegum
+
+    "*{i}Zach unlockes Room 308. The room reeks of mildew and strawberry flavored bubblegum{/i}*"
 
     show Stella at slightleft
 
-    s "So Zach, why do you even want to find your biological family? I mean, is our family not good enough for you?"
+    s "So Zach, why do you even want to find your biological family? I mean,
+        is our family not good enough for you?"
 
     show Zach at slightright
 
@@ -703,9 +727,10 @@ label gRoom:
 
     s "Then why?"
 
-    z "Because I want to know more about myself. It's like there's a part of me missing and I have no way of finding it."
+    z "Because I want to know more about myself. It's like there's a part of
+        me missing and I have no way of finding it."
 
-    s "Okay genius, if there is 'no way of finding it' then why are we in this creepy town?"
+    s "Okay genius, if there is \'no way of finding it\' then why are we in this creepy town?"
 
     show Elliot
 
@@ -715,20 +740,25 @@ label gRoom:
 
     e "You know I was sleeping most of the ride, right?"
 
-    z "*sigh*"
+    z "*{i}Sigh{/i}*"
 
-    e "I really should get a bite to eat before I head to bed for the night. *sees the gum under the table and starts reaching for it*"
+    e "I really should get a bite to eat before I head to bed for the night.
+        *{i}He sees the gum under the table and starts reaching for it{/i}*"
 
-    s "Gross! I should really get you a dog cone. Come on, we're going to the vending machines. I saw some outside."
+    s "Gross! I should really get you a dog cone. Come on, we're going to the
+        vending machines. I saw some outside."
 
     jump vending2
 
 label vending2:
+    show bg vending machine
+    with fade
+
     show Elliot at slightright
     show Stella at slightleft
 
-    "Elliot and Stella work their way to an area with 3 vending machines. All of them are empty except for one with
-    1 Oogle Boogle Nutty Candy Bar in it."
+    "Elliot and Stella work their way to an area with 3 vending machines.
+        All of them are empty except for one with 1 Oogle Boogle Nutty Candy Bar in it."
 
     e "Looks like there's one left..."
 
@@ -737,9 +767,10 @@ label vending2:
     #jump MotelMorn2
 
 label MotelMorn1:
-    "*Stella bangs on the door*"
 
-    s "Rise and shine sleepyheads!!"
+    "*{i}Stella bangs on the door{/i}*"
+
+    s "Rise and shine sleepyheads!"
 
     show Zach at slightright
 
@@ -754,45 +785,43 @@ label MotelMorn1:
     show Elliot at slightleft
     show Stella
 
-    e "*opens the door* Believe me, he is. He's been up since 5:37 a.m."
+    e "*{i}Opening the door{/i}* Believe me, he is. He's been up since 5 a.m."
 
     s "Yeesh, that explains why Zach looks like a..."
+
     s "You know what? Nevermind."
 
     s "Zach you ready yet?"
 
     z "Almost, I need to talk to Elliot quick though."
 
-    z "Last night, you were outta this room so quick that I didn't get to tell you why I wanted to go on this trip
-    in the first place."
+    z "Last night, you were outta this room so quick that I didn't get to tell
+        you why I wanted to go on this trip in the first place."
 
     s "Actually. I'd like to know that too."
 
     e "Oh yeah... Sorry about that. When my minds on food, I kinda forget about my surroundings."
 
-    style multiple2_say_window:
-        xsize 500
-        background None
-
-    style block1_multiple2_say_window:
-        xalign 0.0
-
-    style block2_multiple2_say_window:
-        xalign 0.5
-
     s "We know!" (multiple=2)
     z "We know!" (multiple=2)
 
-    z "Anyways, I decided to go on this trip because I wanted to know more about myself. I've always felt like an odd-ball."
-    z "A misfit, you know I've never really fit in anywhere. And maybe there's a reason behind it. I know I have a loving sister, even if she doesn't show it."
+    z "Anyways, I decided to go on this trip because I wanted to know more about
+        myself. I've always felt like an odd-ball."
+
+    z "A misfit, you know I've never really fit in anywhere. And maybe there's
+        a reason behind it. I know I have a loving sister, even if she doesn't show it."
+
     z "And a great best friend. It's just that my past is a mystery that I want to solve."
 
 
     e "I gotcha."
 
-    s "*notices Zach's pendant flicker in the light* I know you never talk about it, but you'd like to know what that pendant means, right?"
+    s "*{i}Noticing Zach's pendant flicker in the light{/i}* I know you never talk about
+        it, but you'd like to know what that pendant means, right?"
 
-    z "Well yeah... I've had it for as long as I can remember. It means a lot for me. I feel weird without it."
+    z "Well yeah... I've had it for as long as I can remember. It means a lot
+        for me. I feel weird without it."
+
     z "It's a part of me."
 
     s "I can tell."
@@ -924,6 +953,7 @@ label HikingTrail:
     e "Do you want it or not."
 
     s "Yes! Sorry! I want it!"
+
     show Stella
 
     z "Elliot? Where are we on the hiking trail?"
@@ -940,13 +970,14 @@ label HikingTrail:
 
     z "Do you know the way back?"
 
-    e "I think I remember most of the path that we took. But we {i}have{/i} been hiking for a couple miles now."
+    e "I think I remember most of the path that we took. But we {i}have{/i} been
+        hiking for a couple miles now."
 
     e "I don't know if I remember everything."
 
     s "Well, let's get moving. I don't want to spend another minute without cell service."
 
-    z "uhg. I feel so bad that all of your followers haven't seen your face in two hours."
+    z "Uhg. I feel so bad that all of your followers haven't seen your face in two hours."
 
     #Time pass transition(clock sound and swirl) or naration?
 
@@ -959,7 +990,7 @@ label HikingTrail:
     show shadowman at offscreen with moveinleft
     hide shadowman
 
-    s "*scared* Did anyone just see that?!"
+    s "*{i}Visibly scared{/i}* Did anyone just see that?!"
 
     e "See what?"
 
@@ -971,7 +1002,7 @@ label HikingTrail:
 
     #In the script, it says to make a choice here, but it is not fleshed out.
 
-    e "... *visibly sad*"
+    e "..."
 
     z "Hey, that was {i}not{/i} okay Stella. Apologize."
 
@@ -981,7 +1012,6 @@ label HikingTrail:
     hide shadowman
 
     e "Okay, I saw it that time."
-    "*everyone scared*"
 
     z "I did too, but where did it go?"
 
@@ -1008,12 +1038,14 @@ label HikingTrail:
     s "Wait! I don't want to die! Not without being honest about..."
 
     lum "Who's dying now?"
+
     hide shadowman
     show lumberjack behind Elliot, Stella, Zach
 
     s "Eek!"
 
     lum "I haven't seen many people this far into the woods in a while."
+
     lum "What brings you out here?"
 
     z "We were just hiking and got lost. What are you doing out here?"
@@ -1041,25 +1073,11 @@ label HikingTrail:
     s "Stella."
 
     lum "I'm... Who am I again? It's been so long since I've talked to anyone that
-    I haven't really needed a name."
+        I haven't really needed a name."
 
     z "When's like last time you talked to somebody?"
 
     lum "Hmm... Probably about 20 years ago."
-
-
-    style multiple3_say_window:
-        xsize 500
-        background None
-
-    style block1_multiple3_say_window:
-        xalign 0.0
-
-    style block2_multiple3_say_window:
-        xalign 0.5
-
-    style block2_multiple3_say_window:
-        xalign 0.5
 
     s "20 YEARS?!" (multiple=3)
     e "20 YEARS?!" (multiple=3)
@@ -1075,14 +1093,19 @@ label HikingTrail:
 
     z "(Lad?)"
 
-    lum "But it seems you are all tired and hungry. You probably won't be able to make it back tonight."
+    lum "But it seems you are all tired and hungry. You probably won't be able
+        to make it back tonight."
+
     lum "Or at least in one piece."
 
     s "In once piece? *scared*"
 
     lum "Why don't you all come over to my place and rest. I wouldn't mind..."
+
     lum "Mind uh..."
+
     lum "..."
+
     lum "GUIDE! That's the word I'm looking for!"
 
     s "I wish I was that happy remembering diction."
@@ -1092,26 +1115,17 @@ label HikingTrail:
     z "... Anyways, you were saying?"
 
     lum "Oh right, I don't mind being your guide back to Timberland tomorrow."
+
     lum "But you should rest today. Espically the young lady here."
 
     s "What are you talking about? I'm fine... *collapses*"
     #idk how to make this really happen in the game
 
-    style multiple2_say_window:
-        xsize 500
-        background None
-
-    style block1_multiple2_say_window:
-        xalign 0.0
-
-    style block2_multiple2_say_window:
-        xalign 0.5
-
     z "Stella!" (multiple=2)
     e "Stella!" (multiple=2)
 
     lum "Don't worry, she'll come to. Just a bit fatigued. If I had to guess, she's
-    probably never exerted herself this much. That, and she locked her knees."
+        probably never exerted herself this much. That, and she locked her knees."
 
     z "What does that have to do with anything?"
 
