@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1062: style property s is not known.
-    s "20 YEARS?!" (multiple=3)
-     ^
+The label chapter1 is defined twice, at File "game/Chapter1.rpy", line 1:
+label chapter1:
+and File "game/Chapter2.rpy", line 1:
+label chapter1:
+
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Wed Feb  9 16:19:23 2022
+Wed Feb  9 16:51:43 2022

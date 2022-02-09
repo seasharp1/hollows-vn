@@ -1,34 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 81, in script call
-    "Then there's Stella, who generously volunteered to navigate, even though no one asked."
-  File "game/script.rpy", line 923, in script
-    show shadowman at offscreen with moveinleft
-  File "game/script.rpy", line 923, in <module>
-    show shadowman at offscreen with moveinleft
-NameError: name 'offscreen' is not defined
+  File "game/script.rpy", line 106, in script call
+    call Chapter1
+  File "game/script.rpy", line 106, in script call
+    call Chapter1
+ScriptError: could not find label 'Chapter1'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 81, in script call
-    "Then there's Stella, who generously volunteered to navigate, even though no one asked."
-  File "game/script.rpy", line 923, in script
-    show shadowman at offscreen with moveinleft
-  File "renpy/ast.py", line 1197, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "renpy/ast.py", line 1156, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "renpy/python.py", line 2276, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "renpy/python.py", line 2269, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 923, in <module>
-    show shadowman at offscreen with moveinleft
-NameError: name 'offscreen' is not defined
+  File "game/script.rpy", line 106, in script call
+    call Chapter1
+  File "renpy/ast.py", line 1490, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/script.rpy", line 106, in script call
+    call Chapter1
+  File "renpy/script.py", line 918, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'Chapter1'.
 
-Windows-10-10.0.22000
+Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 The Hollows 1.0
-Wed Feb  9 11:06:06 2022
+Wed Feb  9 16:52:03 2022
