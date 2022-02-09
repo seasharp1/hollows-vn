@@ -31,7 +31,7 @@ transform hop:
 
 image stranger walking:
     animation
-    "default character test"
+    "default character test" # Replace this with a better picture
     xalign 0.0
     linear 2.0 xalign 1.0
 
@@ -81,11 +81,9 @@ label start:
 
     "And your pilot this afternoon is me, Zach, the most dashing, charming man you'll ever meet."
 
-<<<<<<< Updated upstream
     "*{i}My thoughts are cut off as Stella pulls out a giant map that blocks my view.{/i}*"
-=======
+
     "My thoughts are cut off as Stella pulls out a giant map that blocks my view."
->>>>>>> Stashed changes
 
     show Stella at slightright
     with dissolve
@@ -112,7 +110,7 @@ label start:
     show Elliot at center
     with dissolve
 
-    e "I'm not a rando, I'm his best friend!" #*{i}Elliot points to Zach{/i}* Taken out
+    e "I'm not a rando, I'm his best friend!"
 
     e "And that was some good sushi!"
 
@@ -201,10 +199,10 @@ label start:
     hide Stella
 
 label Timberland:
-    #Shows some towns people who look disoriented
-
     show bg timberland
     with fade
+
+    #Shows some towns people who look disoriented
 
     show Elliot at slightleft
     with dissolve
@@ -345,7 +343,6 @@ label Tavern:
             jump amulet
 
 label whyareyouhere:
-    show bg tavern
 
     z "So why are you here?"
 
@@ -394,7 +391,6 @@ label whyareyouhere:
     jump ontrack
 
 label whathappened:
-    show bg tavern
 
     z "What happened to everyone in this town?"
 
@@ -423,7 +419,6 @@ label whathappened:
     jump ontrack
 
 label amulet:
-    show bg tavern
 
     z "Do you know anything about this amulet?"
 
@@ -456,14 +451,13 @@ label amulet:
     jump ontrack
 
 label ontrack:
-    show bg tavern
 
     z "We should probably introduce ourselves. I'm Zack, and this..."
 
     show Elliot at slightright
     with dissolve
 
-    z "This is my friend Eliiot and this..."
+    z "This is my friend Elliot and this..."
 
     show Stella at slightleft
     with dissolve
@@ -472,15 +466,18 @@ label ontrack:
 
     e "We were also looking for a place to stay the night. Do you have any recommendations?"
 
-    bm "Yeah, this bar also runs a motel that is right behind this building. My wife can ring up a room for you."
+    bm "Yeah, this bar also runs a motel that is right behind this building.
+        My wife can ring up a room for you."
 
     bm "It's $70 a night for a room, two beds and...uh...well there WAS cable TV."
 
-    bm "But people stopped visiting the town once people started going hollow. The Motel couldn't afford to keep the cable."
+    bm "But people stopped visiting the town once people started going hollow.
+        The Motel couldn't afford to keep the cable."
 
     z "Um..."
 
-    bm "It's a travesty! I know that business is bad, but what about the rest of us who sneak in to watch the college ball games!?"
+    bm "It's a travesty! I know that business is bad, but what about the rest
+        of us who sneak in to watch the college ball games!?"
 
     bm "I can't take it anymore, this is unfair, an outrage, total anarchy!"
 
@@ -513,27 +510,31 @@ label ontrack:
 
             z "I brought enough money for Elliot and myself."
 
-            z "I mean, the least you could have done is brought some money for yourself if you were going to hide in my trunk."
+            z "I mean, the least you could have done is brought some money for
+                yourself if you were going to hide in my trunk."
 
             s "..."
 
-            s "Fine"
+            s "Fine, I'll share the room."
             $ groupRoom = True
             $ ownRoom = False
 
     bm "How long are you going to be in town?"
 
-    z "By the looks of it, not long. I mean, I can't exactly find my biological parents if I can't even talk to anyone in town."
+    z "By the looks of it, not long. I mean, I can't exactly find my biological
+        parents if I can't even talk to anyone in town."
 
     bm "You should at least take a look at the nearby hiking trails before you leave."
 
-    bm "It's probably the only redeeming part of the town. The trail takes you up the (insert name) Mountain to one of the most beautiful views."
+    # This line needs a name for the Mountain --------------------------------
+    bm "It's probably the only redeeming part of the town. The trail takes you
+        up the (insert name) Mountain to one of the most beautiful views."
 
     z "I mean we might as well take a look while we're here."
 
     e "I love hiking! Let's go!"
 
-    s "hmpf, I guess I'll tag along."
+    s "Hmpf, I guess I'll tag along."
 
     bm "Perfect..."
 
@@ -547,16 +548,17 @@ label ontrack:
     else:
         jump gRoom
 
+# Own room
 label zeRoom:
     show bg night motel
     with fade
-    #Zach unlockes Room 308
-    #The room reeks of old mildew and strawberry flavored bubblegum
+
+    "*{i}Zach unlockes Room 308. The room reeks of mildew and strawberry flavored bubblegum{/i}*"
 
     show Elliot at slightright
     with dissolve
 
-    e "So, Zach you never actually explained much of this trip's purpose to me."
+    e "So Zach, you never actually explained much of this trip's purpose to me."
     show Zach at slightleft
     with dissolve
 
@@ -566,53 +568,69 @@ label zeRoom:
 
     z "What are you talking about? I saw you with your eyes open!"
 
-    e "I mean, they probably were. Every since I ate those fried oysters last Monday, my sleep cycle has been kinda weird."
-    e "The other day I found my pillow in the fridge next to the mustard-stained cheese. I've never been one to sleep walkx, but I think I am now."
+    e "I mean, they probably were. Every since I ate those fried oysters last
+        Monday, my sleep cycle has been kinda weird."
 
-    z "...{i}Riiiight{\i}. Um.. well, since we're on the topic: Do you think you're going to get any sleep tonight?"
-    z "You should be somewhat well-rested if we're going hiking tomorrow. I don't need you collapsing on us."
+    e "The other day I found my pillow in the fridge next to the mustard-stained
+        cheese. I've never been one to sleep walkx, but I think I am now."
+
+    z "...{i}Riiiight{\i}. Um.. well, since we're on the topic, do you think
+        you're going to get any sleep tonight?"
+
+    z "You should be somewhat well-rested if we're going hiking tomorrow. I
+        don't need you collapsing on us."
 
     e "I'd say a midnight snack should do the trick. Got anything?"
 
-    z "I don't. I was in such a rush today that I didn't even think about that. I even forgot to pack my toothbrush!"
+    z "I don't. I was in such a rush today that I didn't even think about that.
+        I even forgot to pack my toothbrush!"
+
     z "But feel free to check the vending machines."
 
     e "Works for me!"
 
-    z "Before you go... *sigh* He's already gone. That kid sure has a one-track mind."
+    z "Before you go... *{i}sigh{/i}* He's already gone. That kid sure has a one-track mind."
+
     jump vending1
 
 label vending1:
-    "*Elliot works his way to a section of 3 vending machines. All of them are empty except for the
-    one on the far end that has 1 Oogle Boogle Nutty Candy Bar left in it. Stella’s at the vending
-    machine impatiently waiting for the candy bar to fall)*"
+    show bg vending machine
+    with fade
+
+    "*{i}Elliot works his way to a section of 3 vending machines. All of them are
+        empty except for the one on the far end that has 1 Oogle Boogle Nutty Candy Bar left in it.{/i}*"
+
+    "*{i}Stella’s at the vending machine impatiently waiting for the candy bar to fall{/i}*"
 
     show Stella at slightleft
     with dissolve
 
-    s "*mutterting to herself* Come on! I don't have all day! *kicks the vending machine*"
-    s "UGH, it won't budge *screams out of frustration*"
+    s "Come on! I don't have all day! *{i}She kicks the vending machine{/i}*"
+
+    s "UGH, it won't budge *{i}She lets out a frustrated scream{/i}*"
 
     show Elliot at slightright
     with dissolve
 
-    e "Hey Stella! What are you doing out here? I figured you would've locked yourself to the confinement of your room by now."
+    e "Hey Stella! What are you doing out here? I figured you would've locked
+        yourself to the confinement of your room by now."
 
     s "What does it look like?! I'm {i}trying{/i} to get something to eat!"
 
     e "Still hungry? You didn't really touch your smoked cow tongue."
 
     s "Yeah, I should've just given it to you. And now this dang machine won't give me my candy bar!"
+
     s "I paid for the dang thing! Can you help me?"
 
-
-    e "Sure, give me a sec. *picks up the vending machine and slams it down, candy bar falls down*"
+    e "Sure, give me a sec. *{i}He starts shaking the vending machine and slams
+        it down. The candy bar falls out{/i}*"
     #could use camera shake here again
 
     show Zach
     with dissolve
 
-    z "*comes out of his room* What was that?!"
+    z "*{i}Coming out of his room{/i}* What was that?!"
 
     e "What was what?"
 
@@ -622,39 +640,50 @@ label vending1:
 
     e "Rage? You were the one kicking it earlier."
 
-    s "Whatever. *picks up the candy bar and starts walking away and pauses, under her breath* Thanks Elliot. *continues walking*"
+    s "Whatever. *{i}He picks up the candy bar and starts walking away{/i}*
+        Thanks Elliot."
 
-    e "I think that's the first time time I've ever heard her say thank you. Should I should 'you're welcome'?"
+    e "I think that's the first time time I've ever heard her say thank you.
+        Should I say \'you're welcome\'?"
 
     z "I think she already knows."
+
     z "Besides, you've already caused enough noise tonight. We should probably get back to the room."
 
     e "But I'm still hungry!"
 
-    z "Then you should've grabbed that candy bar before Stella did. *smirks* *walks towards the room*"
+    z "Then you should've grabbed that candy bar before Stella did.
+        *{i}He smirks as he walks towards the room{/i}*"
+
     z "Come on you big lug."
 
     e "Ok..."
+
     e "I guess I'm just happy that Stella has something to eat."
 
     jump MotelNight1Pt2
 
 label MotelNight1Pt2:
+    show bg night motel
+    with fade
+
     show Elliot at slightleft
 
     e "Well, I guess I'm going hungry tonight."
 
     show Zach at slightright
 
-    z "*jokingly* I mean, there's that chewed gum stuck underneath that coffee table, but I wouldn't...."
+    z "*{i}Jokingly{/i}* I mean, there's that chewed gum stuck underneath
+        that coffee table, but I wouldn't...."
 
-    z "*sigh* Elliot, where's the gum?"
+    z "*{i}Sigh{/i}* Elliot, where's the gum?"
 
-    z "That kid sure is something else. *Turns off the light and goes to bed*"
+    z "That kid sure is something else. *{i}He turns off the light and goes to bed{/i}*"
     #FADE OUT
 
     jump MotelMorn1
 
+# Group room
 label gRoom:
     #Zach unlockes Room 308
     #The room reeks of old mildew and strawberry flavored bubblegum
