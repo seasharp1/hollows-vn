@@ -5,7 +5,6 @@ define bm = Character("Boisterous Man", who_color="e62222")
 define lum = Character("Lumberjack", who_color="cc5500")
 ##define me = Character("[povname]") ## Use this for named main character
 
-
 transform slightleft:
     xalign 0.25
     yalign 1.0
@@ -18,6 +17,30 @@ transform hop:
     linear 0.1 ypos 50
     linear 0.1 ypos 0
 
+# This is for displaying multiple character's dialogue simultaneously ---
+# Use (multipe=3) after dialogue on same line to use this
+style multiple3_say_window:
+    xsize 500
+    background None
+
+style block1_multiple3_say_window:
+    xalign 0.0
+
+style block2_multiple3_say_window:
+    xalign 0.5
+
+style block3_multiple3_say_window:
+    xalign 1.0
+#------------------------------------------------------------------------
+
+# Stranger walking animation used in second scene -----------------------
+image stranger walking:
+    animation
+    "default character test" # Replace this with a better picture
+    xalign 0.0
+    linear 2.0 xalign 1.0
+#-------------------------------------------------------------------------
+
 #Example Animation
 #image character change:
     #animation
@@ -28,50 +51,44 @@ transform hop:
     #linear 5.0 xalign 1.0
     #pause 1
     #repeat 2
-#End Example Animation
+#End Example Animation ---------------------------------------------------
 
-image stranger walking:
-    animation
-    "default character test" # Replace this with a better picture
-    xalign 0.0
-    linear 2.0 xalign 1.0
+## This is an example of showing multiple characters talking simultaneously
+##style multiple2_say_window:
+    ##xsize 500
+    ##background None
 
-# The game starts here.
+##style block1_multiple2_say_window:
+    ##xalign 0.0
+
+##style block2_multiple2_say_window:
+    ##xalign 0.5
+
+##s "Test character 1" (multiple=2)
+##e "Test character 2" (multiple=2)
+## End example ------------------------------------------------------------
+
+#Show the Animation Example -----------------------------------------------
+#"Start example"
+#show character change:
+#pause
+#hide character change
+#"End example"
+#End Animation Example ----------------------------------------------------
+
+## Begin User Input Test --------------------------------------------------
+#"Hmm, what is my name again..."
+#python:
+#    povname = renpy.input("Name thyself: ", length=32)
+#    povname = povname.strip()
+#
+#    if not povname:
+#        povname = "Unidentified User"
+#"Hello [povname]"
+## End User Input Test ----------------------------------------------------
+
+# The game starts here. \'O'/
 label start:
-
-    ## This is an example of showing multiple characters talking simultaneously
-    ##style multiple2_say_window:
-        ##xsize 500
-        ##background None
-
-    ##style block1_multiple2_say_window:
-        ##xalign 0.0
-
-    ##style block2_multiple2_say_window:
-        ##xalign 0.5
-
-    ##s "Test character 1" (multiple=2)
-    ##e "Test character 2" (multiple=2)
-    ## End example ------------------------------------------------------------
-
-    #Show the Animation Example
-    #"Start example"
-    #show character change:
-    #pause
-    #hide character change
-    #"End example"
-    #End Animation Example
-
-    ## Begin User Input Test --------
-    #"Hmm, what is my name again..."
-    #python:
-    #    povname = renpy.input("Name thyself: ", length=32)
-    #    povname = povname.strip()
-    #
-    #    if not povname:
-    #        povname = "Unidentified User"
-    #"Hello [povname]"
-    ## End User Input Test ----------
 
     scene bg car
 
@@ -1044,19 +1061,6 @@ label HikingTrail:
     z "When's like last time you talked to somebody?"
 
     lum "Hmm... Probably about 20 years ago."
-
-    style multiple3_say_window:
-        xsize 500
-        background None
-
-    style block1_multiple3_say_window:
-        xalign 0.0
-
-    style block2_multiple3_say_window:
-        xalign 0.5
-
-    style block3_multiple3_say_window:
-        xalign 1.0
 
     s "20 YEARS?!" (multiple=3)
     e "20 YEARS?!" (multiple=3)
