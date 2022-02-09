@@ -2,18 +2,21 @@
 errors listed below, and try again.
 
 
-<<<<<<< Updated upstream
-File "game/script.rpy", line 493: invalid syntax
-=======
-File "game/script.rpy", line 518: invalid syntax
->>>>>>> Stashed changes
-        jump zeRoom
-                   ^
-    
+File "game/script.rpy", line 85: expected statement.
+    <<<<<<< Updated upstream
+                            ^
+
+File "game/script.rpy", line 87: expected statement.
+    =======
+          ^
+
+File "game/script.rpy", line 89: expected statement.
+    >>>>>>> Stashed changes
+                           ^
+
+File "game/script.rpy", line 1028: style statement expects a non-empty block.
+    style block2_multiple3_say_window:
+                                      ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-<<<<<<< Updated upstream
-Mon Feb  7 15:59:06 2022
-=======
-Mon Feb  7 16:01:04 2022
->>>>>>> Stashed changes
+Wed Feb  9 11:03:44 2022

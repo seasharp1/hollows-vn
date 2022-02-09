@@ -82,11 +82,8 @@ label start:
 
     "And your pilot this afternoon is me, Zach, the most dashing, charming man you'll ever meet."
 
-<<<<<<< Updated upstream
     "*{i}My thoughts are cut off as Stella pulls out a giant map that blocks my view.{/i}*"
-=======
-    "My thoughts are cut off as Stella pulls out a giant map that blocks my view."
->>>>>>> Stashed changes
+
 
     show Stella at slightright
     with dissolve
@@ -1026,6 +1023,7 @@ label HikingTrail:
         xalign 0.5
 
     style block2_multiple3_say_window:
+        xalign 0.25
     s "20 YEARS?!" (multiple=3)
     e "20 YEARS?!" (multiple=3)
     z "20 YEARS?!" (multiple=3)
@@ -1088,7 +1086,7 @@ label HikingTrail:
 
     lum "Sure! Follow me."
 
-    
+
 
 
 

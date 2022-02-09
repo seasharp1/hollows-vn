@@ -1,51 +1,75 @@
-Mon Feb  7 17:19:15 2022
-Windows-10-10.0.19041
+Wed Feb  9 11:04:52 2022
+Windows-10-10.0.22000
 Ren'Py 7.4.11.2266
  
 
-Bootstrap to the start of init.init took 0.10s
-Early init took 0.00s
-Loader init took 0.03s
-Loading error handling took 0.02s
-Loading script took 0.31s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
+Bootstrap to the start of init.init took 0.16s
+Early init took 0.01s
+Loader init took 0.04s
+Loading error handling took 0.07s
+Loading script took 2.24s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.01s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
+Running init code took 0.38s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\SvihovecTyler\\AppData\\Roaming/RenPy/backups\\The Hollows':
-Dump and make backups. took 0.08s
+Backing up script files to 'C:\\Users\\VerdouwRowan\\AppData\\Roaming/RenPy/backups\\The Hollows':
+Dump and make backups. took 0.19s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.03s
+Initial gc. took 0.06s
 DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
+Init translation took 0.11s
+Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.03s
+Save screen analysis took 0.06s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.07s
+Save bytecode. took 0.04s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.10s
+Interface start took 0.21s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
 Vendor: 'ATI Technologies Inc.'
-Renderer: 'AMD Radeon(TM) Graphics'
-Version: '4.6.14830 Compatibility Profile Context 20.10.41.02 27.20.21026.3004'
+Renderer: 'AMD Radeon(TM) Vega 8 Graphics'
+Version: '4.6.14830 Compatibility Profile Context 21.10 27.20.21026.3004'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1046) drawable=(1920, 1046)
-Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 81, in script call
+    "Then there's Stella, who generously volunteered to navigate, even though no one asked."
+  File "game/script.rpy", line 923, in script
+    show shadowman at offscreen with moveinleft
+  File "renpy/ast.py", line 1197, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "renpy/ast.py", line 1156, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "renpy/python.py", line 2276, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "renpy/python.py", line 2269, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 923, in <module>
+    show shadowman at offscreen with moveinleft
+NameError: name 'offscreen' is not defined
+
+While running game code:
+  File "game/script.rpy", line 81, in script call
+    "Then there's Stella, who generously volunteered to navigate, even though no one asked."
+  File "game/script.rpy", line 923, in script
+    show shadowman at offscreen with moveinleft
+  File "game/script.rpy", line 923, in <module>
+    show shadowman at offscreen with moveinleft
+NameError: name 'offscreen' is not defined
