@@ -1,11 +1,13 @@
 label chapter5:
-    show Stella with dissolve
+    show Stella at slightleft
     s "Who's idea was this again?"
 
+    show Elliot
     e "I think it was the guy in the tavern's recommendation."
 
     s "Yeah, but who agreed to this?"
 
+    show Zach at slightright
     z "We all did."
 
     s "Well {i}that{/i}... was a mistake. I... need... water."
@@ -20,8 +22,6 @@ label chapter5:
     e "Do you want it or not."
 
     s "Yes! Sorry! I want it!"
-
-    show Stella
 
     z "Elliot? Where are we on the hiking trail?"
 
