@@ -54,7 +54,7 @@ label chapter5:
 
     s "But you said that five miles ago!"
 
-    show shadowman at offscreen with moveinleft
+    show shadowman at offscreenleft with moveinleft
     hide shadowman
 
     s "*{i}Visibly scared{/i}* Did anyone just see that?!"
@@ -75,7 +75,7 @@ label chapter5:
 
     s "I... I'm sorry"
 
-    show shadowman at offscreen with moveinright
+    show shadowman at offscreenright with moveinright
     hide shadowman
 
     e "Okay, I saw it that time."
