@@ -3,6 +3,7 @@ define s = Character("Stella", who_color="ef42f5")
 define z = Character("Zach", who_color="42f584")
 define bm = Character("Boisterous Man", who_color="e62222")
 define lum = Character("Lumberjack", who_color="cc5500")
+define shadow = Character("shadowman", who_color="000000")
 ##define me = Character("[povname]") ## Use this for named main character
 
 transform slightleft:
@@ -927,13 +928,15 @@ label MotelMorn1:
 
 
 label HikingTrail:
-    show Stella with dissolve
+    show Stella
     s "Who's idea was this again?"
 
+    show Elliot at slightright
     e "I think it was the guy in the tavern's recommendation."
 
     s "Yeah, but who agreed to this?"
 
+    show Zach at slightleft
     z "We all did."
 
     s "Well {i}that{/i}... was a mistake. I... need... water."
@@ -948,8 +951,6 @@ label HikingTrail:
     e "Do you want it or not."
 
     s "Yes! Sorry! I want it!"
-
-    show Stella
 
     z "Elliot? Where are we on the hiking trail?"
 
