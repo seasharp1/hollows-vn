@@ -1004,12 +1004,14 @@ label HikingTrail:
     s "Wait! I don't want to die! Not without being honest about..."
 
     lum "Who's dying now?"
+
     hide shadowman
     show lumberjack behind Elliot, Stella, Zach
 
     s "Eek!"
 
     lum "I haven't seen many people this far into the woods in a while."
+
     lum "What brings you out here?"
 
     z "We were just hiking and got lost. What are you doing out here?"
@@ -1037,12 +1039,11 @@ label HikingTrail:
     s "Stella."
 
     lum "I'm... Who am I again? It's been so long since I've talked to anyone that
-    I haven't really needed a name."
+        I haven't really needed a name."
 
     z "When's like last time you talked to somebody?"
 
     lum "Hmm... Probably about 20 years ago."
-
 
     style multiple3_say_window:
         xsize 500
@@ -1054,7 +1055,9 @@ label HikingTrail:
     style block2_multiple3_say_window:
         xalign 0.5
 
-    style block2_multiple3_say_window:
+    style block3_multiple3_say_window:
+        xalign 1.0
+
     s "20 YEARS?!" (multiple=3)
     e "20 YEARS?!" (multiple=3)
     z "20 YEARS?!" (multiple=3)
@@ -1117,7 +1120,7 @@ label HikingTrail:
 
     lum "Sure! Follow me."
 
-    
+
 
 
 
