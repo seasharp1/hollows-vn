@@ -94,11 +94,6 @@ image stranger walking:
 #python:
 #    povname = renpy.input("Name thyself: ", length=32)
 #    povname = povname.strip()
-#
-#    if not povname:
-#        povname = "Unidentified User"
-#"Hello [povname]"
-## End User Input Test ----------------------------------------------------
 
 # The game starts here. \'O'/
 label start:
@@ -1040,7 +1035,7 @@ label HikingTrail:
     lum "Who's dying now?"
 
     hide shadowman
-    show lumberjack behind Elliot, Stella, Zach
+    show Lumberjack behind Elliot, Stella, Zach
 
     s "Eek!"
 
