@@ -210,3 +210,5 @@ label chapter5:
     e "Let's stop standing here and help her! I'll carry her. Can you lead us to your... house... cabin, wherever you live?"
 
     lum "Sure! Follow me."
+
+    jump chapter6

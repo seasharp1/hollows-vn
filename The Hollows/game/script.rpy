@@ -112,6 +112,7 @@ label start:
     # Chapter 3: The Tavern
     # Chapter 4: The Hotel
     # Chapter 5: The Hiking Trail
+    # Chapter 6: Lumberjack Cabin
     #--------------------------------------------
 
     # This ends the game
