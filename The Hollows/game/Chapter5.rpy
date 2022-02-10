@@ -4,7 +4,8 @@ label chapter5:
         animation
         "default character test" # Replace this with a better picture
         xalign 0.0
-        linear 1.0 xalign 1.0 zorder 0.5
+        linear 1.0 xalign 1.0
+        #zorder 0.5
     show Stella at slightleft
     s "Who's idea was this again?"
 

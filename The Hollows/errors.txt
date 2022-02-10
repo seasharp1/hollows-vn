@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label chapter1 is defined twice, at File "game/Chapter1.rpy", line 1:
-label chapter1:
-and File "game/Chapter2.rpy", line 1:
-label chapter1:
-
+File "game/Chapter5.rpy", line 8: expected 'comma or end of line' not found.
+    zorder 0.5
+    ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Wed Feb  9 16:51:43 2022
+Thu Feb 10 11:42:16 2022
