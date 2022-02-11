@@ -1,4 +1,5 @@
 label chapter7:
+    show bg well
 
     show lum at slightleft
     lum "And you crank it, like this."
