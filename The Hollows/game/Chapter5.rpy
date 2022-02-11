@@ -82,8 +82,9 @@ label chapter5:
 
     s "I... I'm sorry"
 
-    show shadowman at offscreenright with moveinright
-    hide shadowman
+    show shadow run:
+        "A shadow rushes by"
+    hide shadow run
 
     e "Okay, I saw it that time."
 
