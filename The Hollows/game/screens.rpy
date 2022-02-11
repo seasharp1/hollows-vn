@@ -313,7 +313,6 @@ screen navigation():
             # action Start()
 
             textbutton _("Start") xpos 0 ypos -100:
-                focus_mask True
                 hovered SetVariable("mainscreen",1)
                 unhovered SetVariable("mainscreen",0)
                 action Start()
