@@ -1,7 +1,11 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
+<<<<<<< Updated upstream
   File "game/script.rpy", line 79, in script call
+=======
+  File "game/script.rpy", line 114, in script call
+>>>>>>> Stashed changes
     call chapter1
   File "game/Chapter7.rpy", line 38, in script
     jump chapter8
@@ -10,6 +14,7 @@ ScriptError: could not find label 'chapter8'.
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+<<<<<<< Updated upstream
   File "game/script.rpy", line 79, in script call
     call chapter1
   File "game/Chapter7.rpy", line 38, in script
@@ -17,10 +22,23 @@ Full traceback:
   File "renpy/ast.py", line 1757, in execute
     rv = renpy.game.script.lookup(target)
   File "renpy/script.py", line 918, in lookup
+=======
+  File "game/script.rpy", line 114, in script call
+    call chapter1
+  File "game/Chapter7.rpy", line 38, in script
+    jump chapter8
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/ast.py", line 1757, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/script.py", line 918, in lookup
+>>>>>>> Stashed changes
     raise ScriptError("could not find label '%s'." % str(original))
 ScriptError: could not find label 'chapter8'.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 The Hollows 1.0
+<<<<<<< Updated upstream
 Fri Feb 11 16:21:05 2022
+=======
+Fri Feb 11 16:07:15 2022
+>>>>>>> Stashed changes
