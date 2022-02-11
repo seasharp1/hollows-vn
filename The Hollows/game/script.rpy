@@ -54,10 +54,10 @@ image stranger walking:
     linear 2.0 xalign 1.0
 #-------------------------------------------------------------------------
 
-#Shadowman Expierment animation
+#Shadowman Experiment animation
 image shadow run:
     animation
-    "shadow.png"
+    "shadow"
     xalign 0.0
     linear 1.0 xalign 1.0
 #-------------------------------------------------------------------------

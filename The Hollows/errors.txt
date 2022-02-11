@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 315: expected a keyword argument, colon, or end of line.
-    imagebutton auto  xpos 40 ypos -90:
-                           ^
+File "game/Chapter5.rpy", line 88: expected 'simple_expression' not found.
+    pause
+         ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Fri Feb 11 12:20:42 2022
+Fri Feb 11 15:49:36 2022

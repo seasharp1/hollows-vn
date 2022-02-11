@@ -1,11 +1,4 @@
 label chapter5:
-
-    image shadowman run:
-        animation
-        "default character test" # Replace this with a better picture
-        xalign 0.0
-        linear 1.0 xalign 1.0
-        #zorder 0.5
     show Stella at slightleft
     s "Who's idea was this again?"
 
@@ -61,8 +54,9 @@ label chapter5:
 
     s "But you said that five miles ago!"
 
-    show shadowman at offscreenleft with moveinleft
-    hide shadowman
+    show shadow run:
+    "*{i}A shadowy figure rushes past{/i}*"
+    hide shadow run
 
     s "*{i}Visibly scared{/i}* Did anyone just see that?!"
 
@@ -83,7 +77,7 @@ label chapter5:
     s "I... I'm sorry"
 
     show shadow run:
-        "A shadow rushes by"
+    "*{i}The shadowy figure appears again{/i}*"
     hide shadow run
 
     e "Okay, I saw it that time."
