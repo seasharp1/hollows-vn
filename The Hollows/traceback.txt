@@ -1,36 +1,80 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00keymap.rpy", line 469, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 469, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 488, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-AttributeError: 'NoneType' object has no attribute 'stores'
+  File "game/screens.rpy", line 372, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 372, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 388, in execute
+    use navigation
+  File "game/screens.rpy", line 298, in execute
+    screen navigation():
+  File "game/screens.rpy", line 298, in execute
+    screen navigation():
+  File "game/screens.rpy", line 300, in execute
+    vbox:
+  File "game/screens.rpy", line 311, in execute
+    if main_menu:
+  File "game/screens.rpy", line 315, in execute
+    imagebutton auto:
+Exception: Imagebutton does not have a idle image.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00keymap.rpy", line 469, in script
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
     python hide:
   File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/ast.py", line 928, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/python.py", line 2245, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 469, in <module>
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
     python hide:
-  File "renpy/common/00keymap.rpy", line 488, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/loadsave.py", line 394, in save
-    roots = renpy.game.log.freeze(None)
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/python.py", line 2142, in freeze
-    self.complete(False)
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/python.py", line 1726, in complete
-    self.current.stores[name], self.current.delta_ebc[name] = sd.get_changes(begin)
-AttributeError: 'NoneType' object has no attribute 'stores'
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/display/core.py", line 3737, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/display/screen.py", line 436, in visit_all
+    callback(self)
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/display/core.py", line 3737, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/display/screen.py", line 447, in per_interact
+    self.update()
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/display/screen.py", line 637, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 372, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 372, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 388, in execute
+    use navigation
+  File "game/screens.rpy", line 298, in execute
+    screen navigation():
+  File "game/screens.rpy", line 298, in execute
+    screen navigation():
+  File "game/screens.rpy", line 300, in execute
+    vbox:
+  File "game/screens.rpy", line 311, in execute
+    if main_menu:
+  File "game/screens.rpy", line 315, in execute
+    imagebutton auto:
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/ui.py", line 951, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/ui.py", line 947, in choice
+    raise Exception("Imagebutton does not have a %s image." % (name,))
+Exception: Imagebutton does not have a idle image.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 The Hollows 1.0
-Thu Feb 10 20:50:33 2022
+Fri Feb 11 12:21:04 2022

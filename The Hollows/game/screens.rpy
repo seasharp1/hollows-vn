@@ -292,13 +292,15 @@ style quick_button_text:
 ##
 ## This screen is included in the main and game menus, and provides navigation
 ## to other menus, and to start the game.
+
 default mainscreen=0
 
 screen navigation():
 
     vbox:
         style_prefix "navigation"
-        if main_menu:
+
+        if renpy.get_screen("main_menu"):
             xalign 0.5
         else:
             xoffset 60
@@ -308,9 +310,9 @@ screen navigation():
 
         if main_menu:
 
-            #textbutton _("Start") action Start()
+            # action Start()
 
-            imagebutton auto "gui/Button_%s.png" xpos 40 ypos -90:
+            textbutton _("Start") xpos 0 ypos -100:
                 focus_mask True
                 hovered SetVariable("mainscreen",1)
                 unhovered SetVariable("mainscreen",0)
@@ -376,7 +378,6 @@ screen main_menu():
         add "gui/main_menu.png"
     else:
         add "gui/main_menu_hovered.png"
-    add gui.main_menu_background
 
     ## This empty frame darkens the main menu.
     frame:
