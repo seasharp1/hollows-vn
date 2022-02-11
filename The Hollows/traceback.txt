@@ -1,44 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-<<<<<<< Updated upstream
   File "game/script.rpy", line 79, in script call
-=======
-  File "game/script.rpy", line 114, in script call
->>>>>>> Stashed changes
     call chapter1
-  File "game/Chapter7.rpy", line 38, in script
-    jump chapter8
-ScriptError: could not find label 'chapter8'.
+  File "game/Chapter8.rpy", line 167, in script
+    with mouveoutleft
+  File "game/Chapter8.rpy", line 167, in <module>
+    with mouveoutleft
+NameError: name 'mouveoutleft' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-<<<<<<< Updated upstream
   File "game/script.rpy", line 79, in script call
     call chapter1
-  File "game/Chapter7.rpy", line 38, in script
-    jump chapter8
-  File "renpy/ast.py", line 1757, in execute
-    rv = renpy.game.script.lookup(target)
-  File "renpy/script.py", line 918, in lookup
-=======
-  File "game/script.rpy", line 114, in script call
-    call chapter1
-  File "game/Chapter7.rpy", line 38, in script
-    jump chapter8
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/ast.py", line 1757, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/script.py", line 918, in lookup
->>>>>>> Stashed changes
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'chapter8'.
+  File "game/Chapter8.rpy", line 167, in script
+    with mouveoutleft
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/ast.py", line 1436, in execute
+    trans = renpy.python.py_eval(self.expr)
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/python.py", line 2276, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/python.py", line 2269, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/Chapter8.rpy", line 167, in <module>
+    with mouveoutleft
+NameError: name 'mouveoutleft' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 The Hollows 1.0
-<<<<<<< Updated upstream
-Fri Feb 11 16:21:05 2022
-=======
-Fri Feb 11 16:07:15 2022
->>>>>>> Stashed changes
+Fri Feb 11 17:31:28 2022

@@ -1,5 +1,5 @@
 label chapter8:
-    
+
     show bg lumberjacks cabin
     with fade
 
@@ -139,6 +139,8 @@ label chapter8:
     z "Lovely."
 
     #Time pass transition
+    show bg lumberjacks cabin
+    with fade
 
     s "Everyone ready?"
 
@@ -157,14 +159,19 @@ label chapter8:
     e "I said I was going to. I don't go back on my word."
 
     s "Then what are we waiting for?"
-    hide Stella with moveoutleft
-    hide Elliot with moveoutleft
-    hide Zach with mouveoutleft
+    hide Stella
+    with moveoutleft
+    hide Elliot
+    with moveoutleft
+    hide Zach
+    with moveoutleft
     s "Lets go!"
 
     show bg woodshed furnace with fade
     "With Stella pushing Zach and Elliot into the door, it swings open, causing both zach and elliot to fall down the stairs."
     "Yet suspiciously Stella remains at the top without falling through."
 
+    show Stella
+    with dissolve
     s "Well, that's one way to get down the stairs..."
     s "I think I'll walk. What am I saying I need to get down there!"
