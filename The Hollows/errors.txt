@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Chapter5.rpy", line 8: expected 'comma or end of line' not found.
-    zorder 0.5
-    ^
+File "game/screens.rpy", line 377: u'mosuearea' is not a keyword argument or valid child for the screen statement.
+    mosuearea:
+             ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Thu Feb 10 11:42:16 2022
+Thu Feb 10 21:16:54 2022
