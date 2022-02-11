@@ -113,6 +113,7 @@ label start:
     # Chapter 4: The Hotel
     # Chapter 5: The Hiking Trail
     # Chapter 6: Lumberjack Cabin
+    # Chapter 7: Well
     #--------------------------------------------
 
     # This ends the game
