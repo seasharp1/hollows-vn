@@ -175,3 +175,5 @@ label chapter8:
     with dissolve
     s "Well, that's one way to get down the stairs..."
     s "I think I'll walk. What am I saying I need to get down there!"
+
+    jump chapter9
