@@ -1,19 +1,19 @@
-label Chapter8:
+label chapter8:
+    
+    show bg lumberjacks cabin
+    with fade
 
     "Elliot hands a glass of water to Stella"
 
-    show Elliot at slightleft
     e "Here you go Stella"
 
-    show Stella at slightright
     s "...Thanks"
 
-    show lum at left
     lum "I'll show you to your rooms for the night."
     "The large man opens a nearby door and gestures inside"
-    lum "Over here is where you three will be uh,"
-    lum "er..."
-    lum "sleeping."
+    lum "Over here is where you three will be..,"
+    lum "Er..."
+    lum "Sleeping."
 
     s "Why would a guy like you have three extra beds? You don't have much need for them it seems."
 
@@ -33,9 +33,12 @@ label Chapter8:
     lum "My apologies, my stone furnace is working overtime. I've been burning pretty dense wood."
     lum "You may crack a window if you like."
     lum "That reminds me I have some errands to run quickly. I won't be out too long."
-    hide lum with moveoutleft
+    hide lumberjack with moveoutleft
+    "And with that, the man is out of the cabin before we can get another word in, we decide to take advantage of his hospitality and get some rest"
 
     #Time pass transition
+    show bg lumberjacks cabin
+    with fade
 
     "It's dark and quiet and as I'm all tucked in, warm and comfortable, my rest is disturbed by the sounds of some sniffling"
 
@@ -95,3 +98,73 @@ label Chapter8:
     lum "No, no, no that can't be right."
     lum "Uh, Larry. Larry the lumberjack...no..."
     lum "Cymbal, Cyanide, Cranial... I feel I'm close. Hmmm..."
+
+    s "What is he mumbling about now? Doesn't he know what time it is?"
+
+    z "Like you should be talking, we're still awake."
+
+    e "Don't know, but he's been stuck on this one for a while."
+
+    lum "I think it starts with a C, *sigh* I just can't remember. I'm sorry {b}{i}Hazel.{/i}{/b} I'm struggling on this one."
+
+    z "{b}{i}Hazel!?{/i}{/b} Whose {b}{i}Hazel?{/i}{/b}"
+
+    e "I don't know, but I don't want to stay and find out."
+
+    s "Get back here. You're not going anywhere until we find out what's going on."
+    s "Let's wait an hour or so until things calm down, then we'll strike."
+
+    z "Jeez Stella, you make it sound like we're hitmen or something."
+
+    s "I mean Elliot's basically a hitman already. Have you seen him? You, on the other hand are dog food."
+
+    e "The good kind or the bad kind?"
+
+    s "..."
+    s "The what?"
+
+    e "The dog food. Is he the good kind or the bad kind?"
+
+    s "There's a good king?"
+
+    e "Of course there is."
+
+    s "Uh...the bad kind...I guess?"
+    s "Anyways, like I said, you're dog food."
+
+    z "So, I'm bait?"
+
+    s "Precisely. Only if we run into a problem that is."
+
+    z "Lovely."
+
+    #Time pass transition
+
+    s "Everyone ready?"
+
+    e "Yep."
+
+    z "ready."
+
+    s "Okay. Lets move out!"
+
+    z "Are we sure we wanna do this?"
+
+    s "Yeah, are you?"
+
+    z "I guess so, we've come this far."
+
+    e "I said I was going to. I don't go back on my word."
+
+    s "Then what are we waiting for?"
+    hide Stella with moveoutleft
+    hide Elliot with moveoutleft
+    hide Zach with mouveoutleft
+    s "Lets go!"
+
+    show bg woodshed furnace with fade
+    "With Stella pushing Zach and Elliot into the door, it swings open, causing both zach and elliot to fall down the stairs."
+    "Yet suspiciously Stella remains at the top without falling through."
+
+    s "Well, that's one way to get down the stairs..."
+    s "I think I'll walk. What am I saying I need to get down there!"

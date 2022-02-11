@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Chapter5.rpy", line 88: expected 'simple_expression' not found.
-    pause
-         ^
+File "game/script.rpy", line 38: style property add is not known.
+    add "textbox.png"
+       ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Fri Feb 11 15:49:36 2022
+Fri Feb 11 16:10:45 2022
