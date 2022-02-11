@@ -1,4 +1,4 @@
-label Chapter8:
+label chapter8:
 
     "Elliot hands a glass of water to Stella"
 

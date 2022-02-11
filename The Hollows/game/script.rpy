@@ -54,48 +54,13 @@ image stranger walking:
     linear 2.0 xalign 1.0
 #-------------------------------------------------------------------------
 
-#Shadowman Experiment animation
+#Shadowman animation------------------------------------------------------
 image shadow run:
     animation
     "shadow"
     xalign 0.0
     linear 1.0 xalign 1.0
 #-------------------------------------------------------------------------
-
-#Example Animation -------------------------------------------------------
-#image character change:
-    #animation
-    #"default character test"
-    #xalign 0.0
-    #pause 1
-    #"angry character test"
-    #linear 5.0 xalign 1.0
-    #pause 1
-    #repeat 2
-#End Example Animation ---------------------------------------------------
-
-## This is an example of showing multiple characters talking simultaneously
-##style multiple2_say_window:
-    ##xsize 500
-    ##background None
-
-##style block1_multiple2_say_window:
-    ##xalign 0.0
-
-##style block2_multiple2_say_window:
-    ##xalign 0.5
-
-##s "Test character 1" (multiple=2)
-##e "Test character 2" (multiple=2)
-## End example ------------------------------------------------------------
-
-#Show the Animation Example -----------------------------------------------
-#"Start example"
-#show character change:
-#pause
-#hide character change
-#"End example"
-#End Animation Example ----------------------------------------------------
 
 ## Begin User Input Test --------------------------------------------------
 #"Hmm, what is my name again..."
@@ -112,7 +77,6 @@ image shadow run:
 label start:
 
     call chapter1
-    return
 
     #Chapter Directory --------------------------
     # Chapter 1: The Car Scene
