@@ -1,4 +1,5 @@
 label chapter2:
+    scene bg timberland
     show bg timberland
     with fade
 
