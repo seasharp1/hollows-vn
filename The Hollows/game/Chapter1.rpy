@@ -144,6 +144,5 @@ label chapter1:
     hide Elliot
     hide Zach
     hide Stella
-    play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
-    
+
     jump chapter2
