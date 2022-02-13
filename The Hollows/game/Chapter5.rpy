@@ -1,4 +1,8 @@
 label chapter5:
+    scene bg hiking trail
+    show bg hiking trail
+
+
     show Stella at slightleft
     s "Who's idea was this again?"
 
@@ -109,7 +113,7 @@ label chapter5:
     lum "Who's dying now?"
 
     hide shadowman
-    show lumberjack behind Elliot, Stella, Zach
+    show lumberjack at left
 
     s "Eek!"
 

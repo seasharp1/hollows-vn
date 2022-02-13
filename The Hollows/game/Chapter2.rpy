@@ -1,4 +1,5 @@
 label chapter2:
+    scene bg timberland
     show bg timberland
     with fade
 
@@ -56,21 +57,23 @@ label chapter2:
     z "Okay, let's go."
 
     #Zach and Stella walk off
+
+    play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
+
     hide Zach
     hide Stella
     with easeoutright
 
-    play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
     pause 1.0
 
     e "My pallet isn't {i}that{/i} bad... right?"
 
+    play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
+
     hide Elliot
-    scene bg timberland
     with moveoutright
 
 
-    play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
     stop music fadeout 1.0
 
     pause 1.0 #used for fading music

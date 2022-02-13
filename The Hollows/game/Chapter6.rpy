@@ -1,4 +1,6 @@
 label chapter6:
+    scene bg lumberjacks cabin
+    show bg lumberjacks cabin
 
     show lum at slightleft
     lum "Alright. You can set the little lady on the chair over there."

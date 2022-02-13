@@ -1,4 +1,5 @@
 label chapter9:
+    scene bg woodshed furance
     show bg woodshed furance
 
     "*{i}The stench of iron gets stronger{/i}*"

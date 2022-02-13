@@ -1,4 +1,5 @@
 label chapter7:
+    scene bg well
     show bg well
     with fade
 
