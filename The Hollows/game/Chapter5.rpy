@@ -2,7 +2,7 @@ label chapter5:
     show Stella at slightleft
     s "Who's idea was this again?"
 
-    show Elliot
+    show Elliot at center
     e "I think it was the guy in the tavern's recommendation."
 
     s "Yeah, but who agreed to this?"
