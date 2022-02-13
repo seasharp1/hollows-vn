@@ -61,10 +61,11 @@ label chapter1:
     s "I'm trying not to, I promise!"
 
     #animation with stella disapearing from view to vomit
-    hide Stella
-    with moveoutright
     play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
 
+    hide Stella
+    with moveoutright
+    
     pause 0.5
 
     "*{i}Stella opens the car door and proceeds to vomit, revealing a tipped over sign that says
@@ -77,10 +78,11 @@ label chapter1:
 
     #"*{i}Zach and Elliot get out of the car to inspect the hood{/i}*"
     #Show elliot and zach moving off screen to inspect hood
+    play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
+
     hide Zach
     hide Elliot
     with easeoutright
-    play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
 
     pause 0.5
 
@@ -89,12 +91,12 @@ label chapter1:
     e "On the bright side, we gave the town an excuss to upgrade."
 
     #Show main cast coming back into car
+    play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
     show Stella at slightright
     show Zack at slightleft
     show Elliot at center
     with easeinright
 
-    play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
     pause 0.5
 
     z "The town sure looks a bit run down, don't ya think?"
