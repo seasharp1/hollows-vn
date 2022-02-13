@@ -1,4 +1,5 @@
 label chapter3:
+    scene bg tavern
     show bg tavern
     with fade
 

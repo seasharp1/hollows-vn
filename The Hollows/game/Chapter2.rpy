@@ -66,7 +66,9 @@ label chapter2:
     e "My pallet isn't {i}that{/i} bad... right?"
 
     hide Elliot
+    scene bg timberland
     with moveoutright
+
 
     play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
     stop music fadeout 1.0

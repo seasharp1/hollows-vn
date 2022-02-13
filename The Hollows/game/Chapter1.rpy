@@ -15,7 +15,6 @@ label chapter1:
     with dissolve
 
     s "Is this the place?"
-    show Stella
 
     show Zach at slightleft
     with dissolve
@@ -65,7 +64,7 @@ label chapter1:
 
     hide Stella
     with moveoutright
-    
+
     pause 0.5
 
     "*{i}Stella opens the car door and proceeds to vomit, revealing a tipped over sign that says
@@ -143,8 +142,5 @@ label chapter1:
     stop music fadeout 1.0 #stops current music
     pause 0.5
 
-    hide Elliot
-    hide Zach
-    hide Stella
 
     jump chapter2
