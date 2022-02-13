@@ -1,5 +1,6 @@
 label chapter1:
     scene bg car
+    play music "audio/upbeatThemeLoop.wav" fadein 1.0
 
     "We've been driving for hours, the three of us.
         Elliot, the big guy in the back fast asleep, and a good friend of mine."
@@ -9,8 +10,6 @@ label chapter1:
     "And your pilot this afternoon is me, Zach, the most dashing, charming man you'll ever meet."
 
     "*{i}My thoughts are cut off as Stella pulls out a giant map that blocks my view.{/i}*"
-
-    "My thoughts are cut off as Stella pulls out a giant map that blocks my view."
 
     show Stella at slightright
     with dissolve
@@ -62,6 +61,12 @@ label chapter1:
     s "I'm trying not to, I promise!"
 
     #animation with stella disapearing from view to vomit
+    play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
+
+    hide Stella
+    with moveoutright
+    
+    pause 0.5
 
     "*{i}Stella opens the car door and proceeds to vomit, revealing a tipped over sign that says
         \"Welcome to Timberland\".{/i}"
@@ -73,12 +78,26 @@ label chapter1:
 
     #"*{i}Zach and Elliot get out of the car to inspect the hood{/i}*"
     #Show elliot and zach moving off screen to inspect hood
+    play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
+
+    hide Zach
+    hide Elliot
+    with easeoutright
+
+    pause 0.5
 
     e "Well, they aren't going to miss that thing."
 
     e "On the bright side, we gave the town an excuss to upgrade."
 
     #Show main cast coming back into car
+    play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
+    show Stella at slightright
+    show Zack at slightleft
+    show Elliot at center
+    with easeinright
+
+    pause 0.5
 
     z "The town sure looks a bit run down, don't ya think?"
 
@@ -120,6 +139,9 @@ label chapter1:
     e "How about we get some-"
 
     s "Don't even finish that sentence. You're going to make me lose my appetite, so just don't."
+
+    stop music fadeout 1.0 #stops current music
+    pause 0.5
 
     hide Elliot
     hide Zach

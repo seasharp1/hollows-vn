@@ -2,6 +2,8 @@ label chapter2:
     show bg timberland
     with fade
 
+    play music "audio/SpookyNoise.mp3" fadein 1.0 volume 0.4
+
     #Shows some towns people who look disoriented
 
     show Elliot at slightleft
@@ -56,9 +58,19 @@ label chapter2:
     #Zach and Stella walk off
     hide Zach
     hide Stella
+    with easeoutright
+
+    play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
+    pause 1.0
 
     e "My pallet isn't {i}that{/i} bad... right?"
 
     hide Elliot
+    with moveoutright
+
+    play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
+    stop music fadeout 1.0
+
+    pause 1.0 #used for fading music
 
     jump chapter3
