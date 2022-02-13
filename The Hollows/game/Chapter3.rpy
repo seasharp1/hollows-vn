@@ -4,6 +4,8 @@ label chapter3:
     with fade
     $ asktime = -1
 
+    play music "audio/Old-distorted-music-1.mp3" fadein 1.0 volume 0.5
+
     show Elliot at slightright
     with dissolve
 

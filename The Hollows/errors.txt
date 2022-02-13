@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Chapter3.rpy", line 71: expected statement.
-    asktime += 1
-            ^
+File "game/Chapter10.rpy", line 229: expected statement.
+    renpy.full_restart()
+                        ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Feb 13 17:50:18 2022
+Sun Feb 13 17:10:42 2022

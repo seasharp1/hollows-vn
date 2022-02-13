@@ -3,6 +3,7 @@ define s = Character("Stella", who_color="ef42f5")
 define z = Character("Zach", who_color="42f584")
 define bm = Character("Boisterous Man", who_color="e62222")
 define lum = Character("Lumberjack", who_color="cc5500")
+define mv = Character("Mysterious Voice", who_color="5e0fb8")
 ##define me = Character("[povname]") ## Use this for named main character
 
 transform slightleft:
