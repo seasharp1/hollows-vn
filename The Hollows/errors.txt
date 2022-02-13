@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 38: style property add is not known.
-    add "textbox.png"
-       ^
+File "game/Chapter10.rpy", line 229: expected statement.
+    renpy.full_restart()
+                        ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Fri Feb 11 16:10:45 2022
+Sun Feb 13 17:10:42 2022

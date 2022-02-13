@@ -1,32 +1,34 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 79, in script call
+  File "game/script.rpy", line 80, in script call
     call chapter1
-  File "game/Chapter8.rpy", line 167, in script
-    with mouveoutleft
-  File "game/Chapter8.rpy", line 167, in <module>
-    with mouveoutleft
-NameError: name 'mouveoutleft' is not defined
+  File "game/Chapter1.rpy", line 5, in script call
+    "We've been driving for hours, the three of us.
+  File "game/Chapter10.rpy", line 229, in script
+    $ MainMenu(confirm=True, save=false)
+  File "game/Chapter10.rpy", line 229, in <module>
+    $ MainMenu(confirm=True, save=false)
+NameError: name 'false' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 79, in script call
+  File "game/script.rpy", line 80, in script call
     call chapter1
-  File "game/Chapter8.rpy", line 167, in script
-    with mouveoutleft
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/ast.py", line 1436, in execute
-    trans = renpy.python.py_eval(self.expr)
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/python.py", line 2276, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\LiveseyJackson\Downloads\renpy-7.4.11-sdk/renpy/python.py", line 2269, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/Chapter8.rpy", line 167, in <module>
-    with mouveoutleft
-NameError: name 'mouveoutleft' is not defined
+  File "game/Chapter1.rpy", line 5, in script call
+    "We've been driving for hours, the three of us.
+  File "game/Chapter10.rpy", line 229, in script
+    $ MainMenu(confirm=True, save=false)
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/Chapter10.rpy", line 229, in <module>
+    $ MainMenu(confirm=True, save=false)
+NameError: name 'false' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 The Hollows 1.0
-Fri Feb 11 17:31:28 2022
+Sun Feb 13 17:09:16 2022
