@@ -71,7 +71,6 @@ label chapter2:
     play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
 
     hide Elliot
-    scene bg timberland
     with moveoutright
 
 
