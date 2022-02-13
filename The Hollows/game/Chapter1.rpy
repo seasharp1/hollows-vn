@@ -10,8 +10,6 @@ label chapter1:
 
     "*{i}My thoughts are cut off as Stella pulls out a giant map that blocks my view.{/i}*"
 
-    "My thoughts are cut off as Stella pulls out a giant map that blocks my view."
-
     show Stella at slightright
     with dissolve
 
