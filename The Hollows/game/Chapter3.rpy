@@ -3,6 +3,8 @@ label chapter3:
     show bg tavern
     with fade
 
+    play music "audio/Old-distorted-music-1.mp3" fadein 1.0 volume 0.5
+
     show Elliot at slightright
     with dissolve
 
