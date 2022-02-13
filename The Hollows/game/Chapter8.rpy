@@ -1,5 +1,5 @@
 label chapter8:
-
+    scene bg lumberjacks cabin
     show bg lumberjacks cabin
     with fade
 
@@ -167,6 +167,7 @@ label chapter8:
     with moveoutleft
     s "Lets go!"
 
+    scene bg woodshed furnace
     show bg woodshed furnace with fade
     "With Stella pushing Zach and Elliot into the door, it swings open, causing both zach and elliot to fall down the stairs."
     "Yet suspiciously Stella remains at the top without falling through."

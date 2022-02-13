@@ -1,4 +1,6 @@
 label chapter4:
+    scene bg tavern
+    show bg tavern
 
     z "We should probably introduce ourselves. I'm Zack, and this..."
 
@@ -98,6 +100,7 @@ label chapter4:
 
 # Own room
 label zeRoom:
+    scene bg night motel
     show bg night motel
     with fade
 
@@ -142,6 +145,7 @@ label zeRoom:
     jump vending1
 
 label vending1:
+    scene bg vending machine
     show bg vending machine
     with fade
 
@@ -212,6 +216,7 @@ label vending1:
     jump MotelNight1Pt2
 
 label MotelNight1Pt2:
+    scene bg night motel
     show bg night motel
     with fade
 
@@ -233,6 +238,8 @@ label MotelNight1Pt2:
 
 # Group room
 label gRoom:
+    scene bg night motel
+    show bg night motel
 
     "*{i}Zach unlockes Room 308. The room reeks of mildew and strawberry flavored bubblegum{/i}*"
 
@@ -272,6 +279,7 @@ label gRoom:
 
 label vending2:
     show bg vending machine
+    scene bg vending machine
     with fade
 
     show Elliot at slightright
@@ -287,6 +295,8 @@ label vending2:
     #jump MotelMorn2
 
 label MotelMorn1:
+    scene bg morning motel
+    show bg morning motel
 
     "*{i}Stella bangs on the door{/i}*"
 
