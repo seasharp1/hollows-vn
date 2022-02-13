@@ -2,6 +2,7 @@ label chapter3:
     scene bg tavern
     show bg tavern
     with fade
+    $ asktime = -1
 
     show Elliot at slightright
     with dissolve
@@ -66,9 +67,12 @@ label chapter3:
     bm "Everyone acts like they tasted somethin' sour n' can't talk!"
 
     "*{i}It appears like this guy has been here for a while, might be a good chance to ask some questions{/i}"
+label menuTavern:
+    $ asktime += 1
+    if asktime == 3:
+        jump chapter4
 
     menu:
-
         "Why are you here?":
             jump whyareyouhere
 
@@ -124,7 +128,7 @@ label whyareyouhere:
 
     bm "One day I left for uh, work, and she went on a walk. When I came home she was like this."
 
-    jump chapter4
+    jump menuTavern
 
 label whathappened:
 
@@ -152,7 +156,7 @@ label whathappened:
 
     bm "I sure miss the noise. I used to hate it, but now? Heh, I'd do anything to get it back."
 
-    jump chapter4
+    jump menuTavern
 
 label amulet:
 
@@ -184,4 +188,4 @@ label amulet:
     hide Stella
     with moveoutright
 
-    jump chapter4
+    jump menuTavern
