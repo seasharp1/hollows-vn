@@ -1,5 +1,5 @@
 label chapter4:
-    scene bg tavern
+
     show bg tavern
 
     z "We should probably introduce ourselves. I'm Zack, and this..."
