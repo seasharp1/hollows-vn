@@ -9,7 +9,10 @@ label chapter4:
 
     z "This is my friend Elliot and this..."
 
-    show Stella at slightleft
+    show Zach:
+        xalign .6
+    show Stella:
+        xalign .3
     with dissolve
 
     z"is my sister Stella."

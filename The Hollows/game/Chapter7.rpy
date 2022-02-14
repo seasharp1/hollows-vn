@@ -5,7 +5,7 @@ label chapter7:
 
     play music "audio/upbeatThemeLoop.wav" fadein 1.0
 
-    show lum at slightleft
+    show Lumberjack at slightleft
     lum "And you crank it, like this."
 
     show Zach at slightright

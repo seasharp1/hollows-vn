@@ -1,10 +1,10 @@
 label chapter6:
-    scene bg lumberjacks cabin
-    show bg lumberjacks cabin
+    scene bg lumberjack cabin
+    show bg lumberjack cabin
 
     play music "audio/JazzPiano.wav" fadein 1.0
 
-    show lum at slightleft
+    show Lumberjack at slightleft
     lum "Alright. You can set the little lady on the chair over there."
 
     "*{i}Elliot sets down Stella on the chair{/i}*"
@@ -23,6 +23,7 @@ label chapter6:
 
     lum "Looks like she's coming to."
 
+    hide Zach
     show Elliot
     e "(to Stella caringly) You should really rest. You really overdid it today."
 

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Chapter5.rpy", line 142: end of line expected.
-    show lumberjack at leftwith dissolve
-                                ^
+File "game/Chapter8.rpy", line 147: expected statement.
+    music stop fadeout 3
+                        ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Feb 13 19:42:53 2022
+Sun Feb 13 20:41:52 2022

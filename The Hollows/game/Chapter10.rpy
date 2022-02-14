@@ -1,6 +1,8 @@
 label chapter10:
     show bg woods
+    with fade
     show Stella at left
+    hide Lumberjack
 
     play music "audio/TheHorrorGoat.wav" fadein 1.0
 

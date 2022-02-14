@@ -43,6 +43,10 @@ label chapter9:
     "..."
 
     show bg hand furnace
+    hide Stella
+    hide Elliot
+    hide Zach
+    with fade
     z "*{i}slightly panicked{/i}* Uh, guys... what's in the fire?"
 
     e "I..I don't know but it looks like..."
@@ -52,11 +56,17 @@ label chapter9:
     e "A hand!" (multiple=2)
     s "A hand!" (multiple=2)
 
+    show Zach with dissolve
+
     z "What the-? All that time we were smelling blood?!"
+
+    show Stella at slightleft with dissolve
 
     s "I don’t know. Scientifically we shouldn’t be smelling blood. If anything, we should be smelling something like cooked meat."
     s "And there’s no remnants of blood in the woodshed at all."
     s "I understand that blood can linger, but the stench... it's so strong."
+
+    show Elliot at slightright with dissolve
 
     e "Mmmmm... cooked meat."
 
@@ -131,7 +141,7 @@ label chapter9:
 
     s "{i}It's the lumberjack!{/i}"
 
-    show lum at slightright
+    show Lumberjack at slightright
 
     lum "May I ask what you were doing in my woodshed?"
 
@@ -144,6 +154,7 @@ label chapter9:
 
     show Zach at slightleft
     show Elliot
+    hide Stella
 
     s "*{i}Notices Zach and Elliot{/i}* RUN!!"
 

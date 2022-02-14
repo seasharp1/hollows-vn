@@ -1,6 +1,6 @@
 label chapter8:
-    scene bg lumberjacks cabin
-    show bg lumberjacks cabin
+    scene bg lumberjack cabin
+    show bg lumberjack cabin
     with fade
 
     play music "audio/JazzPiano.wav" fadein 1.0
@@ -41,7 +41,7 @@ label chapter8:
     pause 0.5
 
     #Time pass transition
-    show bg lumberjacks cabin
+    show bg lumberjack cabin
     with fade
 
     "It's dark and quiet and as I'm all tucked in, warm and comfortable, my rest is disturbed by the sounds of some sniffling"
@@ -144,10 +144,10 @@ label chapter8:
 
     z "Lovely."
 
-    music stop fadeout 3.0
+    stop music fadeout 3.0
 
     #Time pass transition
-    show bg lumberjacks cabin
+    show bg lumberjack cabin
     with fade
 
     s "Everyone ready?"
@@ -178,7 +178,7 @@ label chapter8:
     scene bg woodshed furnace
     show bg woodshed furnace with fade
 
-    music start "audio/Playful-music.mp3" fadein 3.0
+    play music "audio/Playful-music.mp3" fadein 3.0
 
     "With Stella pushing Elliot and I into the door, it swings open, causing both zach and elliot to fall down the stairs."
     "Yet suspiciously Stella remains at the top without falling through."
