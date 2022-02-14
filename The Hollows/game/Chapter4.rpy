@@ -104,6 +104,8 @@ label zeRoom:
     show bg night motel
     with fade
 
+    play music "audio/JazzPiano.wav" fadein 1.0
+
     "*{i}Zach unlockes Room 308. The room reeks of mildew and strawberry flavored bubblegum{/i}*"
 
     show Elliot at slightright
@@ -148,6 +150,8 @@ label vending1:
     scene bg vending machine
     show bg vending machine
     with fade
+
+    play music "audio/Playful-music.mp3" fadein 1.0
 
     "*{i}Elliot works his way to a section of 3 vending machines. All of them are
         empty except for the one on the far end that has 1 Oogle Boogle Nutty Candy Bar left in it.{/i}*"
@@ -220,6 +224,8 @@ label MotelNight1Pt2:
     show bg night motel
     with fade
 
+    play music "audio/JazzPiano.wav" fadein 1.0
+
     show Elliot at slightleft
 
     e "Well, I guess I'm going hungry tonight."
@@ -240,6 +246,8 @@ label MotelNight1Pt2:
 label gRoom:
     scene bg night motel
     show bg night motel
+
+    play music "audio/JazzPiano.wav" fadein 1.0
 
     "*{i}Zach unlockes Room 308. The room reeks of mildew and strawberry flavored bubblegum{/i}*"
 
@@ -282,6 +290,8 @@ label vending2:
     scene bg vending machine
     with fade
 
+    play music "audio/Playful-music.mp3" fadein 1.0
+
     show Elliot at slightright
     show Stella at slightleft
 
@@ -297,6 +307,8 @@ label vending2:
 label MotelMorn1:
     scene bg morning motel
     show bg morning motel
+
+    play music "audio/upbeatThemeLoop.wav" fadein 0.75
 
     "*{i}Stella bangs on the door{/i}*"
 
