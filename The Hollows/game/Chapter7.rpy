@@ -3,6 +3,8 @@ label chapter7:
     show bg well
     with fade
 
+    play music "audio/upbeatThemeLoop.wav" fadein 1.0
+
     show lum at slightleft
     lum "And you crank it, like this."
 
@@ -37,5 +39,8 @@ label chapter7:
     lum "Well, we should be getting back. We don't want to leave the girl thirsty forever."
 
     z "Right..."
+
+    stop music fadeout 1.0
+    pause 0.5
 
     jump chapter8

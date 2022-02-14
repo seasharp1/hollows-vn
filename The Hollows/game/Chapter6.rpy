@@ -2,6 +2,8 @@ label chapter6:
     scene bg lumberjacks cabin
     show bg lumberjacks cabin
 
+    play music "audio/JazzPiano.wav" fadein 1.0
+
     show lum at slightleft
     lum "Alright. You can set the little lady on the chair over there."
 
@@ -31,5 +33,8 @@ label chapter6:
     z "I can do that. Elliot, you watch over Stella, okay?"
 
     e "Got it."
+
+    stop music fadeout 1.0
+    pause 0.5
 
     jump chapter7

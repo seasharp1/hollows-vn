@@ -3,6 +3,8 @@ label chapter8:
     show bg lumberjacks cabin
     with fade
 
+    play music "audio/JazzPiano.wav" fadein 1.0
+
     "Elliot hands a glass of water to Stella"
 
     e "Here you go Stella"
