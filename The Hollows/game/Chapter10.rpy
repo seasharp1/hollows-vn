@@ -216,7 +216,7 @@ label hazelstree:
 
     z "I... I... don't know."
 
-    z "This statue... it looks like the severed tree lims we saw in the woodshed.
+    z "This statue... it looks like the severed tree limbs we saw in the woodshed.
         And it's of me."
 
     s "What does this mean?"
