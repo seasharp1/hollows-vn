@@ -37,6 +37,8 @@ label chapter8:
     lum "That reminds me I have some errands to run quickly. I won't be out too long."
     hide lumberjack with moveoutleft
     "And with that, the man is out of the cabin before we can get another word in, we decide to take advantage of his hospitality and get some rest"
+    stop music fadeout 3.0
+    pause 0.5
 
     #Time pass transition
     show bg lumberjacks cabin
@@ -51,6 +53,8 @@ label chapter8:
     s "It smells like its in the air. I don't know how to explain it."
 
     e "Now that you mention it, I smell it too. It's like a mixture of smoke and iron."
+
+    play music "audio/TheHorrorGoat.wav" fadein 3.0
 
     s "Yeah..."
 
@@ -127,7 +131,7 @@ label chapter8:
 
     e "The dog food. Is he the good kind or the bad kind?"
 
-    s "There's a good king?"
+    s "There's a good kind?"
 
     e "Of course there is."
 
@@ -139,6 +143,8 @@ label chapter8:
     s "Precisely. Only if we run into a problem that is."
 
     z "Lovely."
+
+    music stop fadeout 3.0
 
     #Time pass transition
     show bg lumberjacks cabin
@@ -171,7 +177,10 @@ label chapter8:
 
     scene bg woodshed furnace
     show bg woodshed furnace with fade
-    "With Stella pushing Zach and Elliot into the door, it swings open, causing both zach and elliot to fall down the stairs."
+
+    music start "audio/Playful-music.mp3" fadein 3.0
+
+    "With Stella pushing Elliot and I into the door, it swings open, causing both zach and elliot to fall down the stairs."
     "Yet suspiciously Stella remains at the top without falling through."
 
     show Stella

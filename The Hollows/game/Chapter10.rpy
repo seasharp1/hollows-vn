@@ -2,6 +2,8 @@ label chapter10:
     show bg woods
     show Stella at left
 
+    play music "audio/TheHorrorGoat.wav" fadein 1.0
+
     s "He's chasing after us!"
 
     show Zach at center
@@ -36,7 +38,11 @@ label splitup: # Made more sense to me if these were swapped so I did that.
 
     e "Then I'll be able to get out of the woods and get help."
 
-    s "*{i}After a brief pause{/i}* Ok... but be careful."
+    pause 1.0
+
+    s "..."
+
+    s "Ok... but be careful."
 
     hide Elliot
 
