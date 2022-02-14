@@ -2,6 +2,7 @@ label chapter5:
     scene bg hiking trail
     show bg hiking trail
 
+    play music "audio/upbeatThemeLoop.wav" fadein 1.0 volume 0.75
 
     show Stella at slightleft
     s "Who's idea was this again?"
@@ -15,11 +16,20 @@ label chapter5:
     z "We all did."
 
     s "Well {i}that{/i}... was a mistake. I... need... water."
-    #Drop transition
+
+    #Stella drops
+    hide Stella
+    with easeoutbottom
+    pause 2.0
+
 
     e "Here Stella, I brought enough for everyone."
 
+    show Stella at slightleft
+    with easeinbottom
+
     s "..."
+
 
     s "This tastes like its been in the car for months."
 
@@ -51,6 +61,17 @@ label chapter5:
     z "Uhg. I feel so bad that all of your followers haven't seen your face in two hours."
 
     #Time pass transition(clock sound and swirl) or naration?
+    hide Zach
+    hide Elliot
+    hide Stella
+    with easeoutright
+
+    pause 3.0
+
+    show Stella at slightleft
+    show Elliot at center
+    show Zach at slightright
+    with easeinleft
 
     s "Face it. We're lost."
 
@@ -58,9 +79,13 @@ label chapter5:
 
     s "But you said that five miles ago!"
 
+    stop music fadeout 1.5
+
     show shadow run:
     "*{i}A shadowy figure rushes past{/i}*"
     hide shadow run
+
+    play music "audio/TheHorrorGoat.wav" fadein 3.0 volume 1.0
 
     s "*{i}Visibly scared{/i}* Did anyone just see that?!"
 
@@ -115,7 +140,11 @@ label chapter5:
     hide shadowman
     show lumberjack at left
 
+    stop music fadeout 1.5
+
     s "Eek!"
+
+    play music "audio/Playful-music.mp3" fadein 1.0
 
     lum "I haven't seen many people this far into the woods in a while."
 
@@ -192,6 +221,9 @@ label chapter5:
     lum "But you should rest today. Espically the young lady here."
 
     s "What are you talking about? I'm fine... *collapses*"
+
+    hide Stella
+    with easeoutbottom
     #idk how to make this really happen in the game
 
     z "Stella!" (multiple=2)
@@ -209,5 +241,8 @@ label chapter5:
     e "Let's stop standing here and help her! I'll carry her. Can you lead us to your... house... cabin, wherever you live?"
 
     lum "Sure! Follow me."
+    
+    stop music fadeout 1.0
+    pause 1.0
 
     jump chapter6

@@ -102,7 +102,7 @@ label zeRoom:
     show bg night motel
     with fade
 
-    play music "audio/JazzPiano.wav" fadeout 3.0 fadein 3.0
+    play music "audio/JazzPiano.wav" fadein 1.0
 
     "*{i}Zach unlockes Room 308. The room reeks of mildew and strawberry flavored bubblegum{/i}*"
 
@@ -320,7 +320,7 @@ label MotelMorn1:
     scene bg morning motel
     show bg morning motel
 
-    play music "audio/upbeatThemeLoop.wav" fadein 0.75
+    play music "audio/upbeatThemeLoop.wav" fadein 1.0 volume 0.75
 
     "*{i}Stella bangs on the door{/i}*"
 
@@ -384,5 +384,5 @@ label MotelMorn1:
 
     stop music fadeout 1.0 #stops current music
     pause 1.0
-    
+
     jump chapter5
