@@ -81,7 +81,7 @@ label chapter5:
 
     stop music fadeout 1.5
 
-    show shadow run:
+    show shadow run behind Elliot, Stella, Zach:
     "*{i}A shadowy figure rushes past{/i}*"
     hide shadow run
 
@@ -105,7 +105,7 @@ label chapter5:
 
     s "I... I'm sorry"
 
-    show shadow run:
+    show shadow run behind Elliot, Stella, Zach:
     "*{i}The shadowy figure appears again{/i}*"
     hide shadow run
 
@@ -113,7 +113,7 @@ label chapter5:
 
     z "I did too, but where did it go?"
 
-    show shadowman behind Elliot, Stella, Zach
+    show shadow behind Elliot, Stella, Zach
 
     s "Guys, I think whatever it is... it's right behind us."
 
@@ -137,9 +137,14 @@ label chapter5:
 
     lum "Who's dying now?"
 
-    hide shadowman
-    show lumberjack at left
-
+    hide shadow at left
+    with dissolve
+    show lumberjack at left with dissolve
+    show Stella:
+        xalign .4
+    show Elliot:
+        xalign .65
+    show Zach at right with easeinleft
     stop music fadeout 1.5
 
     s "Eek!"
@@ -241,7 +246,7 @@ label chapter5:
     e "Let's stop standing here and help her! I'll carry her. Can you lead us to your... house... cabin, wherever you live?"
 
     lum "Sure! Follow me."
-    
+
     stop music fadeout 1.0
     pause 1.0
 

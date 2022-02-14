@@ -6,12 +6,18 @@ define lum = Character("Lumberjack", who_color="cc5500")
 define mv = Character("Mysterious Voice", who_color="5e0fb8")
 ##define me = Character("[povname]") ## Use this for named main character
 
+image Elliot = "Elliot.png"
+image Stella = "Stella.png"
+image Zach = "Zach.png"
+image Boisterous Man = "Boisterious_Man.png"
+image Lumberjack = "Lumberjack.png"
+
 transform slightleft:
-    xalign 0.25
+    xalign 0.1
     yalign 1.0
 
 transform slightright:
-    xalign 0.75
+    xalign 0.9
     yalign 1.0
 
 transform hop:

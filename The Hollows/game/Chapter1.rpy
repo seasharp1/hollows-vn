@@ -92,7 +92,7 @@ label chapter1:
     #Show main cast coming back into car
     play sound "<from 0 to 1>audio/Footsteps.wav" fadeout 1.0
     show Stella at slightright
-    show Zack at slightleft
+    show Zach at slightleft
     show Elliot at center
     with easeinright
 
