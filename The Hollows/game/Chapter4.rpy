@@ -88,10 +88,8 @@ label chapter4:
 
     bm "Perfect..."
 
-    hide Elliot
-    hide Stella
-    hide Zach
-    hide Boisterous Man
+    stop music fadeout 1.0 #stops current music
+    pause 1.0
 
     if ownRoom:
         jump zeRoom
@@ -104,7 +102,7 @@ label zeRoom:
     show bg night motel
     with fade
 
-    play music "audio/JazzPiano.wav" fadein 1.0
+    play music "audio/JazzPiano.wav" fadeout 3.0 fadein 3.0
 
     "*{i}Zach unlockes Room 308. The room reeks of mildew and strawberry flavored bubblegum{/i}*"
 
@@ -143,6 +141,8 @@ label zeRoom:
     e "Works for me!"
 
     z "Before you go... *{i}sigh{/i}* He's already gone. That kid sure has a one-track mind."
+    stop music fadeout 1.0 #stops current music
+    pause 1.0
 
     jump vending1
 
@@ -217,6 +217,9 @@ label vending1:
 
     e "I guess I'm just happy that Stella has something to eat."
 
+    stop music fadeout 1.0 #stops current music
+    pause 1.0
+
     jump MotelNight1Pt2
 
 label MotelNight1Pt2:
@@ -239,6 +242,9 @@ label MotelNight1Pt2:
 
     z "That kid sure is something else. *{i}He turns off the light and goes to bed{/i}*"
     #FADE OUT
+
+    stop music fadeout 1.0 #stops current music
+    pause 1.0
 
     jump MotelMorn1
 
@@ -283,6 +289,9 @@ label gRoom:
     s "Gross! I should really get you a dog cone. Come on, we're going to the
         vending machines. I saw some outside."
 
+    stop music fadeout 1.0 #stops current music
+    pause 1.0
+
     jump vending2
 
 label vending2:
@@ -301,6 +310,9 @@ label vending2:
     e "Looks like there's one left..."
 
     "Elliot and Stella split the bar"
+
+    stop music fadeout 1.0 #stops current music
+    pause 1.0
 
     #jump MotelMorn2
 
@@ -369,4 +381,8 @@ label MotelMorn1:
     s "I can tell."
 
     z "I suppose we should get going. I can explain more on the way."
+
+    stop music fadeout 1.0 #stops current music
+    pause 1.0
+    
     jump chapter5
