@@ -81,7 +81,7 @@ label chapter4:
 
     # This line needs a name for the Mountain --------------------------------
     bm "It's probably the only redeeming part of the town. The trail takes you
-        up the (insert name) Mountain to one of the most beautiful views."
+        up Mt Timberland to one of the most beautiful views."
 
     z "I mean we might as well take a look while we're here."
 

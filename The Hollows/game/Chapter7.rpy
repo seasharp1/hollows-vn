@@ -28,7 +28,7 @@ label chapter7:
     lum "CLUES! That's the word. What clues do you have?"
 
     z "I just know that my parents were from Timberland. Also, they left me with this pendent."
-    "*{i}shows the lumberjack the pendent{/i}*"
+    "*{i}Zach shows the lumberjack the pendent{/i}*"
     #Maybe we could have an art assest of the pendent?
 
     lum "Oh I see. *{i}surpised{/i}*"

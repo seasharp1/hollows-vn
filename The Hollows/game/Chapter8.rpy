@@ -21,7 +21,7 @@ label chapter8:
 
     lum "I used to have three kids at one time or another, but they've all moved on now."
 
-    "Theres a pause that hangs in the air a little too long."
+    "*{i}Theres a pause that hangs in the air a little too long{/i}"
 
     z "So you've kept them."
 
@@ -74,11 +74,11 @@ label chapter8:
 
     s "I think so, but if we smell iron, then what is that guy up to?"
 
-    "Another silence, I brace myself for what stellas about to say next"
+    "{i}Another silence, I brace myself for what Stella is about to say next{/i}"
 
     s "I think we should investigate."
 
-    "And there it is"
+    "{i}And there it is{/i}"
 
     e "I'll go if you go."
 
@@ -87,7 +87,7 @@ label chapter8:
 
     s "It's not snooping. It's investigating."
 
-    "I let out a long sigh"
+    "{i}I let out a long sigh{/i}"
 
     z "There's no stopping you, is there?"
 
@@ -97,7 +97,7 @@ label chapter8:
     z "I guess I am. I'll have to admit, I {i}am{/i} a bit skeptical of the lumberjack...but for a different reason."
     z "I told him about my pendant today and, just for a split second, he looked like he knew what it was... or rather who {i}I{/i} was."
 
-    "Our disscusion is cut short when we hear a voice from the neighboring room."
+    "{i}Our disscusion is cut short when we hear a voice from the neighboring room{/i}"
 
     lum "Sanjay, Sucrose, Samantha...Is my name Samantha?"
     lum "..."
