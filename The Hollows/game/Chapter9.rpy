@@ -2,10 +2,13 @@ label chapter9:
     scene bg woodshed furance
     show bg woodshed furance
 
+    play music "audio/SpookyNoise.mp3" fadein 3.0
+
     "*{i}The stench of iron gets stronger{/i}*"
 
     show Stella
-    s "*{i}Running down the stairs{/i}* Sorry guys! I should've been more careful."
+    with easeinleft
+    s "Sorry guys! I should've been more careful."
 
     show Zach at slightleft
     z "It's okay Stel, I landed on Elliot."
@@ -152,5 +155,7 @@ label chapter9:
 
     lum "*{i}Shouting{/i}* Please! I'm begging you! Don't split up in those woods!"
     lum "You'll become a... if..."
+
+    stop music fadeout 1.0
 
     jump chapter10
